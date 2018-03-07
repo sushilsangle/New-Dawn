@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nav_live"
+        android:title="Live"/>
+
+
+
+    <item android:title="All Issues">
+        <menu>
+            <item
+                android:id="@+id/nav_voice_quality_issue"
+                android:title="Voice Quality Issue" />
+            <item
+                android:id="@+id/nav_outbund"
+                android:title="Out bound Issue" />
+            <item
+                android:id="@+id/nav_callnot_to_agent"
+                android:title="Calls Not Landing To Agent" />
+
+        </menu>
+    </item>
+
+    <item android:title="Configuration">
+        <menu>
+            <item
+                android:id="@+id/nav_ipsi"
+                android:title="IPSI Card" />
+            <item
+                android:id="@+id/nav_clan"
+                android:title="CLAN Card" />
+            <item
+                android:id="@+id/nav_ds_one"
+                android:title="DS1 Card" />
+            <item
+                android:id="@+id/nav_medpro"
+                android:title="MEDPRO Card" />
+            <item
+                android:id="@+id/nav_val"
+                android:title="VAL Board" />
+            <item
+                android:id="@+id/nav_g_four_fifty"
+                android:title="G-450" />
+            <item
+                android:id="@+id/nav_g_six_fifty"
+                android:title="G-650" />
+
+        </menu>
+    </item>
+
+
+    <item android:title="Additional Info">
+        <menu>
+
+
+            <item
+                android:id="@+id/nav_interview"
+                android:title="Interview Specific" />
+
+            <item
+                android:id="@+id/nav_about_us"
+                android:title="About US" />
+            <item
+                android:id="@+id/nav_log_out"
+                android:title="Log Out" />
+
+        </menu>
+    </item>
+
+</menu>

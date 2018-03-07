@@ -1,0 +1,516 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sushil.navigationtesting.fragments.GfourFifty">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_config"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/img_gfour"
+            android:layout_alignParentTop="true"
+            android:background="#D7CCC8"
+            android:gravity="center"
+            android:text="Follow the steps to upload announcements."
+            android:textStyle="bold" />
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_gfour"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gfour"
+            android:layout_margin="6dp"
+            android:layout_below="@+id/txt_config"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/img_gfour"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_gf"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/img_gfour"
+            android:text="Above is just sample G450 Media Gateway..."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_gf"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_gfo"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_gf"
+            android:text="Now do login into MG via Putty using MG's IP address."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_gfo"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_gfou"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_gfo"
+            android:text="In this MG up to 450 extensions available and s8500 server."/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_gfou"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_gfour"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_gfou"
+            android:text="1 slot for main board and remaining..."/>
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_gfour"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_fg"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_gfour"
+            android:text="8 slots used for media moduls."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_fgr"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_fg"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="!! Refer below basic details for G450 Media Gateway. !!"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_port"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mgtrunk"
+            android:layout_margin="6dp"
+            android:layout_below="@+id/txt_fgr"
+            />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_mg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="406dp"
+            android:background="@drawable/mg_name"
+
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/img_mg"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_conet"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/img_mg"
+            android:text="After connecting cable to E1/T1 port on MM710 or MM710B Media Module."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_fgru"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_conet"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="!! Refer below steps to add G450 MG in CM. !!"/>
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_fgru"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_siglig"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_fgru"
+            android:text="First collect all MG serial no by using below command by using Putty.."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:layout_below="@+id/txt_siglig"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_mg_show"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_siglig"
+            android:text="show system"/>
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sho_comd"
+            android:layout_margin="6dp"
+            android:layout_below="@+id/txt_mg_show"
+            />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/img_show"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_fur"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/img_show"
+            android:text="Now login into ACD and execute below command."/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:layout_below="@+id/txt_fur"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_mg_add"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_fur"
+            android:text="add media-gateway"/>
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mg_addcm"
+            android:layout_margin="6dp"
+            android:layout_below="@+id/txt_mg_add"
+            />
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:layout_below="@+id/img_add"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_mg_ad"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/img_add"
+            android:text="Set / show mgc list "/>
+
+
+
+
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_set"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gwshow_mg"
+            android:layout_margin="6dp"
+            android:layout_below="@+id/txt_mg_ad"
+            />
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/img_set"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_confg"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/img_set"
+            android:text="To save configuration in MG refer below command."/>
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:layout_below="@+id/txt_confg"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_mg_adu"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_confg"
+            android:text="copy running-configuration startup-configuration"/>
+
+
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_setrun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gw_copy"
+            android:layout_margin="6dp"
+            android:layout_below="@+id/txt_mg_adu"
+            />
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/img_setrun"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_reset"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/img_setrun"
+            android:text="Now you need to restart your MG do it using beow command."/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:layout_below="@+id/txt_reset"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_mg_reset"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_reset"
+            android:text="reset"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_mg_reset"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_rese"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_mg_reset"
+            android:text="Now check If it's registred properly or not using below command."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:layout_below="@+id/txt_rese"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_mg_res"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_rese"
+            android:text="show mgc list"/>
+
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_setr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mg_showmgc"
+            android:layout_margin="6dp"
+            android:layout_below="@+id/txt_mg_res"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/img_setr"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_resemg"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/img_setr"
+            android:text="If you want to clear MG then use below command."/>
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:layout_below="@+id/txt_resemg"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_mg_reu"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_resemg"
+            android:text="clear mgc list 172.16.0.141"/>
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

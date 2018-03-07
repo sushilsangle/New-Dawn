@@ -1,0 +1,507 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sushil.navigationtesting.fragments.IpsiCard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_cmd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#afafaf"
+            android:gravity="center"
+            android:text="How to configure IPSI Card"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold" />
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_cmd"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_nowp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_cmd"
+            android:text="Insert                    into G-650 gateway in"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ipsit"
+            android:layout_marginStart="65dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold"
+            android:layout_below="@+id/txt_cmd"
+            android:text="IPSI Card"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ipsith"
+            android:layout_marginStart="270dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_cmd"
+            android:text="First Slot"/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/txt_ipsith"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ipsifou"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_below="@+id/txt_ipsith"
+            android:text="1."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ipsisix"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ipsith"
+            android:text="Connect your laptop vis cross-over / LAN  cable to service port on front Laptop"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ipsifur"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_below="@+id/txt_ipsisix"
+            android:text="2."/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ips"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ipsisix"
+            android:text="By default service port IP is -  "/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ipst"
+            android:layout_marginStart="235dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_ipsisix"
+            android:text="192.11.13.5"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ipsto"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_below="@+id/txt_ipst"
+            android:text="3."/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ipss"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ipst"
+            android:text="Set the Laptop IP near by port IP like..... "/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ipstort"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_below="@+id/txt_ipss"
+            android:text="3."/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_iport"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ipss"
+            android:text="IP            :-  192.11.13.5"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ipstor"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_below="@+id/txt_iport"
+            android:text="4."/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_iporth"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/txt_iport"
+            android:text="Subnet   :-  255.255.255.0 "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ipstse"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_below="@+id/txt_iporth"
+            android:text="5."/>
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ipse"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/txt_iporth"
+            android:text="Gateway :- 192.11.13.1"/>
+
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_ipsi"
+            android:layout_margin="13dp"
+            android:layout_below="@+id/txt_ipse"
+            android:background="@drawable/ipsi_f"/>
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/img_ipsi"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_pi"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/img_ipsi"
+            android:text="Now open the command promt in your laptop../"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_pi"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ping"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_pi"
+            android:text="ping 192.11.13.6/"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ping"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_pichk"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ping"
+            android:text="Check the ping result if it's happing then check below."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_pichk"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_pirult"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_pichk"
+            android:text="Once getting ping response put below cmmand with IPSI IP."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_pirult"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_pirt"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_pirult"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="telnet  192.11.13.6"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_pirt"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_pirtu"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_pirt"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="ipsilogin"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_pirtu"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ipsilon"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_pirtu"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="ID :- craft"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ipsilon"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ipsipsw"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ipsilon"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="Password :- serv1ces"/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ipsipsw"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ipsi_set"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ipsipsw"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="set control interface 192.11.13.6   255.255.255.0"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ipsi_set"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ipsi_getw"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ipsi_set"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="set control gateway 192.11.13.6   192.11.13.1"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ipsi_getw"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ipsi_speed"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ipsi_getw"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="set port speed 1100mb"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ipsi_speed"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ipsi_duplex"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ipsi_speed"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="set port duplex1 full"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ipsi_duplex"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ipsi_neg"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ipsi_duplex"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="set port negotiation 1 disable"/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ipsi_neg"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ipsi_dis"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ipsi_neg"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="disable auto negotiation"/>
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

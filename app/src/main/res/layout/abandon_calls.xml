@@ -1,0 +1,157 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sushil.navigationtesting.fragments.AbandonCalls">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_main"
+            android:background="@drawable/cms_sample"/>
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_report"
+            android:layout_below="@+id/img_main"
+            android:background="@drawable/cms_acd_report"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/img_report"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_report"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/img_report"
+            android:text="How to pull out above report from CMS just follow steps."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_report"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="138dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/txt_report"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="206dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/txt_report"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="283dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/txt_report"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="364dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/txt_report"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+
+            android:layout_marginTop="9dp"
+            android:layout_below="@+id/txt_report"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_repor"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_report"
+            android:text="Go to Commands      Reports     Historical     Skill/Split     Summary-interval"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+
+            android:layout_below="@+id/txt_repor"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_rept"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_repor"
+            android:text="If you want to check abandoned calls then refer above snap and coloumn name is "/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_reptn"
+            android:layout_marginStart="199dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="21dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_repor"
+            android:text="Aban Calls "/>
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+
+            android:layout_below="@+id/txt_reptn"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_reptre"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_reptn"
+            android:text="If you want to check from which side call got disconnected in this case you can refer            report. "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_reptu"
+            android:layout_marginStart="274dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="21dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_reptn"
+            android:text="ECHI"/>
+
+    </RelativeLayout>
+</ScrollView>

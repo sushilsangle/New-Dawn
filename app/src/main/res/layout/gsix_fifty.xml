@@ -1,0 +1,239 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sushil.navigationtesting.fragments.GsixFifty">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/txt_config"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/img_gfour"
+            android:layout_alignParentTop="true"
+            android:background="#D7CCC8"
+            android:gravity="center"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="!!  G-650 Media Gateway Details.   !!"
+            android:textStyle="bold" />
+
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/img_gs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mgg"
+            android:layout_marginStart="206dp"
+            android:layout_marginTop="29dp"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_config"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_gf"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_config"
+            android:text="IN this MG 16 slots are there."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_gf"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_gsi"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_gf"
+            android:text="2 slots user for power supply."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_gsi"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_gsx"
+            android:layout_marginStart="23dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_gsi"
+            android:text="Left power supply is standard."/>
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_gsx"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_gsxi"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_gsx"
+            android:text="Right power supply is optional."/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_gsxi"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_gsxu"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_gsxi"
+            android:text="5 racks can be connected....."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_gsxu"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_gsu"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_gsxu"
+            android:text="via TDM backplane cable"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_gsu"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_gech"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_gsu"
+            android:text="Each rack has 14 slots (5*14=70 modules)"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_gech"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ipsi"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_gech"
+            android:text="Always insert IPSI card in first slot."/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ipsi"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ip"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ipsi"
+            android:text="Always insert CLAN card in second slot like wise...."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ip"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ipu"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ip"
+            android:text="You can insert remaining all cards accordingly.."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ipu"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ise"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ipu"
+            android:text="Carrier address range start from A to E"/>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,682 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sushil.navigationtesting.fragments.ClanCard">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/txt_config"
+            android:gravity="center"
+            android:background="#D7CCC8"
+            android:text="C-LAN configuration" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_config"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_pi"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_config"
+            android:text="First insert C-LAN card into G-650 Media Gateway."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_pi"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_cln"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_pi"
+            android:text="Now connect LAN cable through C-LAN connector to MG."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_cln"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_clnn"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_cln"
+            android:text="Now execute below command and check the result."/>
+
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:layout_below="@+id/txt_clnn"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_clan_cmd"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_clnn"
+            android:text="test board    01A02"/>
+
+
+
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_clan_cmd"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_clnu"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_clan_cmd"
+            android:text="Once your getting ping resoponce it means board is ready to use."/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_clnu"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_clno"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_clnu"
+            android:text="Login into ACD and check all C-LAN status using CMD."/>
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:layout_below="@+id/txt_clno"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_clan_ip"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_clno"
+            android:text="list ip-interface clan all"/>
+
+
+
+
+
+
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_clan_ip"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_clnt"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_clan_ip"
+            android:text="Now set valid                          and                      IP new C-LAN"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_clntr"
+            android:layout_marginStart="114dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold"
+            android:layout_below="@+id/txt_clan_ip"
+            android:text="NODE NAME"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_clntrr"
+            android:layout_marginStart="226dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_clan_ip"
+            android:text="IP Address"/>
+
+
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:layout_below="@+id/txt_clntrr"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_clan_chan"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_clntrr"
+            android:text="change node-name ip"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_clntu"
+            android:layout_marginStart="180dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_clntrr"
+            android:text="enter ip address here..."/>
+
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_clntu"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_clnut"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_clntu"
+            android:text="Once you set Node name and IP address then check..."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_clnut"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_check"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_clnut"
+            android:text="First check how many ethernet links are free in ACD."/>
+
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:layout_below="@+id/txt_check"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_clan_cethr"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_check"
+            android:text="list communication -ethernet links"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_clan_cethr"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_checs"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_clan_cethr"
+            android:text="If you found 21 link is free then use same like....."/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:layout_below="@+id/txt_checs"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_cethrn"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_checs"
+            android:text="change communication -ethernet link 21"/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_cethrn"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_checst"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_cethrn"
+            android:text="Set the link name"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_checst"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_chxcu"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_checst"
+            android:text="Now check TN2302 is up or not using below command."/>
+
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:layout_below="@+id/txt_chxcu"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_cdisp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_chxcu"
+            android:text="display circuit-pack"/>
+
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc"
+            android:layout_marginStart="105dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_cdisp"
+            android:text=" IP INTERFACE"/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_typ"
+            android:layout_marginStart="109dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc"
+            android:text="Type :- "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_type"
+            android:layout_marginStart="157dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc"
+            android:text="C-LAN"/>
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_slo"
+            android:layout_marginStart="116dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_type"
+            android:text="Slot :- "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_slot"
+            android:layout_marginStart="157dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_type"
+            android:text="01A03"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_enab"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_slot"
+            android:text="Enable Interface :- "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_enabled"
+            android:layout_marginStart="157dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_slot"
+            android:text="y / n"/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_val"
+            android:layout_marginStart="105dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_enabled"
+            android:text="VLAN :- "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_valn"
+            android:layout_marginStart="157dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_enabled"
+            android:text="n"/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_net"
+            android:layout_marginStart="43dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_valn"
+            android:text="Network Region :- "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_work"
+            android:layout_marginStart="157dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_valn"
+            android:text="xxx"/>
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_nod"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_work"
+            android:text="Gateeway Node Name :- "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_names"
+            android:layout_marginStart="157dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_work"
+            android:text="G_TEST   IP:- 10.130.135.144"/>
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_mask"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_names"
+            android:text="Subnet Mask :- "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_sub"
+            android:layout_marginStart="157dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_names"
+            android:text="255.255.255.0"/>
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_linkt"
+            android:layout_marginStart="67dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_sub"
+            android:text="Ethrnet Link :- "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_lin"
+            android:layout_marginStart="157dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_sub"
+            android:text="As per your ACD"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_speed"
+            android:layout_marginStart="99dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_lin"
+            android:text="Speed :- "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_spee"
+            android:layout_marginStart="157dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_lin"
+            android:text="100Mbps"/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_dup"
+            android:layout_marginStart="99dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_speed"
+            android:text="Duplex :- "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_duple"
+            android:layout_marginStart="157dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_speed"
+            android:text="Full"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_duple"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_nowpo"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_duple"
+            android:text="Once you done above configuration extecute TEST BOARD 01A03 and check the result. "/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

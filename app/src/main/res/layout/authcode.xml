@@ -1,0 +1,188 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sushil.navigationtesting.fragments.AuthCode">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/txt_change_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c7d9db"
+        android:text="change auth-code 1212" />
+
+
+    <TextView
+        android:id="@+id/txt_auth_code_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/txt_change_id"
+        android:text="Auth Code....!" />
+    <TextView
+        android:id="@+id/txt_auth_codee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txt_auth_code_details"
+        android:text="Auth Code     COR" />
+    <TextView
+        android:id="@+id/txt_auth_code_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/txt_auth_codee"
+        android:text="14322              3" />
+    <TextView
+        android:id="@+id/txt_auth_code_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/txt_auth_code_one"
+        android:text="14323              3" />
+    <TextView
+        android:id="@+id/txt_auth_code_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/txt_auth_code_two"
+        android:text="14324              3" />
+    <TextView
+        android:id="@+id/txt_auth_code_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/txt_auth_code_three"
+        android:text="14325              3" />
+    <TextView
+        android:id="@+id/txt_auth_code_fiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/txt_auth_code_four"
+        android:text="14326              3" />
+
+
+    <TextView
+        android:id="@+id/txt_auth_cod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="197dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txt_auth_code_details"
+        android:text="Auth Code       COR" />
+    <TextView
+        android:id="@+id/txt_auth_code_six"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="207dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/txt_auth_cod"
+        android:text="14327              3" />
+
+    <TextView
+        android:id="@+id/txt_auth_code_sevn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="207dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/txt_auth_code_six"
+        android:text="14328              3" />
+    <TextView
+        android:id="@+id/txt_auth_code_eight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="207dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/txt_auth_code_sevn"
+        android:text="14329              3" />
+    <TextView
+        android:id="@+id/txt_auth_code_ten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="207dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/txt_auth_code_eight"
+        android:text="14330              3" />
+    <TextView
+        android:id="@+id/txt_auth_code_elevn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="207dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/txt_auth_code_ten"
+        android:text="14331              3" />
+
+
+
+    <TextView
+        android:id="@+id/txt_changecmd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c7d9db"
+        android:layout_below="@+id/txt_auth_code_fiv"
+        android:layout_marginTop="10dp"
+        android:text="change auth-code 1212" />
+
+
+
+    <TextView
+        android:id="@+id/txt_authcoderelated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_changecmd"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="!! Auth code related commands. !!" />
+
+
+
+    <TextView
+        android:id="@+id/txt_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_authcoderelated"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="10dp"
+        android:text="change auth-code : 14322" />
+    <TextView
+        android:id="@+id/txt_disply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_change"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="10dp"
+        android:text="display auth-code : 14322" />
+    <TextView
+        android:id="@+id/txt_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_disply"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginLeft="10dp"
+        android:text="list auth-code : 14322" />
+
+
+</RelativeLayout>

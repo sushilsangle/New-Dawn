@@ -1,0 +1,351 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sushil.navigationtesting.fragments.Interview">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_config"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/img_gfour"
+            android:layout_alignParentTop="true"
+            android:background="#D7CCC8"
+            android:gravity="center"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="!!  Interview Questions and Answers  !!"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_confi"
+            style="@style/Questions"
+            android:layout_below="@+id/txt_config"
+            android:text="Q 1.     What is CMS?"
+            />
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_confi"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_report"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_confi"
+            android:text="CMS stands for Call Management System.It is Management information system which is used in avaya call center for Real Time, Historical and Integrated Reporting."/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_report"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_in"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_report"
+            android:text="It provides two types of backup:"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ad"
+            android:layout_marginStart="39dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/txt_in"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="1. ADMIN Backup 2. Maintainance Backup."/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_slots"
+            style="@style/Questions"
+            android:layout_below="@+id/txt_ad"
+            android:text="Q 2.     How many slots are there in G-650 Media Gateway?"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_slots"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_int"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_slots"
+            android:text="There are 16 slots 1st and last used for power supply and remaining 14 for circuit packs"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_arsq"
+            android:layout_below="@+id/txt_int"
+            android:text="Q 3.     What is AAR?"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_arsq"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_ars"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_arsq"
+            android:text="AAR stands for Automatic Alternate Route. It is used for direct outgoing calling.It routes call within a company or own private Network. When you dial FAC(Feature Access Code) and telephone number AAR select most desirable route for call.If first choice route is unavailable then it chose another route automatically. "/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_ares"
+            android:layout_below="@+id/txt_ars"
+            android:text="Q 4.    What is ARS?"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ares"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_aars"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ares"
+            android:text="ARS stands for Automatic Route Selection. It select carrier automatically and route the call inexpensivly over the public networks.When user dial FAC by telephone number CM analyse the dialed digits. select route for call deletes and insert digits if necessary route call over trunks which are specify in your routing tables."/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_hunq"
+            android:layout_below="@+id/txt_aars"
+            android:text="Q 5.    What is HUNT?"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_hunq"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_hunt"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_hunq"
+            android:text="It is a collection of user handling similar types of calls. i.e ACD Automatic Call Distribution System."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_hunqu"
+            android:layout_below="@+id/txt_hunt"
+            android:text="Q 4.    What is a function of IPSI Card?"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_hunqu"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_hunts"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_hunqu"
+            android:text="It provides communication link between port-network and communication manager.It send keep a live message to CM. Tone generation, clock selection and globale call classification TN2312BP."/>
+
+
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_clanq"
+            android:layout_below="@+id/txt_hunts"
+            android:text="Q 5.    What is a function of CLAN Card?"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_clanq"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_clan"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_clanq"
+            android:text="It provides H323 to registration of Phones.The phone registration capacity is 300/400 max recommended by Avaya. Circuit Pack: TN799DP Port 17"/>
+
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_medprq"
+            android:layout_below="@+id/txt_clan"
+            android:text="Q 5.    What are the types of Hunt Group?"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_medprq"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_medpr"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_medprq"
+            android:text="There are 4 types in Hunt Group:- "/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_group"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_below="@+id/txt_medpr"
+            android:text="1.Group:-"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_grop"
+            android:layout_marginStart="99dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_medpr"
+            android:text="Incoming call is presented simultaneously to all the available hunt group members. "/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_linear"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_below="@+id/txt_grop"
+            android:text="2.Linear:-"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_linr"
+            android:layout_marginStart="99dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_grop"
+            android:text="Incoming call is presented to the first available member in the list. If unanswered, it is presented to the next available member in the list. "/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_circular"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_below="@+id/txt_linr"
+            android:text="3.Circular:-"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_cirl"
+            android:layout_marginStart="99dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_linr"
+            android:text="This hunt type operates similarly to Linear. However the starting point for call presentation is the first available member after the last member to answer a call."/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_idle"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_below="@+id/txt_cirl"
+            android:text="4.Most Idle"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_midle"
+            android:layout_marginStart="103dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_cirl"
+            android:text="An incoming call is first presented to the available member who has been idle the longest. If unanswered it is presented to the next longest idle member."/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

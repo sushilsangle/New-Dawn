@@ -1,0 +1,708 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/txt_follow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#c7d9db"
+            android:gravity="center"
+            android:text="Follow the steps to uploade Announcements in VAL board" />
+
+        <TextView
+            android:id="@+id/txt_faro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_follow"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="->" />
+
+        <TextView
+            android:id="@+id/txt_fainfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_follow"
+            android:text="First login into respective          and execute below command" />
+
+        <TextView
+            android:id="@+id/txt_fainfoo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="185dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold"
+            android:layout_below="@+id/txt_follow"
+            android:text="ACD" />
+
+        <TextView
+            android:id="@+id/txt_sero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:background="#D7CCC8"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_fainfoo"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="->" />
+
+
+        <TextView
+            android:id="@+id/txt_seainfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#D7CCC8"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_fainfoo"
+            android:text="enable filexfer" />
+
+
+        <TextView
+            android:id="@+id/txt_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="91dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="9dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_seainfo"
+            android:text="Login  :  tata" />
+        <TextView
+            android:id="@+id/txt_paswd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_login"
+            android:text="Password  :  tata123" />
+        <TextView
+            android:id="@+id/txt_paswdr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_paswd"
+            android:text="Re-enter Password  :  tata123" />
+
+        <TextView
+            android:id="@+id/txt_secur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="81dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_paswdr"
+            android:text="Secure? :  n" />
+        <TextView
+            android:id="@+id/txt_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="41dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_secur"
+            android:text="Board address : 03a09" />
+        <TextView
+            android:id="@+id/txt_listp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:background="#D7CCC8"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_location"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="->" />
+
+
+        <TextView
+            android:id="@+id/txt_listip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#D7CCC8"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_location"
+            android:text="list ip-interface val" />
+
+        <TextView
+            android:id="@+id/txt_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_listip"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="->" />
+
+
+        <TextView
+            android:id="@+id/txt_nowinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_listip"
+            android:text="Now execute above command in ACD and check VAL IPs." />
+
+        <TextView
+            android:id="@+id/txt_valb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_nowinfo"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="->" />
+
+
+        <TextView
+            android:id="@+id/txt_valbb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_nowinfo"
+            android:text="After executing above command check  " />
+
+        <TextView
+            android:id="@+id/txt_valbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="269dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_nowinfo"
+            android:text="VAl Board and IPs" />
+
+        <TextView
+            android:id="@+id/txt_sup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_valbl"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="->" />
+
+
+        <TextView
+            android:id="@+id/txt_supp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_valbl"
+            android:text="Suppose VAL board IP is 10.120.134.65 then..." />
+
+        <TextView
+            android:id="@+id/txt_exe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_supp"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="->" />
+
+
+        <TextView
+            android:id="@+id/txt_execu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_supp"
+            android:text="Open           in your system and execute below command." />
+
+        <TextView
+            android:id="@+id/txt_execumd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_supp"
+            android:text="CMD" />
+        <TextView
+            android:id="@+id/txt_ftpar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:background="#D7CCC8"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_execumd"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="->" />
+
+
+        <TextView
+            android:id="@+id/txt_ftp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#D7CCC8"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_execumd"
+            android:text="ftp 10.120.134.65" />
+        <TextView
+            android:id="@+id/txt_ftpp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="#D7CCC8"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_ftp"
+            android:text="     Connected to 10.120.134.65" />
+        <TextView
+            android:id="@+id/txt_cre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_ftpp"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="->" />
+
+
+        <TextView
+            android:id="@+id/txt_cret"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_ftpp"
+            android:text="It will ask login credintial so enter above same." />
+
+        <TextView
+            android:id="@+id/txt_cretv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_ftpp"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="->" />
+
+
+        <TextView
+            android:id="@+id/txt_cretve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_ftpp"
+            android:text="It will ask login credintial so enter above same." />
+
+        <TextView
+            android:id="@+id/txt_sms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_cretve"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="->" />
+
+
+        <TextView
+            android:id="@+id/txt_smslogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_cretve"
+            android:text="After login you will get message like " />
+
+
+        <TextView
+            android:id="@+id/txt_smsloginin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="253dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_cretve"
+            android:text="User Logged in" />
+
+
+        <TextView
+            android:id="@+id/txt_smscmd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_smsloginin"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="->" />
+
+
+        <TextView
+            android:id="@+id/txt_smslogind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_smsloginin"
+            android:text="Now execute the below command. " />
+
+        <TextView
+            android:id="@+id/txt_bin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:background="#D7CCC8"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_smslogind"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="->" />
+
+
+        <TextView
+            android:id="@+id/txt_binn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#D7CCC8"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_smslogind"
+            android:text="bin" />
+        <TextView
+            android:id="@+id/txt_has"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:background="#D7CCC8"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_binn"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="->" />
+
+
+        <TextView
+            android:id="@+id/txt_hash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#D7CCC8"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_binn"
+            android:text="hash" />
+
+        <TextView
+            android:id="@+id/txt_put"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:background="#D7CCC8"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_hash"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="->" />
+
+
+        <TextView
+            android:id="@+id/txt_putt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#D7CCC8"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_hash"
+            android:text="put" />
+
+        <TextView
+            android:id="@+id/txt_red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="49dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#D7CCC8"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_below="@+id/txt_hash"
+            android:text="Now just drag and drop your .wav file here" />
+
+        <TextView
+            android:id="@+id/txt_pro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_red"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="->" />
+
+
+        <TextView
+            android:id="@+id/txt_proces"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_red"
+            android:text="It will show the uploading process like below...." />
+
+        <TextView
+            android:id="@+id/txt_prohas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_proces"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="->" />
+
+
+        <TextView
+            android:id="@+id/txt_procesh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_proces"
+            android:text="#####################################" />
+
+        <TextView
+            android:id="@+id/txt_once"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_prohas"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="->" />
+
+
+        <TextView
+            android:id="@+id/txt_done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_prohas"
+            android:text="Once finished execute below command." />
+        <TextView
+            android:id="@+id/txt_by"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:background="#D7CCC8"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_done"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="->" />
+
+
+
+        <TextView
+            android:id="@+id/txt_bye"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_done"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:background="#D7CCC8"
+            android:text="bye"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txt_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_done"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="9dp"
+            android:text="Download Announcement from VAL."
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_steps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:background="#D7CCC8"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_down"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="->" />
+
+
+
+        <TextView
+            android:id="@+id/txt_step"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_down"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:background="#D7CCC8"
+            android:text="Follow same above steps to download .wav files."
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_prou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_step"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="->" />
+
+
+        <TextView
+            android:id="@+id/txt_puts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_step"
+            android:text="Use below command insted of PUT" />
+        <TextView
+            android:id="@+id/txt_get"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:background="#D7CCC8"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_puts"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="->" />
+
+
+        <TextView
+            android:id="@+id/txt_gett"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#D7CCC8"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_puts"
+            android:text="get" />
+
+        <TextView
+            android:id="@+id/txt_redget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="49dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#D7CCC8"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_below="@+id/txt_puts"
+            android:text="Now just paste .wav file name here" />
+
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
