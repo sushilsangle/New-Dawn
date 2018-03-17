@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.sushil.navigationtesting.R;
+import com.sushil.navigationtesting.interfaces.RecyclerItemClickInterface;
 import com.sushil.navigationtesting.viewholder.DataViewHolder;
 
 import java.util.List;
@@ -13,10 +14,12 @@ import java.util.List;
 public class ListAdapter extends RecyclerView.Adapter<DataViewHolder> {
 
     private List<String> list;
+    private RecyclerItemClickInterface clickInterface;
 
-    public ListAdapter(List<String> list) {
+    public ListAdapter(List<String> list, RecyclerItemClickInterface clickInterface) {
 
         this.list = list;
+        this.clickInterface=clickInterface;
     }
  
     @Override
@@ -29,11 +32,11 @@ public class ListAdapter extends RecyclerView.Adapter<DataViewHolder> {
     @Override
     public void onBindViewHolder(DataViewHolder holder, int position) {
         holder.title.setText(list.get(position));
+        holder.itemView.setOnClickListener( it -> clickInterface.passFragmentName(list.get(position)));
     }
  
     @Override
     public int getItemCount() {
-
         return list.size();
     }
 }

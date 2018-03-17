@@ -1,9 +1,8 @@
-package com.sushil.navigationtesting;
+package com.sushil.navigationtesting.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,21 +13,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.sushil.navigationtesting.R;
 import com.sushil.navigationtesting.adapter.ViewPagerAdapter;
 import com.sushil.navigationtesting.fragments.ACD;
 import com.sushil.navigationtesting.fragments.CMS;
-import com.sushil.navigationtesting.fragments.ClanCard;
-import com.sushil.navigationtesting.fragments.DS1;
-import com.sushil.navigationtesting.fragments.GfourFifty;
-import com.sushil.navigationtesting.fragments.GsixFifty;
-import com.sushil.navigationtesting.fragments.Interview;
-import com.sushil.navigationtesting.fragments.IpsiCard;
-import com.sushil.navigationtesting.fragments.LiveHelp;
-import com.sushil.navigationtesting.fragments.MedPro;
-import com.sushil.navigationtesting.fragments.OutBoundIssue;
 import com.sushil.navigationtesting.fragments.SIP;
-import com.sushil.navigationtesting.fragments.ValBoard;
-import com.sushil.navigationtesting.fragments.VoiceQuality;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener{
@@ -36,7 +25,7 @@ public class MainActivity extends AppCompatActivity
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
-private ViewPagerAdapter adapter;
+    private ViewPagerAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -106,75 +95,98 @@ private ViewPagerAdapter adapter;
         int id = item.getItemId();
 
         if (id == R.id.nav_live) {
-            LiveHelp help=new LiveHelp();
-            FragmentManager manager=getSupportFragmentManager();
-            manager.beginTransaction().replace(R.id.fm_content_main,
-                    help,
-                    help.getTag()).commit();
+//            LiveHelp help=new LiveHelp();
+//            FragmentManager manager=getSupportFragmentManager();
+//            manager.beginTransaction().replace(R.id.fm_content_main,
+//                    help,
+//                    help.getTag()).commit();
+            launchNavigationItemActivity("LiveHelp");
 
         } else if (id == R.id.nav_voice_quality_issue) {
 
-            VoiceQuality voiceQuality=new VoiceQuality();
 
-            FragmentManager manager=getSupportFragmentManager();
-            manager.beginTransaction().replace(R.id.fm_content_main,
-                    voiceQuality,
-                    voiceQuality.getTag()).commit();
+
+            launchNavigationItemActivity("VoiceQuality");
+
+//            VoiceQuality voiceQuality=new VoiceQuality();
+//            FragmentManager manager=getSupportFragmentManager();
+//            manager.beginTransaction().replace(R.id.fm_content_main,
+//                    voiceQuality,
+//                    voiceQuality.getTag()).commit();
 
         } else if (id == R.id.nav_clan) {
 
-            ClanCard clan=new ClanCard();
-            FragmentManager manager=getSupportFragmentManager();
-            manager.beginTransaction().replace(R.id.fm_content_main,
-                    clan,
-                    clan.getTag()).commit();
+            launchNavigationItemActivity("ClanCard");
+
+//            ClanCard clan=new ClanCard();
+//            FragmentManager manager=getSupportFragmentManager();
+//            manager.beginTransaction().replace(R.id.fm_content_main,
+//                    clan,
+//                    clan.getTag()).commit();
 
         } else if (id == R.id.nav_medpro) {
-            MedPro media=new MedPro();
-            FragmentManager manager=getSupportFragmentManager();
-            manager.beginTransaction().replace(R.id.fm_content_main,media,media.getTag()).commit();
+
+            launchNavigationItemActivity("MedPro");
+
+//            MedPro media=new MedPro();
+//            FragmentManager manager=getSupportFragmentManager();
+//            manager.beginTransaction().replace(R.id.fm_content_main,media,media.getTag()).commit();
 
 
 
         } else if (id == R.id.nav_ipsi) {
 
-            IpsiCard ipsi=new IpsiCard();
-            FragmentManager manager=getSupportFragmentManager();
-            manager.beginTransaction().replace(R.id.fm_content_main,ipsi,ipsi.getTag()).commit();
+            launchNavigationItemActivity("IpsiCard");
+//            IpsiCard ipsi=new IpsiCard();
+//            FragmentManager manager=getSupportFragmentManager();
+//            manager.beginTransaction().replace(R.id.fm_content_main,ipsi,ipsi.getTag()).commit();
 
 
 
         } else if (id == R.id.nav_ds_one) {
 
-            DS1 dsone=new DS1();
-            FragmentManager manager=getSupportFragmentManager();
-            manager.beginTransaction().replace(R.id.fm_content_main,dsone,dsone.getTag()).commit();
+
+            launchNavigationItemActivity("DS1");
+
+
+//            DS1 dsone=new DS1();
+//            FragmentManager manager=getSupportFragmentManager();
+//            manager.beginTransaction().replace(R.id.fm_content_main,dsone,dsone.getTag()).commit();
 
         }else if (id==R.id.nav_val)
         {
-            ValBoard val=new ValBoard();
-            FragmentManager manager=getSupportFragmentManager();
-            manager.beginTransaction().replace(R.id.fm_content_main,val,val.getTag()).commit();
+
+            launchNavigationItemActivity("ValBoard");
+
+//            ValBoard val=new ValBoard();
+//            FragmentManager manager=getSupportFragmentManager();
+//            manager.beginTransaction().replace(R.id.fm_content_main,val,val.getTag()).commit();
         }else if(id==R.id.nav_voice_quality_issue){
 
-            VoiceQuality voice=new VoiceQuality();
-            FragmentManager manager=getSupportFragmentManager();
-            manager.beginTransaction().replace(R.id.fm_content_main,voice,voice.getTag()).commit();
+            launchNavigationItemActivity("VoiceQuality");
+
+//            VoiceQuality voice=new VoiceQuality();
+//            FragmentManager manager=getSupportFragmentManager();
+//            manager.beginTransaction().replace(R.id.fm_content_main,voice,voice.getTag()).commit();
 
 
         }
         else if (id==R.id.nav_outbund)
         {
-            OutBoundIssue issue=new OutBoundIssue();
-            FragmentManager manager=getSupportFragmentManager();
-            manager.beginTransaction().replace(R.id.fm_content_main,issue,issue.getTag()).commit();
+            launchNavigationItemActivity("OutBoundIssue");
+
+//            OutBoundIssue issue=new OutBoundIssue();
+//            FragmentManager manager=getSupportFragmentManager();
+//            manager.beginTransaction().replace(R.id.fm_content_main,issue,issue.getTag()).commit();
 
         }
         else if(id ==R.id.nav_g_six_fifty)
         {
-            GsixFifty gatway=new GsixFifty();
-            FragmentManager manager=getSupportFragmentManager();
-            manager.beginTransaction().replace(R.id.fm_content_main,gatway,gatway.getTag()).commit();
+            launchNavigationItemActivity("GsixFifty");
+
+//            GsixFifty gatway=new GsixFifty();
+//            FragmentManager manager=getSupportFragmentManager();
+//            manager.beginTransaction().replace(R.id.fm_content_main,gatway,gatway.getTag()).commit();
 
         }else if(id==R.id.nav_g_four_fifty)
         {

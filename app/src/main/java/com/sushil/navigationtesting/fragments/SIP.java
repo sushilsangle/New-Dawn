@@ -1,6 +1,7 @@
 package com.sushil.navigationtesting.fragments;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -11,6 +12,8 @@ import android.view.ViewGroup;
 
 import com.sushil.navigationtesting.R;
 import com.sushil.navigationtesting.adapter.ListAdapter;
+import com.sushil.navigationtesting.interfaces.RecyclerItemClickInterface;
+import com.sushil.navigationtesting.activity.TabScrollingActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +21,7 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class SIP extends Fragment {
+public class SIP extends Fragment implements RecyclerItemClickInterface {
 
     List<String> list=new ArrayList<>();
 
@@ -31,15 +34,22 @@ public class SIP extends Fragment {
                              Bundle savedInstanceState) {
         mView= inflater.inflate(R.layout.acd, container, false);
         mRecyclerView=(RecyclerView)mView.findViewById(R.id.recycler_view);
-        list.add("SIP Flow");
-        list.add("SBC");
-        list.add("SMGR");
-        list.add("AMS");
+
         list.add("SM");
+        list.add("SBC");
+        list.add("AMS");
+        list.add("SMGR");
+        list.add("SIP Flow");
+
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        adapter=new ListAdapter(list);
+        adapter=new ListAdapter(list,this);
         mRecyclerView.setAdapter(adapter);
         return mView;
     }
 
+    @Override
+    public void passFragmentName(String fragmentName) {
+        startActivity(new Intent(getActivity(), TabScrollingActivity.class)
+                .putExtra(getString(R.string.fragment_name),fragmentName));
+    }
 }

@@ -1,0 +1,205 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.sushil.navigationtesting.fragments.AgentID">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/txt_change_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#c7d9db"
+        android:text="change agent-loginID 1212" />
+
+    <TextView
+        android:id="@+id/txt_agent_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="20dp"
+        android:text="Name : Sushil Sangale" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_agent_name"
+        android:layout_below="@+id/txt_agent_name"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="10dp"
+        android:text="TN : 9" />
+
+
+    <TextView
+        android:id="@+id/txt_agent_cor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="COR : 5" />
+
+
+    <TextView
+        android:id="@+id/txt_agent_coverage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/txt_agent_cor"
+        android:layout_marginTop="5dp"
+        android:text="Coverage Path : 3" />
+
+
+    <TextView
+        android:id="@+id/txt_agent_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/txt_agent_coverage"
+        android:layout_marginTop="5dp"
+        android:text="Password : *****" />
+
+
+
+    <TextView
+        android:id="@+id/txt_passwrd_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_agent_pass"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Re-Password : *****" />
+
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_passwrd_a"
+        android:layout_marginTop="10dp"
+        android:background="#c7d9db"
+        android:text="change agent-loginID 1212" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_agent_cor"
+        android:layout_alignStart="@+id/txt_agent_cor"
+        android:layout_below="@+id/textView15"
+        android:layout_marginTop="15dp"
+        android:text="Agent ID related commands..." />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/textView16"
+        android:layout_marginTop="15dp"
+        android:text="add agent -loginID : xxx" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/textView17"
+        android:layout_marginTop="5dp"
+        android:text="duplicate agent-loginID : xxx" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/textView18"
+        android:layout_marginTop="5dp"
+        android:text="change agent-loginID : xxx" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/textView19"
+        android:layout_marginTop="5dp"
+        android:text="list agent-loginID : xxx" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/textView20"
+        android:text="display agent-loginID : xxx" />
+    <TextView
+        android:id="@+id/txtAgentDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/textView21"
+        android:gravity="center"
+        android:text="*** Agent IDs related Issue's ***" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="->"
+        android:layout_below="@+id/txtAgentDe"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
+        android:layout_marginTop="6dp"/>
+
+
+    <TextView
+        android:id="@+id/txtissuone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="25dp"
+        android:layout_below="@+id/txtAgentDe"
+        android:text="If any perticulare agent facing voice quality issue and one way voice issue in this case check his extensions Tenanat, COR,Network Region also check voice vlan." />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="->"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/txtissuone"/>
+
+
+
+    <TextView
+        android:id="@+id/txtissutwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/txtissuone"
+        android:text="If any agent is not able to login on Avaya phone then check his login IDs Tenant, COR,as per ACD configuration."/>
+
+
+
+</RelativeLayout>

@@ -1,6 +1,7 @@
 package com.sushil.navigationtesting.fragments;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -11,6 +12,8 @@ import android.view.ViewGroup;
 
 import com.sushil.navigationtesting.R;
 import com.sushil.navigationtesting.adapter.ListAdapter;
+import com.sushil.navigationtesting.interfaces.RecyclerItemClickInterface;
+import com.sushil.navigationtesting.activity.TabScrollingActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +21,7 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class CMS extends Fragment {
+public class CMS extends Fragment implements RecyclerItemClickInterface {
     List<String> list=new ArrayList<>();
 
     private View mView;
@@ -30,14 +33,26 @@ public class CMS extends Fragment {
                              Bundle savedInstanceState) {
         mView= inflater.inflate(R.layout.acd, container, false);
         mRecyclerView=(RecyclerView)mView.findViewById(R.id.recycler_view);
-        list.add("Auth Code");
-        list.add("Vector");
-        list.add("VDN");
-        list.add("COS");
-        list.add("COR");
+        list.add("Reports");
+        list.add("Add Agent");
+        list.add("Login Agent");
+        list.add("Admin Backup");
+        list.add("Admin Backup");
+        list.add("Abandon Calls");
+        list.add("Create Agent Group");
+        list.add("Maintenance Backup");
+        list.add("Set Call Profile SLA");
+        list.add("Create CMS Supervisor ID");
+        list.add("Upload CHR files from CMS TO ECHI");
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        adapter=new ListAdapter(list);
+        adapter=new ListAdapter(list,this);
         mRecyclerView.setAdapter(adapter);
         return mView;
+    }
+
+    @Override
+    public void passFragmentName(String fragmentName) {
+        startActivity(new Intent(getActivity(), TabScrollingActivity.class)
+                .putExtra(getString(R.string.fragment_name),fragmentName));
     }
 }
