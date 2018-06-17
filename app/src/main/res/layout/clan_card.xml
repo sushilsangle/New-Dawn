@@ -2,10 +2,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sushil.navigationtesting.fragments.ClanCard">
+    android:layout_marginTop="?attr/actionBarSize"
+    tools:context="com.sushil.navigationtesting.fragments.navigation.ClanCard">
 
     <RelativeLayout
-        android:layout_marginTop="?attr/actionBarSize"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -17,6 +17,7 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:id="@+id/txt_config"
+            android:textColor="@android:color/holo_green_dark"
             android:gravity="center"
             android:background="#D7CCC8"
             android:text="C-LAN configuration" />
@@ -57,6 +58,8 @@
             android:layout_below="@+id/txt_pi"
             android:text="Now connect LAN cable through C-LAN connector to MG."/>
 
+
+
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -65,75 +68,6 @@
             android:textStyle="bold"
             android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_cln"
-            />
-        <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
-            android:id="@+id/txt_clnn"
-            android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/txt_cln"
-            android:text="Now execute below command and check the result."/>
-
-
-
-
-
-        <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:background="#D7CCC8"
-            android:layout_below="@+id/txt_clnn"
-            />
-        <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
-            android:id="@+id/txt_clan_cmd"
-            android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
-            android:background="#D7CCC8"
-            android:textStyle="bold"
-            android:textColor="@android:color/holo_green_dark"
-            android:layout_below="@+id/txt_clnn"
-            android:text="test board    01A02"/>
-
-
-
-
-
-
-
-        <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/txt_clan_cmd"
-            />
-        <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
-            android:id="@+id/txt_clnu"
-            android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/txt_clan_cmd"
-            android:text="Once your getting ping resoponce it means board is ready to use."/>
-
-
-        <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/txt_clnu"
             />
         <android.support.v7.widget.AppCompatTextView
             style="@style/MasterTmargin"
@@ -141,11 +75,8 @@
             android:layout_marginStart="25dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
-            android:layout_below="@+id/txt_clnu"
+            android:layout_below="@+id/txt_cln"
             android:text="Login into ACD and check all C-LAN status using CMD."/>
-
-
-
 
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
@@ -169,15 +100,6 @@
             android:layout_below="@+id/txt_clno"
             android:text="list ip-interface clan all"/>
 
-
-
-
-
-
-
-
-
-
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -194,7 +116,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_clan_ip"
-            android:text="Now set valid                          and                      IP new C-LAN"/>
+            android:text="Now set valid                            and                       IP new C-LAN"/>
 
         <android.support.v7.widget.AppCompatTextView
             style="@style/MasterTmargin"
@@ -210,19 +132,13 @@
         <android.support.v7.widget.AppCompatTextView
             style="@style/MasterTmargin"
             android:id="@+id/txt_clntrr"
-            android:layout_marginStart="226dp"
+            android:layout_marginStart="230dp"
             android:layout_marginLeft="5dp"
             android:textColor="@android:color/holo_green_dark"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_clan_ip"
-            android:text="IP Address"/>
-
-
-
-
-
-
+            android:text=" IP Address"/>
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -231,7 +147,7 @@
             android:textStyle="bold"
             android:layout_marginTop="10dp"
             android:background="#D7CCC8"
-            android:layout_below="@+id/txt_clntrr"
+            android:layout_below="@+id/txt_clnt"
             />
         <android.support.v7.widget.AppCompatTextView
             style="@style/MasterTmargin"
@@ -242,7 +158,7 @@
             android:background="#D7CCC8"
             android:textStyle="bold"
             android:textColor="@android:color/holo_green_dark"
-            android:layout_below="@+id/txt_clntrr"
+            android:layout_below="@+id/txt_clnt"
             android:text="change node-name ip"/>
 
         <android.support.v7.widget.AppCompatTextView
@@ -250,10 +166,9 @@
             android:id="@+id/txt_clntu"
             android:layout_marginStart="180dp"
             android:layout_marginLeft="5dp"
-            android:textColor="@android:color/holo_green_dark"
-            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
             android:layout_marginTop="10dp"
-            android:layout_below="@+id/txt_clntrr"
+            android:layout_below="@+id/txt_clnt"
             android:text="enter ip address here..."/>
 
 
@@ -296,10 +211,6 @@
             android:layout_below="@+id/txt_clnut"
             android:text="First check how many ethernet links are free in ACD."/>
 
-
-
-
-
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -320,7 +231,7 @@
             android:textStyle="bold"
             android:textColor="@android:color/holo_green_dark"
             android:layout_below="@+id/txt_check"
-            android:text="list communication -ethernet links"/>
+            android:text="list communication-ethernet links"/>
 
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
@@ -338,7 +249,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_clan_cethr"
-            android:text="If you found 21 link is free then use same like....."/>
+            android:text="If you find link 21 is free then use this link with the help of below command."/>
 
 
 
@@ -362,7 +273,9 @@
             android:textStyle="bold"
             android:textColor="@android:color/holo_green_dark"
             android:layout_below="@+id/txt_checs"
-            android:text="change communication -ethernet link 21"/>
+            android:text="change communication-ethernet link 21"/>
+
+
 
 
 
@@ -374,24 +287,6 @@
             android:textStyle="bold"
             android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_cethrn"
-            />
-        <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
-            android:id="@+id/txt_checst"
-            android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/txt_cethrn"
-            android:text="Set the link name"/>
-
-        <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/txt_checst"
             />
         <android.support.v7.widget.AppCompatTextView
             style="@style/MasterTmargin"
@@ -399,10 +294,8 @@
             android:layout_marginStart="25dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
-            android:layout_below="@+id/txt_checst"
-            android:text="Now check TN2302 is up or not using below command."/>
-
-
+            android:layout_below="@+id/txt_cethrn"
+            android:text="Once you configured above link then configure c-lan board by using below command in respactive ACD."/>
 
 
 
@@ -412,11 +305,10 @@
             android:text="->"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold"
-
             android:layout_marginTop="10dp"
             android:background="#D7CCC8"
-            android:layout_below="@+id/txt_chxcu"
-            />
+            android:layout_below="@+id/txt_chxcu"/>
+
         <android.support.v7.widget.AppCompatTextView
             style="@style/MasterTmargin"
             android:id="@+id/txt_cdisp"
@@ -427,11 +319,7 @@
             android:textStyle="bold"
             android:textColor="@android:color/holo_green_dark"
             android:layout_below="@+id/txt_chxcu"
-            android:text="display circuit-pack"/>
-
-
-
-
+            android:text="change ip-interface 03a03"/>
 
         <android.support.v7.widget.AppCompatTextView
             style="@style/MasterTmargin"
@@ -655,6 +543,7 @@
             android:layout_below="@+id/txt_interfc_speed"
             android:text="Full"/>
 
+
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -662,7 +551,30 @@
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
             android:layout_below="@+id/txt_interfc_duple"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_changecir"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_interfc_duple"
+            android:text="  change ip-interface 3a03"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_changecir"
             />
         <android.support.v7.widget.AppCompatTextView
             style="@style/MasterTmargin"
@@ -670,9 +582,32 @@
             android:layout_marginStart="25dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
-            android:layout_below="@+id/txt_interfc_duple"
-            android:text="Once you done above configuration extecute TEST BOARD 01A03 and check the result. "/>
+            android:layout_below="@+id/txt_changecir"
+            android:layout_marginBottom="10dp"
+            android:text="Once you done above configuration extecute TEST BOARD 01A03 and check the result.If everything looks fine then CLAN board is ready to use. "/>
 
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:background="#D7CCC8"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/txt_nowpo"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_clan_cmd"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_nowpo"
+            android:text="  test board    01A02"/>
 
 
 

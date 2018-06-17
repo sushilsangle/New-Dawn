@@ -1,8 +1,9 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
     android:layout_height="match_parent"
-    tools:context="com.sushil.navigationtesting.fragments.MedPro">
+    tools:context="com.sushil.navigationtesting.fragments.navigation.MedPro">
 
     <!-- TODO: Update blank fragment layout -->
     <RelativeLayout
@@ -16,6 +17,7 @@
             android:textStyle="bold"
             android:id="@+id/txt_config"
             android:gravity="center"
+            android:textColor="@android:color/holo_green_dark"
             android:background="#D7CCC8"
             android:text="MedPro configuration" />
 
@@ -37,7 +39,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_config"
-            android:text="First insert DS1 card into G-650 Media Gateway."/>
+            android:text="First insert MedPro card into G-650 Media Gateway."/>
 
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
@@ -55,7 +57,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_pi"
-            android:text="Now connect LAN cable through DS1 connector to MG."/>
+            android:text="Now connect LAN cable through MedPro connector to MG."/>
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -113,7 +115,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_clan_cmd"
-            android:text="Once your getting ping response it means board is ready."/>
+            android:text="If first 5 text are pass then board is ready to use."/>
 
 
 
@@ -133,7 +135,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_med"
-            android:text="Now login into ACD then checl MedPro Status."/>
+            android:text="Now login into ACD and configure MedPro board."/>
 
 
 
@@ -184,10 +186,432 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_med_cmd"
-            android:text="pending....."/>
+            android:text="It will show the all medpro which are available into that Port Network."/>
 
 
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:layout_below="@+id/txt_medpo"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_chan_cmd"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_medpo"
+            android:text="change-ip-interface medpro 03A03"/>
+
+
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfce"
+            android:layout_marginStart="105dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_chan_cmd"
+            android:text=" IP INTERFACE"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc"
+            android:layout_marginStart="105dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfce"
+            android:text="Critical Reliable Bearer?"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_critical"
+            android:layout_marginStart="257dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfce"
+            android:text="Y"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_typ"
+            android:layout_marginStart="109dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc"
+            android:text="Type :- "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_type"
+            android:layout_marginStart="157dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc"
+            android:text="MEDPRO"/>
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_slo"
+            android:layout_marginStart="116dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_type"
+            android:text="Slot :- "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_slot"
+            android:layout_marginStart="157dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_type"
+            android:text="03A03"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_enab"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_slot"
+            android:text="Enable Interface :- "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_enabled"
+            android:layout_marginStart="157dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_slot"
+            android:text="y / n"/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_val"
+            android:layout_marginStart="105dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_enabled"
+            android:text="VLAN :- "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_valn"
+            android:layout_marginStart="157dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_enabled"
+            android:text="n"/>
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_net"
+            android:layout_marginStart="43dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_valn"
+            android:text="Network Region :- "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_work"
+            android:layout_marginStart="157dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_valn"
+            android:text="121"/>
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_medn_net"
+            android:layout_marginStart="43dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_work"
+            android:text="       Node Name :- "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_mednn_work"
+            android:layout_marginStart="157dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_work"
+            android:text="xxxx"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_med_nod"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_mednn_work"
+            android:text=" Duplicate Node Name :- "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_med_names"
+            android:layout_marginStart="157dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_mednn_work"
+            android:text="G_TEST   IP:- 10.130.135.144"/>
+
+
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_nod"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_med_names"
+            android:text=" Gateeway Node Name :- "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_names"
+            android:layout_marginStart="157dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_med_names"
+            android:text="G_TEST   IP:- 10.130.135.144"/>
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_mask"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_names"
+            android:text="Subnet Mask :- "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_interfc_sub"
+            android:layout_marginStart="157dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_interfc_names"
+            android:text="255.255.255.0 / 26"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:layout_below="@+id/txt_interfc_sub"
+            />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_chan_cmdu"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_interfc_sub"
+            android:text="change-ip-interface medpro 03A03"/>
+
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_chan_cmdu"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_medpt"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_chan_cmdu"
+            android:text="Now execute the test board command. If the tests are pass then board is ready to use. Refer below commands."/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:layout_below="@+id/txt_medpt"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_medp_cmds"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_medpt"
+            android:text="test board    01A02"/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_medp_cmds"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_medptu"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_medp_cmds"
+            android:text="Check the status of all MedPro cards by using below command."/>
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:background="#D7CCC8"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_medptu"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_medp_cmd"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_medptu"
+            android:text="status medpro board 03a03"/>
+
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_medp_cmd"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_medptn"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_medp_cmd"
+            android:text="Check all parametrs of MedPro cards by using below command."/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:background="#D7CCC8"
+            android:layout_below="@+id/txt_medptn"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_medp_cmdo"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:background="#D7CCC8"
+            android:layout_below="@+id/txt_medptn"
+            android:text="display media-processor board 03a03"/>
 
 
     </RelativeLayout>
 </ScrollView>
+

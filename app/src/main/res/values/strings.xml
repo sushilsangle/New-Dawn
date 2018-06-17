@@ -12,4 +12,46 @@
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="title_activity_navigation_item">NavigationItemActivity</string>
     <string name="fragment_name">Fragment_Name</string>
+    <string name="rm_chr_rm_file_name" />
+    <string name="suppose_your_extension_having_tenant_9_so_execute_below_command_and_grant_access_from_tenant_9_set_y_to_tenant_5_also_from_tenant_5_to_provide_access_tenant_9">Suppose your extension having tenant 9 so execute below command and grant access from tenant 9 set Y to tenant 5 also from tenant 5 to provide access tenant 9.</string>
+    <string name="we_have_provided_persmission_check_above_higlighted_in_red">We have provided persmission check above higlighted in red.</string>
+    <string name="you_can_put_below_command_and_check_which_vector_is_free_as_per_your_acd_setup">You can put below command and check which vector is free as per your ACD setup.</string>
+    <string name="arrow"><![CDATA[->]]></string>
+    <string name="arrows"><![CDATA[->]]></string>
+    <string name="welcome_wav">\'Welcome.wav\'</string>
+    <string name="if_you_want_check_how_many_agents_are_added_in_any_cms_group_then_enter_group_name_get_content_and_click_on_list_you_will_get_the_whole_agent_list">If you want check how many agents are added in any CMS Group. Then enter group name, Get Content and click on list you will get the whole agent list.</string>
+    <string name="sip_can_supports_following_protocols_1_sdp_for_media_handling_2_rtp_for_media_transport"><![CDATA[SIP can supports following protocols (1-> SDP for media handling, 2-> RTP for media transport)]]></string>
+    <string name="sip_flow"><![CDATA[<------------------------------------------------------------->]]></string>
+    <string name="sip_green_line"><![CDATA[<-------------------------------------------->]]></string>
+    <string name="from_abc_sips_192_132_4_9_tag_143212"><![CDATA[From: ABC<sips:192.132.4.9>;tag = 143212]]></string>
+    <string name="to_bob_sips_192_132_0_9"><![CDATA[To: Bob<sips:192.132.0.9>]]></string>
+    <string name="call_id_143212_192_168_2_1">Call-ID: 143212@192.168.2.1</string>
+    <string name="cseq_1_invite">CSeq: 1 INVITE</string>
+    <string name="contact_sips_alice_client_anc_com"><![CDATA[Contact: <sips:Alice@client.ANC.com>]]></string>
+    <string name="allow_invite_ack_cancel_options_bye_refer_notify_supported_replaces">Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, NOTIFY Supported: replaces</string>
+    <string name="content_type_application_sdp">Content-Type: application/sdp</string>
+    <string name="v_0">v = 0</string>
+    <string name="o_abc_143212_in_ip4_client_anc_com">o = ABC 143212 IN IP4 client.ANC.com</string>
+    <string name="s_session_sdp">s = Session SDP</string>
+    <string name="c_in_ip4_client_anc_com">c = IN IP4 client.ANC.com</string>
+    <string name="t_3034423619_0">t = 3034423619 0</string>
+    <string name="m_audio_49170_rtp_avp_0">m = audio 49170 RTP/AVP 0</string>
+    <string name="a_rtpmap_0_pcmu_8000">a = rtpmap:0 PCMU/8000</string>
+    <string name="via_sip_2_0_tls_client_anc_com_5061_branch_z9hg4bk74bf9">Via: SIP/2.0/TLS client.ANC.com:5061;branch = z9hG4bK74bf9</string>
+    <string name="invite_sip_192_132_12_9_sip_2_0">INVITE sip: 192.132.12.9 SIP/2.0</string>
+    <string name="if_you_want_to_read_check_vectors_steps_then_execute_above_command">If you want to read/check vectors steps then execute above command.</string>
+    <string name="list_multimedia_ip_unregistered_550955_count_10"><![CDATA[> list multimedia ip-unregistered 550955 count 10]]></string>
+    <string name="the_above_is_difference_between_g_450_and_g_650_gw">The above is difference between G-450 and G-650 GW.</string>
+    <string name="this_command_will_show_the_status_of_lsp_in_g_450_media_gateway_in_respactive_acd">This command will show the status of LSP in G-450 media-gateway in respactive ACD.</string>
+    <string name="list_registered_ip_stations_region_55"><![CDATA[> list registered-ip-stations region 55]]></string>
+    <string name="once_execute_above_command_check_ping_result_packet_loss_should_be_0_and_take_action_accordingly">Once execute above command check ping result, packet loss should be 0% and take action accordingly.</string>
+    <string name="gsixfifty">G-650</string>
+    <string name="gfourfifty">G-450</string>
+    <string name="ipsicards">IPSI Card</string>
+    <string name="voicequality">Voice Quality</string>
+    <string name="if_the_cm_communication_resume_when_connectivity_between_port_network_and_main_server_is_lost"><![CDATA[If the CM communication resume when connectivity between port network and & main server is lost.]]></string>
+    <string name="if_the_link_between_remote_media_gateway_h_248_and_media_gateway_controller_is_broken_or_mgc_is_down_then_lps_will_automatically_activate_and_it_support_to_all_phones">If the link between remote media gateway H.248 and Media Gateway controller is broken or MGC is down then LPS will automatically activate and it support to all phones.</string>
+    <string name="put_file_path"><![CDATA[> put <file path>]]></string>
+    <string name="hash">###########################################</string>
+    <string name="follow_steps_to_uploade_chr_files_from_cms_to_echi_server_manually_using_ftp_queuing">Follow steps to uploade CHR files from CMS to ECHI Server manually using FTP queuing...</string>
 </resources>

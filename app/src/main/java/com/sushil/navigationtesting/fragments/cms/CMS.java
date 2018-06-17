@@ -1,4 +1,4 @@
-package com.sushil.navigationtesting.fragments;
+package com.sushil.navigationtesting.fragments.cms;
 
 
 import android.content.Intent;
@@ -37,13 +37,13 @@ public class CMS extends Fragment implements RecyclerItemClickInterface {
         list.add("Add Agent");
         list.add("Login Agent");
         list.add("Admin Backup");
-        list.add("Admin Backup");
         list.add("Abandon Calls");
         list.add("Create Agent Group");
         list.add("Maintenance Backup");
         list.add("Set Call Profile SLA");
         list.add("Create CMS Supervisor ID");
-        list.add("Upload CHR files from CMS TO ECHI");
+        list.add("Uploade CHR Files To ECHI");
+        list.add("ChrFiles");
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         adapter=new ListAdapter(list,this);
         mRecyclerView.setAdapter(adapter);

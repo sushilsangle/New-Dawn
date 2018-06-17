@@ -12,12 +12,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.GridLayout;
 
 import com.sushil.navigationtesting.R;
 import com.sushil.navigationtesting.adapter.ViewPagerAdapter;
-import com.sushil.navigationtesting.fragments.ACD;
-import com.sushil.navigationtesting.fragments.CMS;
-import com.sushil.navigationtesting.fragments.SIP;
+import com.sushil.navigationtesting.fragments.acd.ACD;
+import com.sushil.navigationtesting.fragments.cms.CMS;
+import com.sushil.navigationtesting.fragments.sip.SIP;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener{
@@ -42,7 +43,8 @@ public class MainActivity extends AppCompatActivity
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+                this, drawer, toolbar, R.string.navigation_drawer_open,
+                R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
@@ -63,6 +65,7 @@ public class MainActivity extends AppCompatActivity
             drawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
+
         }
     }
 
@@ -106,7 +109,7 @@ public class MainActivity extends AppCompatActivity
 
 
 
-            launchNavigationItemActivity("VoiceQuality");
+            launchNavigationItemActivity("Voice Quality");
 
 //            VoiceQuality voiceQuality=new VoiceQuality();
 //            FragmentManager manager=getSupportFragmentManager();
@@ -116,7 +119,7 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_clan) {
 
-            launchNavigationItemActivity("ClanCard");
+            launchNavigationItemActivity("Clan Card");
 
 //            ClanCard clan=new ClanCard();
 //            FragmentManager manager=getSupportFragmentManager();
@@ -126,7 +129,7 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_medpro) {
 
-            launchNavigationItemActivity("MedPro");
+            launchNavigationItemActivity("Med Pro");
 
 //            MedPro media=new MedPro();
 //            FragmentManager manager=getSupportFragmentManager();
@@ -136,7 +139,7 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_ipsi) {
 
-            launchNavigationItemActivity("IpsiCard");
+            launchNavigationItemActivity("IPSI Card");
 //            IpsiCard ipsi=new IpsiCard();
 //            FragmentManager manager=getSupportFragmentManager();
 //            manager.beginTransaction().replace(R.id.fm_content_main,ipsi,ipsi.getTag()).commit();
@@ -156,14 +159,14 @@ public class MainActivity extends AppCompatActivity
         }else if (id==R.id.nav_val)
         {
 
-            launchNavigationItemActivity("ValBoard");
+            launchNavigationItemActivity("Val Board");
 
 //            ValBoard val=new ValBoard();
 //            FragmentManager manager=getSupportFragmentManager();
 //            manager.beginTransaction().replace(R.id.fm_content_main,val,val.getTag()).commit();
         }else if(id==R.id.nav_voice_quality_issue){
 
-            launchNavigationItemActivity("VoiceQuality");
+            launchNavigationItemActivity(getString(R.string.voicequality));
 
 //            VoiceQuality voice=new VoiceQuality();
 //            FragmentManager manager=getSupportFragmentManager();
@@ -173,7 +176,7 @@ public class MainActivity extends AppCompatActivity
         }
         else if (id==R.id.nav_outbund)
         {
-            launchNavigationItemActivity("OutBoundIssue");
+            launchNavigationItemActivity("Out Bound Issue");
 
 //            OutBoundIssue issue=new OutBoundIssue();
 //            FragmentManager manager=getSupportFragmentManager();
@@ -182,7 +185,7 @@ public class MainActivity extends AppCompatActivity
         }
         else if(id ==R.id.nav_g_six_fifty)
         {
-            launchNavigationItemActivity("GsixFifty");
+            launchNavigationItemActivity("G-650");
 
 //            GsixFifty gatway=new GsixFifty();
 //            FragmentManager manager=getSupportFragmentManager();
@@ -190,11 +193,19 @@ public class MainActivity extends AppCompatActivity
 
         }else if(id==R.id.nav_g_four_fifty)
         {
-            launchNavigationItemActivity("GfourFifty");
+            launchNavigationItemActivity("G-450");
         }
         else if(id==R.id.nav_interview)
         {
             launchNavigationItemActivity("Interview");
+        }
+        else if (id==R.id.nav_comds)
+        {
+            launchNavigationItemActivity("ACD Commands");
+        }
+        else if (id==R.id.nav_asa)
+        {
+            launchNavigationItemActivity("ASA Web Page");
         }
 
 
@@ -207,4 +218,5 @@ public class MainActivity extends AppCompatActivity
         startActivity(new Intent(this,NavigationItemActivity.class)
                 .putExtra(getResources().getString(R.string.fragment_name),fragment));
     }
+
 }

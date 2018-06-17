@@ -1,11 +1,12 @@
 <ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
     android:layout_height="match_parent"
-    tools:context="com.sushil.navigationtesting.fragments.DS1">
+    tools:context="com.sushil.navigationtesting.fragments.navigation.DS1">
 
     <RelativeLayout
-        android:layout_marginTop="?attr/actionBarSize"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <!-- TODO: Update blank fragment layout -->
@@ -14,6 +15,7 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:id="@+id/txt_config"
+            android:textColor="@android:color/holo_green_dark"
             android:gravity="center"
             android:background="#D7CCC8"
             android:text="DS1 configuration" />
@@ -52,7 +54,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_pi"
-            android:text="Now connect LAN cable through DS1 connector to MG."/>
+            android:text="Now connect Telco/LAN cable through DS1 connector to MG."/>
 
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
@@ -368,7 +370,7 @@
             android:textStyle="bold"
             android:textColor="@android:color/holo_green_dark"
             android:layout_below="@+id/txt_anlog_sub"
-            android:text="display ds1    01A02"/>
+            android:text="add ds1    01A02"/>
 
 
         <android.support.v7.widget.AppCompatTextView
@@ -431,6 +433,32 @@
             android:textColor="@android:color/holo_green_dark"
             android:layout_below="@+id/txt_onc_ds"
             android:text="test board    01A02"/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_dsad_cmd_dis"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_onc_dsn"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/txt_dsad_cmd_dis"
+            android:text="Once you finished configuration then execute below command and check the result it should be pass..."/>
+
+
+
+
+
 
     </RelativeLayout>
 </ScrollView>

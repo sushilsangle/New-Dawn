@@ -12,10 +12,10 @@ import com.sushil.navigationtesting.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class AgentCmsID extends Fragment {
+public class CallProfile extends Fragment {
 
 
-    public AgentCmsID() {
+    public CallProfile() {
         // Required empty public constructor
     }
 

@@ -1,13 +1,925 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sushil.navigationtesting.fragments.COS">
+    android:background="#1A237E"
+    tools:context="com.sushil.navigationtesting.fragments.acd.COS">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            style="@style/Commands"
+            android:id="@+id/cos_change_group"
+            android:text="  change cos-group   9" />
 
-</FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="CLASS OF SERVICE"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#FFEB3B"
+            android:layout_below="@+id/cos_change_group"
+            android:id="@+id/cos_class_service"/>
+        <TextView
+           android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="COS Group: 1"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#FFEB3B"
+            android:layout_marginStart="166dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/cos_change_group"
+            android:id="@+id/cos_cos_grp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="COS Name: Test"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#FFEB3B"
+            android:layout_marginStart="260dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/cos_change_group"
+            android:id="@+id/cos_cos_name"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:layout_marginStart="155dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#FBC02D"
+            android:layout_below="@+id/cos_class_service"
+            android:id="@+id/cos_cos_zero"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:textColor="#FBC02D"
+            android:layout_marginStart="179dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/cos_class_service"
+            android:id="@+id/cos_cos_one"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="2"
+            android:textColor="#FBC02D"
+            android:layout_marginStart="203dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/cos_class_service"
+            android:id="@+id/cos_cos_two"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="3"
+            android:textColor="#FBC02D"
+            android:layout_marginStart="227dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/cos_class_service"
+            android:id="@+id/cos_cos_three"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="4"
+            android:textColor="#FBC02D"
+            android:layout_marginStart="253dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/cos_class_service"
+            android:id="@+id/cos_cos_four"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="5"
+            android:textColor="#FBC02D"
+            android:layout_marginStart="279dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/cos_class_service"
+            android:id="@+id/cos_cos_fiv"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="6"
+            android:textColor="#FBC02D"
+            android:layout_marginStart="303dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/cos_class_service"
+            android:id="@+id/cos_cos_six"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="7"
+            android:textColor="#FBC02D"
+            android:layout_marginStart="325dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/cos_class_service"
+            android:id="@+id/cos_cos_sevn"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="8"
+            android:textColor="#FBC02D"
+            android:layout_marginStart="350dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/cos_class_service"
+            android:id="@+id/cos_cos_eith"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="9"
+            android:textColor="#FBC02D"
+            android:layout_marginStart="374dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/cos_class_service"
+            android:id="@+id/cos_cos_nine"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="155dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/cos_class_service"
+            android:id="@+id/cos_cos_y"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="179dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/cos_class_service"
+            android:id="@+id/cos_cos_one_y"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="203dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/cos_class_service"
+            android:id="@+id/cos_cos_two_y"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="227dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/cos_class_service"
+            android:id="@+id/cos_cos_three_y"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="253dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/cos_class_service"
+            android:id="@+id/cos_cos_four_y"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="279dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/cos_class_service"
+            android:id="@+id/cos_cos_fiv_y"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="303dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/cos_class_service"
+            android:id="@+id/cos_cos_six_y"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="325dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/cos_class_service"
+            android:id="@+id/cos_cos_sevn_y"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="350dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/cos_class_service"
+            android:id="@+id/cos_cos_eith_y"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="374dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/cos_class_service"
+            android:id="@+id/cos_cos_nine_y"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Y"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="155dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_auto"
+            android:id="@+id/cos_cos_yz"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="179dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_auto"
+            android:id="@+id/cos_cos_one_yo"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="203dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_auto"
+            android:id="@+id/cos_cos_two_yt"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="227dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_auto"
+            android:id="@+id/cos_cos_three_yf"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="253dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_auto"
+            android:id="@+id/cos_cos_four_yf"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Y"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="279dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_auto"
+            android:id="@+id/cos_cos_fiv_ys"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Y"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="303dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_auto"
+            android:id="@+id/cos_cos_six_yse"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Y"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="325dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_auto"
+            android:id="@+id/cos_cos_sevn_yei"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Y"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="350dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_auto"
+            android:id="@+id/cos_cos_eith_yni"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Y"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="374dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_auto"
+            android:id="@+id/cos_cos_nine_yte"/>
+
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Y"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="155dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_callfwd"
+            android:id="@+id/cos_yz"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="179dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_callfwd"
+            android:id="@+id/cos_one_yo"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="203dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_callfwd"
+            android:id="@+id/cos_two_yt"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="227dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_callfwd"
+            android:id="@+id/cos_three_yf"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="253dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_callfwd"
+            android:id="@+id/cos_four_yf"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="279dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_callfwd"
+            android:id="@+id/cos_fiv_ys"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="303dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_callfwd"
+            android:id="@+id/cos_six_yse"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="325dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_callfwd"
+            android:id="@+id/cos_sevn_yei"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Y"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="350dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_callfwd"
+            android:id="@+id/cos_eith_yni"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="374dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_callfwd"
+            android:id="@+id/cos_nine_yte"/>
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="155dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_data"
+            android:id="@+id/cos_z"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="179dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_data"
+            android:id="@+id/cos_one_o"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="203dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_data"
+            android:id="@+id/cos_two_t"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="227dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_data"
+            android:id="@+id/cos_three_f"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="253dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_data"
+            android:id="@+id/cos_four_sf"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="n"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="279dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_data"
+            android:id="@+id/cos_fiv_yei"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Y"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="303dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_data"
+            android:id="@+id/cos_six_se"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Y"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="325dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_data"
+            android:id="@+id/cos_sevn_ye"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Y"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="350dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_data"
+            android:id="@+id/cos_eith_yi"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Y"
+            android:textColor="#FB8C00"
+            android:layout_marginStart="374dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_data"
+            android:id="@+id/cos_nine_e"/>
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Y"
+            android:layout_marginStart="155dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#FB8C00"
+            android:textStyle="bold"
+            android:layout_below="@+id/cos_cos_calling"
+            android:id="@+id/cos_ze"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Y"
+            android:textStyle="bold"
+            android:layout_marginStart="179dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#FB8C00"
+            android:layout_below="@+id/cos_cos_calling"
+            android:id="@+id/cos_one_op"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Y"
+            android:textStyle="bold"
+            android:layout_marginStart="203dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#FB8C00"
+            android:layout_below="@+id/cos_cos_calling"
+            android:id="@+id/cos_two_pt"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Y"
+            android:textStyle="bold"
+            android:layout_marginStart="227dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#FB8C00"
+            android:layout_below="@+id/cos_cos_calling"
+            android:id="@+id/cos_three_fs"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Y"
+            android:textStyle="bold"
+            android:layout_marginStart="253dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#FB8C00"
+            android:layout_below="@+id/cos_cos_calling"
+            android:id="@+id/cos_fours"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Y"
+            android:textStyle="bold"
+            android:layout_marginStart="279dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#FB8C00"
+            android:layout_below="@+id/cos_cos_calling"
+            android:id="@+id/cos_fivs"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Y"
+            android:textStyle="bold"
+            android:layout_marginStart="303dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#FB8C00"
+            android:layout_below="@+id/cos_cos_calling"
+            android:id="@+id/cos_sixs"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Y"
+            android:textStyle="bold"
+            android:layout_marginStart="325dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#FB8C00"
+            android:layout_below="@+id/cos_cos_calling"
+            android:id="@+id/cos_seven"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Y"
+            android:textStyle="bold"
+            android:layout_marginStart="350dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#FB8C00"
+            android:layout_below="@+id/cos_cos_calling"
+            android:id="@+id/cos_eiths"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Y"
+            android:textStyle="bold"
+            android:layout_marginStart="374dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#FB8C00"
+            android:layout_below="@+id/cos_cos_calling"
+            android:id="@+id/cos_nines"/>
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Auto Callback"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/cos_class_service"
+            android:id="@+id/cos_cos_auto"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Call fwd-All Calls"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_auto"
+            android:id="@+id/cos_cos_callfwd"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Data Privacy"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/cos_cos_callfwd"
+            android:id="@+id/cos_cos_data"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Priority Calling"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/cos_cos_data"
+            android:id="@+id/cos_cos_calling"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Console Permissions"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_below="@+id/cos_cos_calling"
+            android:id="@+id/cos_cos_console"/>
+        <TextView
+
+            style="@style/Commands"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/cos_cos_console"
+            android:id="@+id/cos_change_grp"
+            android:text="  change cos-group   9" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="->"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_below="@+id/cos_change_grp"
+            android:id="@+id/cos_full"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFEB3B"
+            android:text="COS stands for Class Of Service."
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/cos_change_grp"
+            android:id="@+id/cos_fulll"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="->"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_below="@+id/cos_fulll"
+            android:id="@+id/cos_fulle"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="If you want to record announcement from any Avaya phone then change that extensions COS-Group with the help of that extensions Tenant."
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFEB3B"
+            android:layout_below="@+id/cos_fulll"
+            android:id="@+id/cos_info"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="->"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_below="@+id/cos_info"
+            android:id="@+id/cos_displ"/>
+        <TextView
+            style="@style/Commands"
+            android:text="  display station 5500991"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/cos_info"
+            android:id="@+id/cos_disp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="->"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_below="@+id/cos_disp"
+            android:id="@+id/cos_dispn"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Now put                                      command of that respective extension and check ->                       and execute below command. "
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFEB3B"
+            android:layout_below="@+id/cos_disp"
+            android:id="@+id/cos_dispnn"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="display tenanat xxx"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="85dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/cos_disp"
+            android:id="@+id/cos_dispe"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="COS Group"
+            android:layout_marginStart="175dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="27dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_below="@+id/cos_disp"
+            android:id="@+id/cos_dispegr"/>
+
+
+
+        <TextView
+            android:id="@+id/cos_dispt"
+            style="@style/Commands"
+            android:text="  change cos-group 9"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/cos_dispegr"
+           />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="->"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:layout_marginTop="9dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_below="@+id/cos_dispt"
+            android:id="@+id/cos_chang"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Once you have done above steps and extension having COS 0 then set Console Permission 0 as Y."
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="9dp"
+            android:textColor="#FFEB3B"
+            android:layout_below="@+id/cos_dispt"
+            android:id="@+id/cos_change"/>
+
+    </RelativeLayout>
+
+</ScrollView>

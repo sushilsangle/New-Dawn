@@ -1,13 +1,196 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<ScrollView android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sushil.navigationtesting.fragments.Tenant">
+    android:background="#1A237E"
+    android:layout_marginTop="?attr/actionBarSize"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/txt_tenant"
+            style="@style/Commands"
+            android:text="  display tenant  777" />
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/txt_ten"
+            android:layout_below="@+id/txt_tenant"
+            style="@style/TxtAllNames"
+            android:layout_marginTop="9dp"
+            android:text="TENANT" />
+        <TextView
+            android:id="@+id/txt_ten_nam"
+            android:layout_below="@+id/txt_ten"
+           style="@style/AllFragmentsStyle"
+            android:textColor="#FFEB3B"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Name  : Test " />
+        <TextView
+            android:id="@+id/txt_ten_mus"
+            android:layout_below="@+id/txt_ten_nam"
+           style="@style/AllFragmentsStyle"
+            android:textColor="#FFEB3B"
+            android:layout_marginStart="57dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="Music Source  :  xxx" />
+        <TextView
+            android:id="@+id/txt_ten_mugrp"
+            android:layout_below="@+id/txt_ten_mus"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="73dp"
+            android:textColor="#FFEB3B"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="COS Group  :  xxx" />
+        <TextView
+            android:id="@+id/txt_ten_infoo"
+            android:layout_below="@+id/txt_ten_mugrp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="->" />
+        <TextView
+            android:id="@+id/txt_ten_infu"
+            android:layout_below="@+id/txt_ten_mugrp"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#FFEB3B"
+            android:layout_marginLeft="5dp"
+            android:text="If you want to allow any tenant to tenant permission then just select." />
+        <TextView
+            android:id="@+id/txt_ten_inu"
+            android:layout_below="@+id/txt_ten_mugrp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="89dp"
+            android:layout_marginTop="22dp"
+            android:textStyle="bold"
+            android:textColor="#ff8c00"
+            android:text="Y"/>
+
+        <ImageView
+            android:id="@+id/img_tenant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cor_permi"
+            android:layout_below="@+id/txt_ten_inu"/>
+
+
+        <TextView
+            android:id="@+id/cmd_ten"
+            android:layout_marginTop="2dp"
+            style="@style/Commands"
+            android:layout_below="@+id/img_tenant"
+            android:text="  display tenant  777" />
+
+        <TextView
+            android:id="@+id/txt_ten_cdminfo"
+            android:layout_below="@+id/cmd_ten"
+            style="@style/TxtAllNames"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="!.. Tenant related commands...!" />
+
+
+        <TextView
+            android:id="@+id/txt_ten_cmd"
+            android:layout_below="@+id/txt_ten_cdminfo"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="->" />
+        <TextView
+            android:id="@+id/txt_ten_cdm"
+            android:layout_below="@+id/txt_ten_cdminfo"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#FFEB3B"
+            android:text="change tenant  xxx" />
+        <TextView
+            android:id="@+id/txt_ten_dips"
+            android:layout_below="@+id/txt_ten_cdm"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="->" />
+        <TextView
+            android:id="@+id/txt_ten_disp"
+            android:layout_below="@+id/txt_ten_cdm"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="25dp"
+            android:textColor="#FFEB3B"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="display tenant  xxx" />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_infoten"
+            android:layout_below="@+id/txt_ten_disp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:text="->"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_enfo"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_ten_disp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#FFEB3B"
+            android:text="Let say, you have trunk 929 and this trunk have tenant 5."/>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_ten_in"
+            android:layout_below="@+id/txt_enfo"
+            style="@style/MastersTvarrow"
+            android:text="->"/>
+
+        <android.support.v7.widget.AppCompatTextView
+
+           style="@style/AllFragmentsStyle"
+            android:id="@+id/txt_change_tn"
+            android:layout_below="@+id/txt_enfo"
+            android:layout_marginStart="25dp"
+            android:textColor="#FFEB3B"
+            android:layout_marginLeft="5dp"
+            android:text="@string/suppose_your_extension_having_tenant_9_so_execute_below_command_and_grant_access_from_tenant_9_set_y_to_tenant_5_also_from_tenant_5_to_provide_access_tenant_9">
+        </android.support.v7.widget.AppCompatTextView>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_tenu"
+            android:layout_below="@+id/txt_change_tn"
+            style="@style/MastersTvarrow"
+            android:text="->"/>
+
+        <android.support.v7.widget.AppCompatTextView
+
+            style="@style/AllFragmentsStyle"
+            android:id="@+id/txt_change_tnu"
+            android:layout_below="@+id/txt_change_tn"
+            android:textColor="#FFEB3B"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:text="@string/we_have_provided_persmission_check_above_higlighted_in_red">
+        </android.support.v7.widget.AppCompatTextView>
+
+
+    </RelativeLayout>
+
+</ScrollView>

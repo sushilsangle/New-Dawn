@@ -1,13 +1,515 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="?attr/actionBarSize"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.sushil.navigationtesting.fragments.sip.SIPCallFlow">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/img_sip"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:background="@drawable/sip_osi"
+        android:layout_margin="9dp"
+        />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txt_dot_sip"
+       style="@style/AllFragmentsStyle"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:layout_below="@id/img_sip"
+        android:text="--------------------------------------------------------------------------------------"/>
 
-</FrameLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txt_sip_mean"
+       style="@style/SIPFlowCMD"
+        android:layout_below="@+id/txt_dot_sip"
+        android:text="     What is mean by SIP.?"
+       />
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_below="@+id/txt_sip_mean"
+        android:text="->" />
+   <android.support.v7.widget.AppCompatTextView
+    android:id="@+id/txt_firstan"
+    style="@style/SIPCallFlowText"
+    android:layout_below="@+id/txt_sip_mean"
+    android:text="SIP stands for Session Initiation Protocol."/>
+
+<android.support.v7.widget.AppCompatTextView
+   style="@style/SIPCallFlowArrow"
+    android:layout_below="@+id/txt_firstan"
+    android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txt_sip_call_s"
+        style="@style/SIPCallFlowText"
+        android:layout_below="@+id/txt_firstan"
+        android:text="It used to establish, modify , terminate multimedia sessions over the Internet Protocol."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_below="@+id/txt_sip_call_s"
+        android:id="@+id/txt_sipt"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+       style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sipf"
+        android:layout_below="@+id/txt_sip_call_s"
+        android:text="A session is nothing but a simple call between two endpoints.End point can be laptop,phone or any device."/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:id="@+id/txt_sip_ei"
+        android:layout_below="@+id/txt_sipf"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+       style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sipei"
+        android:layout_below="@+id/txt_sipf"
+        android:text="SIP is an open source and application layer protocol defined by IETF (Internet Engineering Task Force) standard. It is defined in RFC 3261."/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+       style="@style/SIPCallFlowArrow"
+        android:id="@+id/txt_sipten"
+        android:layout_below="@+id/txt_sipei"
+        android:text="->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+       style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sipele"
+        android:layout_below="@+id/txt_sipei"
+        android:text="It is easy to develop,implement and troubleshoot application layer. It is a HTTP,Web protocol or SMTP. "/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:id="@+id/txt_tl"
+        android:layout_below="@+id/txt_sipele"
+        android:text="->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_thir"
+        android:layout_below="@+id/txt_sipele"
+        android:text="It consist Messages of headers and message body uses like client-server model"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:id="@+id/txt_four"
+        android:layout_below="@+id/txt_thir"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_fourte"
+        android:layout_below="@+id/txt_thir"
+        android:text="It is text based protocol which used UTF-8 encoding and alternate to H.323"/>
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:id="@+id/txt_sdp_arro"
+        android:layout_below="@+id/txt_fourte"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sip_sdp"
+        android:layout_below="@+id/txt_fourte"
+        android:text="SIP takes help from SDP (Session Description Protocol)which describessession and RTP (Real Time Transport Protocol) used for delivering voice and video over IP network."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:id="@+id/txt_sdp_uni"
+        android:layout_below="@+id/txt_sip_sdp"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sip_unicst"
+        android:layout_below="@+id/txt_sip_sdp"
+        android:text="SIP can be used for two-party unicast or multiparty multicast sessions.."/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:id="@+id/txt_sdp_tcp"
+        android:layout_below="@+id/txt_sip_unicst"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sip_tcp"
+        android:layout_below="@+id/txt_sip_unicst"
+        android:text="SIP applications can run on TCP, UDP protocols."/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:id="@+id/txt_sdp_prot"
+        android:layout_below="@+id/txt_sip_tcp"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sip_prot"
+        android:layout_below="@+id/txt_sip_tcp"
+        android:text="@string/sip_can_supports_following_protocols_1_sdp_for_media_handling_2_rtp_for_media_transport"/>
+
+
+    <!--TODO write above text id to below text  -->
+
+    <android.support.v7.widget.AppCompatTextView
+       style="@style/SIPFlowCMD"
+        android:id="@+id/txt_sip_fif"
+        android:layout_below="@+id/txt_sip_prot"
+        android:text="     What are the SIP componant.?"/>
+    <android.support.v7.widget.AppCompatTextView
+       style="@style/SIPCallFlowArrow"
+        android:id="@+id/txt_fit"
+        android:layout_below="@+id/txt_sip_fif"
+        android:text="->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sev"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_below="@+id/txt_sip_fif"
+        android:text="Signaling:- "/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sip_sig"
+        android:layout_marginStart="89dp"
+        android:layout_below="@+id/txt_sip_fif"
+        android:text=" is used to exchange control information between endpoints."/>
+
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:id="@+id/txt_ber"
+        android:layout_below="@+id/txt_sip_sig"
+        android:text="->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_bere"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_below="@+id/txt_sip_sig"
+        android:text="Bearer (Media):- "/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sip_berer"
+        android:layout_marginStart="129dp"
+        android:layout_below="@+id/txt_sip_sig"
+        android:text="Actual Voice/Video flow is like below..."/>
+
+
+    <ImageView
+        android:id="@+id/img_phonl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/txt_sip_berer"
+        android:background="@drawable/img_phonel"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txt_sip_flo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="65dp"
+        android:layout_below="@+id/txt_sip_berer"
+        android:textColor="@android:color/holo_red_dark"
+        android:text="@string/sip_flow"
+        />
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txt_sip_flow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="65dp"
+        android:layout_below="@+id/txt_sip_flo"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_dark"
+        android:text="@string/sip_green_line"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_sip_sign"
+       android:layout_marginStart="150dp"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_below="@+id/txt_sip_berer"
+        android:text="signaling"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_sip_signl"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="29dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_below="@+id/txt_sip_flo"
+        android:text="Media"/>
+
+
+    <ImageView
+        android:id="@+id/img_phonr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="315dp"
+        android:layout_below="@+id/txt_sip_berer"
+        android:background="@drawable/img_phoner"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+       style="@style/SIPFlowCMD"
+        android:id="@+id/txt_sip_rfc"
+        android:layout_below="@+id/img_phonr"
+        android:text="     What is mean by RFC.?"/>
+    <android.support.v7.widget.AppCompatTextView
+       style="@style/SIPCallFlowArrow"
+        android:id="@+id/txt_sip_si"
+        android:layout_below="@+id/txt_sip_rfc"
+        android:text="->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sip_six"
+        android:layout_below="@+id/txt_sip_rfc"
+        android:text="RFC stands for Request for Comments. It defines the most current  SIP version like 2.0 also it Deprecates RFC 2543."/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPFlowCMD"
+        android:id="@+id/txt_sip_protocol"
+        android:layout_below="@+id/txt_sip_six"
+        android:text="     What are the protocols used in SIP.?"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:id="@+id/txt_prot"
+        android:layout_below="@+id/txt_sip_protocol"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sip_proto"
+        android:layout_below="@+id/txt_sip_protocol"
+        android:text="1. Real-time transport protocol (RTP)"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:id="@+id/txt_protu"
+        android:layout_below="@+id/txt_sip_proto"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sip_protot"
+        android:layout_below="@+id/txt_sip_proto"
+        android:text="2. Session Description Protocol (SDP)"/>
+<android.support.v7.widget.AppCompatTextView
+    style="@style/SIPFlowCMD"
+    android:id="@+id/txt_sip_entity"
+    android:layout_below="@+id/txt_sip_protot"
+    android:text="     There are some entities which helps to creating SIP network."/>
+
+    <android.support.v7.widget.AppCompatTextView
+       style="@style/SIPCallFlowArrow"
+        android:id="@+id/txt_sip_ent"
+        android:layout_below="@+id/txt_sip_entity"
+        android:text="-> UA"/>
+    <android.support.v7.widget.AppCompatTextView
+       style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sip_enty"
+        android:layout_below="@+id/txt_sip_entity"
+        android:text="      stands for User Agent. It is IP endpoint session and most important SIP element. It works as both user agent client and server. "/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:id="@+id/txt_sip_ua"
+        android:layout_below="@+id/txt_sip_enty"
+        android:text="-> UAC"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sip_uac"
+        android:layout_below="@+id/txt_sip_enty"
+        android:text="         stands for User Agent client.It is logical entity which creates new SIP request. It sends request and receives response from client side."/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:id="@+id/txt_sip_uass"
+        android:layout_below="@+id/txt_sip_uac"
+        android:text="-> UAS"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sip_uas"
+        android:layout_below="@+id/txt_sip_uac"
+        android:text="        stands for User Agent Server.It is logical entity which genrate request. It receives request and sends response."/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPFlowCMD"
+        android:id="@+id/txt_sip_request"
+        android:layout_below="@+id/txt_sip_uas"
+        android:text="     Following is the SIP call flow"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/im_sip_call_flow"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/txt_sip_request"
+        android:background="@drawable/callflow"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/im_sip_trace"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/im_sip_call_flow"
+        android:background="@drawable/sip_trace"/>
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPFlowCMD"
+        android:id="@+id/txt_sip_rec"
+        android:layout_below="@+id/im_sip_trace"
+        android:text="       INVITE"/>
+
+    <android.support.v7.widget.AppCompatTextView
+       style="@style/SIPCallFlowArrow"
+        android:id="@+id/txt_sip_re"
+        android:layout_below="@+id/txt_sip_rec"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+       style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sip_invite"
+        android:layout_below="@+id/txt_sip_rec"
+        android:layout_marginStart="25dp"
+        android:text="INVITE can contain media information of caller in message body.A successful INVITE request establishes dialog between two user agents which continues until BYE is sent to terminate the session."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPFlowCMD"
+        android:id="@+id/txt_sip_acc"
+        android:layout_below="@+id/txt_sip_invite"
+        android:text="       ACK"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:id="@+id/txt_sip_ac"
+        android:layout_below="@+id/txt_sip_acc"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sip_ack"
+        android:layout_marginStart="25dp"
+        android:layout_below="@+id/txt_sip_acc"
+        android:text="ACK confirms that client has received a final response to an INVITE message"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:id="@+id/txt_sip_acks"
+        android:layout_below="@+id/txt_sip_ack"
+        android:text="->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sip_acku"
+        android:layout_marginStart="25dp"
+        android:layout_below="@+id/txt_sip_ack"
+        android:text="ACK may not be used to modify the media description that has already been sent in the initial INVITE."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPFlowCMD"
+        android:id="@+id/txt_sip_byy"
+        android:layout_below="@+id/txt_sip_acku"
+        android:text="       BYE"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:id="@+id/txt_sip_by"
+        android:layout_below="@+id/txt_sip_byy"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sip_bye"
+        android:layout_marginStart="25dp"
+        android:layout_below="@+id/txt_sip_byy"
+        android:text="This is a SIP request that can be sent by either the caller or the called to end a session or Terminates the call."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPFlowCMD"
+        android:id="@+id/txt_sip_cancell"
+        android:layout_below="@+id/txt_sip_bye"
+        android:text="       CANCEL"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:id="@+id/txt_sip_cancel"
+        android:layout_below="@+id/txt_sip_cancell"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sip_cance"
+        android:layout_marginStart="25dp"
+        android:layout_below="@+id/txt_sip_cancell"
+        android:text="CANCEL is used to terminate a session which is not established.It is hop by hop request"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPFlowCMD"
+        android:id="@+id/txt_sip_optionn"
+        android:layout_below="@+id/txt_sip_cance"
+        android:text="       OPTIONS"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:id="@+id/txt_sip_option"
+        android:layout_below="@+id/txt_sip_optionn"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sip_options"
+        android:layout_marginStart="25dp"
+        android:layout_below="@+id/txt_sip_optionn"
+        android:text="OPTIONS is used to query a user agent or a proxy server about its capabilities and discover its current availability.The proxy never generates an OPTIONS request."/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPFlowCMD"
+        android:id="@+id/txt_sip_registee"
+        android:layout_below="@+id/txt_sip_options"
+        android:text="       REGISTER"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:id="@+id/txt_sip_registe"
+        android:layout_below="@+id/txt_sip_registee"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sip_register"
+        android:layout_marginStart="25dp"
+        android:layout_below="@+id/txt_sip_registee"
+        android:text="REGISTER request performs registration of user agent.It carries AOR (Address of Record) in To header of the user which is being registered and request contains the time period (3600sec)."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:id="@+id/txt_sip_regist"
+        android:layout_below="@+id/txt_sip_register"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sip_registu"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/txt_sip_register"
+        android:text=" One user agent can send a REGISTER request on behalf of another user agent. This is known as third-party registration."/>
+
+
+</RelativeLayout>
+</ScrollView>

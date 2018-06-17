@@ -1,10 +1,10 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
     android:layout_height="match_parent"
-    tools:context="com.sushil.navigationtesting.fragments.Interview">
+    tools:context="com.sushil.navigationtesting.fragments.navigation.Interview">
     <RelativeLayout
-        android:layout_marginTop="?attr/actionBarSize"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <!-- TODO: Update blank fragment layout -->
@@ -24,47 +24,34 @@
             android:id="@+id/txt_confi"
             style="@style/Questions"
             android:layout_below="@+id/txt_config"
-            android:text="Q 1.     What is CMS?"
+            android:text=" Q 1.  What is CMS?"
             />
 
 
 
 
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
+            style="@style/AnsArrow"
+            android:text=" ->"
             android:layout_below="@+id/txt_confi"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AnswerStyle"
             android:id="@+id/txt_report"
-            android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_confi"
             android:text="CMS stands for Call Management System.It is Management information system which is used in avaya call center for Real Time, Historical and Integrated Reporting."/>
 
 
 
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="->"
+            style="@style/AnsArrow"
+            android:text=" ->"
             android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_report"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AnswerStyle"
             android:id="@+id/txt_in"
-            android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_report"
             android:text="It provides two types of backup:"/>
 
@@ -84,24 +71,18 @@
             android:id="@+id/txt_slots"
             style="@style/Questions"
             android:layout_below="@+id/txt_ad"
-            android:text="Q 2.     How many slots are there in G-650 Media Gateway?"
+            android:text=" Q 2.  How many slots are there in G-650 Media Gateway?"
             />
 
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="->"
+            style="@style/AnsArrow"
+            android:text=" ->"
             android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_slots"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AnswerStyle"
             android:id="@+id/txt_int"
-            android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_slots"
             android:text="There are 16 slots 1st and last used for power supply and remaining 14 for circuit packs"/>
 
@@ -110,23 +91,17 @@
             style="@style/Questions"
             android:id="@+id/txt_arsq"
             android:layout_below="@+id/txt_int"
-            android:text="Q 3.     What is AAR?"
+            android:text=" Q 3.   What is AAR?"
             />
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="->"
+            style="@style/AnsArrow"
+            android:text=" ->"
             android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_arsq"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AnswerStyle"
             android:id="@+id/txt_ars"
-            android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_arsq"
             android:text="AAR stands for Automatic Alternate Route. It is used for direct outgoing calling.It routes call within a company or own private Network. When you dial FAC(Feature Access Code) and telephone number AAR select most desirable route for call.If first choice route is unavailable then it chose another route automatically. "/>
 
@@ -136,23 +111,16 @@
             style="@style/Questions"
             android:id="@+id/txt_ares"
             android:layout_below="@+id/txt_ars"
-            android:text="Q 4.    What is ARS?"
+            android:text=" Q 4.  What is ARS?"
             />
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
+            style="@style/AnsArrow"
+            android:text=" ->"
             android:layout_below="@+id/txt_ares"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AnswerStyle"
             android:id="@+id/txt_aars"
-            android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_ares"
             android:text="ARS stands for Automatic Route Selection. It select carrier automatically and route the call inexpensivly over the public networks.When user dial FAC by telephone number CM analyse the dialed digits. select route for call deletes and insert digits if necessary route call over trunks which are specify in your routing tables."/>
 
@@ -162,104 +130,33 @@
             style="@style/Questions"
             android:id="@+id/txt_hunq"
             android:layout_below="@+id/txt_aars"
-            android:text="Q 5.    What is HUNT?"
+            android:text=" Q 5.  What is HUNT?"
             />
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
+            style="@style/AnsArrow"
+            android:text=" ->"
             android:layout_below="@+id/txt_hunq"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AnswerStyle"
             android:id="@+id/txt_hunt"
-            android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_hunq"
             android:text="It is a collection of user handling similar types of calls. i.e ACD Automatic Call Distribution System."/>
 
         <android.support.v7.widget.AppCompatTextView
             style="@style/Questions"
-            android:id="@+id/txt_hunqu"
-            android:layout_below="@+id/txt_hunt"
-            android:text="Q 4.    What is a function of IPSI Card?"
-            />
-        <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/txt_hunqu"
-            />
-        <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
-            android:id="@+id/txt_hunts"
-            android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/txt_hunqu"
-            android:text="It provides communication link between port-network and communication manager.It send keep a live message to CM. Tone generation, clock selection and globale call classification TN2312BP."/>
-
-
-
-
-
-
-        <android.support.v7.widget.AppCompatTextView
-            style="@style/Questions"
-            android:id="@+id/txt_clanq"
-            android:layout_below="@+id/txt_hunts"
-            android:text="Q 5.    What is a function of CLAN Card?"
-            />
-        <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/txt_clanq"
-            />
-        <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
-            android:id="@+id/txt_clan"
-            android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/txt_clanq"
-            android:text="It provides H323 to registration of Phones.The phone registration capacity is 300/400 max recommended by Avaya. Circuit Pack: TN799DP Port 17"/>
-
-
-
-
-
-        <android.support.v7.widget.AppCompatTextView
-            style="@style/Questions"
             android:id="@+id/txt_medprq"
-            android:layout_below="@+id/txt_clan"
-            android:text="Q 5.    What are the types of Hunt Group?"
+            android:layout_below="@+id/txt_hunt"
+            android:text=" Q 5.  What are the types of Hunt Group?"
             />
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
+            style="@style/AnsArrow"
+            android:text=" ->"
             android:layout_below="@+id/txt_medprq"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AnswerStyle"
             android:id="@+id/txt_medpr"
-            android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_medprq"
             android:text="There are 4 types in Hunt Group:- "/>
 
@@ -345,6 +242,791 @@
             android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_cirl"
             android:text="An incoming call is first presented to the available member who has been idle the longest. If unanswered it is presented to the next longest idle member."/>
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_hunqu"
+            android:layout_below="@+id/txt_midle"
+            android:text=" Q 4.  What is a function of IPSI Card?"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_hunqu"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_hunts"
+            android:layout_below="@+id/txt_hunqu"
+            android:text="The communication link between media server and media  gateway.It send keep a live message to Communicaton Manager.It provide dial tone to station. Tone generation, clock selection and globale call classification TN2312BP."/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_clanq"
+            android:layout_below="@+id/txt_hunts"
+            android:text=" Q 5.  What is a function of CLAN Card?"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_clanq"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_clan"
+            android:layout_below="@+id/txt_clanq"
+            android:text="IP phones get registered on CLAN cards.The phone registration capacity is 400 max recommended by Avaya but we can registered up to 300 phones for better performance. Circuit Pack: TN799DP Port 17"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_clanqq"
+            android:layout_below="@+id/txt_clan"
+            android:text=" Q 6.  What is a function of VAL Card?"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_clanqq"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_clana"
+            android:layout_below="@+id/txt_clanqq"
+            android:text="It provides voice communication. We can store announcements upto 1 hours. It supports .wav format files.         format which are palying in live IVR..."/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_valc"
+            android:layout_marginStart="335dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/txt_clanqq"
+            android:text=".wav "/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_valq"
+            android:layout_below="@+id/txt_clana"
+            android:text=" Q 7.  What is a function of DS1 Card?"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_valq"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_vl"
+            android:layout_below="@+id/txt_valq"
+            android:text="This is the Digital Interface card which is inserted into G650 MG. All IP trunks are terminated over DS1 cards."/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_valqo"
+            android:layout_below="@+id/txt_vl"
+            android:text=" Q 8.  What is a function of MedPro Card?"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_valqo"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_vln"
+            android:layout_below="@+id/txt_valqo"
+            android:text="This card used for sending voice packets by using codec set.It dose converstion between TDM to IP and IP to TDM.All voice packets travlled via MedPro card."/>
+
+        <android.support.v7.widget.AppCompatTextView
+           style="@style/Questions"
+            android:id="@+id/txt_protocol"
+            android:layout_below="@+id/txt_vln"
+            android:text=" Q 9.  What is Protocol.?"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_protocol"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_proto"
+            android:layout_below="@+id/txt_protocol"
+            android:text="The Protocol means set of rules."/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_lspq"
+            android:layout_below="@+id/txt_proto"
+            android:text=" Q 10.  What is the difference between ESS and LSP.?"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_lspq" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_essf"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_lspq"
+            android:text="  ESS "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_essf" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_esss"
+            android:layout_below="@+id/txt_essf"
+            android:text=" ESS stands for Enterprise Survivable Server. "/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_esss" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_es"
+            android:layout_below="@+id/txt_esss"
+            android:text=" It is backup server which placed at network. "/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_es" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_eso"
+            android:layout_below="@+id/txt_es"
+            android:text="@string/if_the_cm_communication_resume_when_connectivity_between_port_network_and_main_server_is_lost"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_eso" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_est"
+            android:layout_below="@+id/txt_eso"
+            android:text=" It supports port network and LSP gateway. "/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_est" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_esth"
+            android:layout_below="@+id/txt_est"
+            android:text=" ESS is non conncetion preserving with CM. "/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_esth" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_esf"
+            android:layout_below="@+id/txt_esth"
+            android:text=" It support up to 63 servers in a system. "/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_esf" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_lsp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_esf"
+            android:textStyle="bold"
+            android:text=" LSP "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_lsp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_lspo"
+            android:layout_below="@+id/txt_lsp"
+            android:text=" LSP stands for Local Survivable Processor. "/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_lspo" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_lspt"
+            android:layout_below="@+id/txt_lspo"
+            android:text="@string/if_the_link_between_remote_media_gateway_h_248_and_media_gateway_controller_is_broken_or_mgc_is_down_then_lps_will_automatically_activate_and_it_support_to_all_phones"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_lspt" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_lspth"
+            android:layout_below="@+id/txt_lspt"
+            android:text=" It supports only H.248 Media Gateway."/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_lspth" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_lspf"
+            android:layout_below="@+id/txt_lspth"
+            android:text=" LSP is connection preserving with CM."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_lspf" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_lspfiv"
+            android:layout_below="@+id/txt_lspf"
+            android:text=" It support upto 250 LSP in a server."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_fimware"
+            android:layout_below="@+id/txt_lspfiv"
+            android:text=" Q 9.  How to do firmware upgradation of MedPro and CLAN.?"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_fimware" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_fir"
+            android:layout_below="@+id/txt_fimware"
+            android:text=" Make sure DS1 and MedPro TN2302 don't have memory to save firmware upgradation file."/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_fir" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_tn"
+            android:layout_below="@+id/txt_fir"
+            android:text=" For TN2302 load the firmware file to any CLAN board and enter CLAN board location by enabling filexfer."/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_tn" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_ena"
+            android:layout_below="@+id/txt_tn"
+            android:text=" First check all cards firmware in respactive ACD using below command."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_listconf"
+            android:layout_below="@+id/txt_ena"
+            android:text="   >  list conf all         check below command"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_listconf" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_enas"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_listconf"
+            android:text=" 03A09       CONTROL-LAN       TN799DP       HW01       FW011"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_enas" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_enable"
+            android:layout_below="@+id/txt_enas"
+            android:text=" Now login into ACD and execute below command."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_enablec"
+            android:layout_below="@+id/txt_enable"
+            android:text="   >  enable filexfer"/>
+
+        <TextView
+            android:id="@+id/txt_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="91dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="9dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_enablec"
+            android:text="Login  :  tata" />
+        <TextView
+            android:id="@+id/txt_paswd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_login"
+            android:text="Password  :  tata123" />
+        <TextView
+            android:id="@+id/txt_paswdr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_paswd"
+            android:text="Re-enter Password  :  tata123" />
+
+        <TextView
+            android:id="@+id/txt_secur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="81dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_paswdr"
+            android:text="Secure? :  y" />
+        <TextView
+            android:id="@+id/txt_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="41dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_secur"
+            android:text="Board address : 03a09" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_enablecc"
+            android:layout_below="@+id/txt_location"
+            android:text="   >  enable filexfer"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_enablecc" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_file"
+            android:layout_below="@+id/txt_enablecc"
+            android:text=" Now open command promt and do the FTP to CLAN IP and put firmware file from C drive."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_ftpc"
+            android:layout_below="@+id/txt_file"
+            android:text="   >  ftp  191.9.10.143"/>
+
+        <TextView
+            android:id="@+id/txt_ftpp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_ftpc"
+            android:text="     Connected to 191.9.10.143...Then you will get response like ftp server is ready.." />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_ftpp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_ftps"
+            android:layout_below="@+id/txt_ftpp"
+            android:text=" Now it will ask login and password so just enter above ID and password."/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_ftps" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_ftpv"
+            android:layout_below="@+id/txt_ftps"
+            android:text=" Then you will get respnse like User logged in."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_ftpv" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_ftpu"
+            android:layout_below="@+id/txt_ftpv"
+            android:text=" Now execute below command to convert file into binary format."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_ftpres"
+            android:layout_below="@+id/txt_ftpu"
+            android:text="   >  bin"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_ftpres" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_ftphash"
+            android:layout_below="@+id/txt_ftpres"
+            android:text=" Now execute below command for printing runing format."/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_putf"
+            android:layout_below="@+id/txt_ftphash"
+            android:text="@string/put_file_path"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_putf" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_ftpha"
+            android:layout_below="@+id/txt_putf"
+            android:text="@string/hash"/>
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_byee"
+            android:layout_below="@+id/txt_ftpha"
+            android:text="   >  bye"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_byee" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_ftplist"
+            android:layout_below="@+id/txt_byee"
+            android:text=" Now execute below command and check whether the firmware file has been loaded or not.."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_direct"
+            android:layout_below="@+id/txt_ftplist"
+            android:text="   >  list directory board 01A09"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_direct" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_alrm"
+            android:layout_below="@+id/txt_direct"
+            android:text=" Now execute below command and check any activity alarms."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_alrms"
+            android:layout_below="@+id/txt_alrm"
+            android:text="   >  Test firmware download 1"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_alrms" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_buyot"
+            android:layout_below="@+id/txt_alrms"
+            android:text=" Now busy out MedPro card for which the firmware to be upgraded then execute below command."/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_changefir"
+            android:layout_below="@+id/txt_buyot"
+            android:text="   >  change firmware download 1"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_firms"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_changefir"
+            android:text="FIRMWARE DOWNLOAD"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:layout_marginStart="5dp"
+            android:id="@+id/txt_sbl"
+            android:layout_below="@+id/txt_firms"
+            android:text="        Source Board Location :             File Server : "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_sblc"
+            android:layout_marginStart="183dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_firms"
+            android:text="1A07"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_sblcd"
+            android:layout_marginStart="303dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_firms"
+            android:text="none"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:layout_marginStart="5dp"
+            android:id="@+id/txt_img"
+            android:layout_below="@+id/txt_sblcd"
+            android:text="Firmware Image File Name :  "/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_sblu"
+            android:layout_marginStart="183dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_sblcd"
+            android:text="xyz-f12.bin"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:layout_marginStart="6dp"
+            android:id="@+id/txt_target"
+            android:layout_below="@+id/txt_sblu"
+            android:text="              Target Board Code :                       Suffix:"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_sbln"
+            android:layout_marginStart="183dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_sblu"
+            android:text="TN2302"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_sblnu"
+            android:layout_marginStart="303dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_sblu"
+            android:text="AP"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:layout_marginStart="20dp"
+            android:id="@+id/txt_schedul"
+            android:layout_below="@+id/txt_sblnu"
+            android:text="         Schedule Download?"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_sblp"
+            android:layout_marginStart="183dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_sblnu"
+            android:text=" n"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:layout_marginStart="20dp"
+            android:id="@+id/txt_remove"
+            android:layout_below="@+id/txt_sblp"
+            android:text="Remove Image File After Successful Download? "/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_sbls"
+            android:layout_marginStart="321dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_sblp"
+            android:text=" n"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_firma"
+            android:layout_below="@+id/txt_sbls"
+            android:text="   >  change firmware download 1"/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_firma" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_star"
+            android:layout_below="@+id/txt_firma"
+            android:text=" Now execute below command and check status of firmware file."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_chngr"
+            android:layout_below="@+id/txt_star"
+            android:text="   >  status firmware download 1"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_chngr" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_stap"
+            android:layout_below="@+id/txt_chngr"
+            android:text=" If its showing    means Pending. If status is blank then it's done."/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_stapnd"
+            android:textStyle="bold"
+            android:layout_marginStart="111dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_chngr"
+            android:text=" P "/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_stap" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_medpu"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_below="@+id/txt_stap"
+            android:text=" Kindly refer below points for MedPro TN2602 AP and CLAN card firmware upgradations."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_medpu" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_md"
+            android:layout_below="@+id/txt_medpu"
+            android:text=" For MedPro card TN2602 AP the file will directly be ftp to MedPro card instead of CLAN."/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_md" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_mds"
+            android:layout_below="@+id/txt_md"
+            android:text=" The source board location and target board location will be same."/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_mds" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_mdsu"
+            android:layout_below="@+id/txt_mds"
+            android:text=" The firmware upgradation for CLAN card is same as MedPro TN 2602AP.There is different firmware for different vintage."/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_mdsu" />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_mdsua"
+            android:layout_below="@+id/txt_mdsu"
+            android:text=" Now check upgraded firmware with the help of below command."/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_chg"
+            android:layout_below="@+id/txt_mdsua"
+            android:layout_marginBottom="10dp"
+            android:text="   >  list configuration carrier 11A"/>
+
+
+
 
 
     </RelativeLayout>

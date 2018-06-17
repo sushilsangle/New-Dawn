@@ -1,13 +1,148 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
     tools:context="com.sushil.navigationtesting.fragments.cms.CMSAgentGrp">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_main"
+            android:background="@drawable/cms_sample"/>
 
-</FrameLayout>
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_dictionary"
+            android:layout_below="@+id/img_main"
+            android:layout_marginStart="75dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/cms_dictionry"/>
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_operation"
+            android:layout_below="@+id/img_dictionary"
+            android:layout_marginStart="75dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/cms_dic_option"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_option"
+            android:layout_below="@+id/img_operation"
+            android:layout_marginStart="75dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/cms_agent_opt"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_agetgr"
+            android:layout_below="@+id/img_option"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/cms_agent_ex"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/img_agetgr"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_networ"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/img_agetgr"
+            android:text="Enter agent Group Name and click on     to add into CMS."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_plus"
+            android:layout_marginStart="260dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/img_agetgr"
+            android:textStyle="bold"
+            android:textColor="#00A695"
+            android:text="+"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/txt_plus"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_grop"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/txt_plus"
+            android:text="Enter Agent Group name which is already prasent in CMS."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="5dp"
+            android:text="->"
+            android:layout_below="@+id/txt_grop"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_group"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/txt_grop"
+            android:text="Then click on second last button (Get Content)"/>
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_get"
+            android:layout_below="@+id/txt_grop"
+            android:layout_marginStart="318dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/cms_getcon"/>
+        <android.support.v7.widget.AppCompatTextView
+           style="@style/MastersTvarrow"
+            android:text="->"
+            android:layout_below="@+id/img_get"
+            android:layout_marginStart="5dp"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AllFragmentsStyle"
+            android:id="@+id/txt_cms_grpu"
+            android:text="@string/if_you_want_check_how_many_agents_are_added_in_any_cms_group_then_enter_group_name_get_content_and_click_on_list_you_will_get_the_whole_agent_list"
+            android:layout_marginStart="25dp"
+            android:layout_below="@+id/img_get"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>

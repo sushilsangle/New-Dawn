@@ -1,13 +1,1248 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.sushil.navigationtesting.fragments.navigation.ACDCommands">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_cmd1"
+        android:textStyle="bold"
+        android:background="#D7CCC8"
+        android:textColor="@android:color/holo_green_dark"
+        android:text="  >  list station"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_cmd1"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/txt_st_ans"
+        style="@style/ACDCMDAnswer"
+        android:layout_below="@+id/txt_cmd1"
+        android:text="You can check all extensions in respeactive ACD with the help of above command."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_station"
+        android:layout_below="@+id/txt_st_ans"
+        android:text="  >  display station 550955"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_station"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_stationd"
+        android:layout_below="@+id/txt_station"
+        android:text="you can check all the extension / station parameters with the help of above command."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_station_ch"
+        android:layout_below="@+id/txt_stationd"
+        android:text="  >  change station 550955"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_station_ch"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_stationc"
+        android:layout_below="@+id/txt_station_ch"
+        android:text="If you want to change any parameter like Extension name,password,Tenant,cor etc do it using this command."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+         android:id="@+id/txt_stationadd"
+         android:layout_below="@+id/txt_stationc"
+         android:text="  >  add station"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_stationadd"
+        android:text="->"
+        />
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_stationus"
+        android:layout_below="@+id/txt_stationadd"
+        android:text="If you want to create new extension then do it with the help of this command."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_ext"
+        android:layout_below="@+id/txt_stationus"
+        android:text="  >  status station 550955"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_below="@+id/txt_ext"
+        style="@style/ACDCMDArrow"
+        android:text="->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_extan"
+        android:layout_below="@+id/txt_ext"
+        android:text="This command will help you to check that extensions which are in service or out off service"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_regi"
+        android:layout_below="@+id/txt_extan"
+        android:text="  >  list registered-ip-stations ext 550955 count 10"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_below="@+id/txt_regi"
+        style="@style/ACDCMDArrow"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_reig"
+        android:layout_below="@+id/txt_regi"
+        android:text="It will show the regisered extensions and IPs."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_stationunre"
+        android:layout_below="@+id/txt_reig"
+        android:text="@string/list_multimedia_ip_unregistered_550955_count_10"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_stationunre"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_stans"
+        android:layout_below="@+id/txt_stationunre"
+        android:text="you can check free extensions in respective ACD with the help of this command."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_ntregi"
+        android:layout_below="@+id/txt_stans"
+        android:text="@string/list_registered_ip_stations_region_55"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_ntregi"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_ntregis"
+        android:layout_below="@+id/txt_ntregi"
+        android:text="It is possible to check how many phones are registered in any network region with the help of above command."/>
+
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_statbus"
+        android:layout_below="@+id/txt_ntregis"
+        android:text="  >  busy-out station 550955"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_statbus"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_statbuys"
+        android:layout_below="@+id/txt_statbus"
+        android:text="If the extension is out off service or any agent wants to log out from
+         extension then execute this command."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_release"
+        android:layout_below="@+id/txt_statbuys"
+        android:text="  >  release station 550955"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:id="@+id/txt_demo"
+        android:layout_below="@+id/txt_release"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_statrelese"
+        android:layout_below="@+id/txt_release"
+        android:text="Once done above step then relase station, phone will restart automatically once phone up then ask agent to use same phone."/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_cor"
+        android:layout_below="@+id/txt_statrelese"
+        android:text="  >  list cor"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_cor"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_corh"
+        android:layout_below="@+id/txt_cor"
+        android:text="After executing above command you are able to see all cors in respacive ACD."/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:layout_below="@+id/txt_corh"
+        android:id="@+id/txt_corchan"
+        android:text="  >  change cor 9"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_corchan"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_corchnd"
+        android:layout_below="@+id/txt_corchan"
+        android:text="As per respeactive ACD find free cor and copy that cor number then execute above command with cor number."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_corchnd"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_corchndo"
+        android:layout_below="@+id/txt_corchnd"
+        android:text="Then set the cor name also enable the cor permissions as per ACD setup."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_cordisp"
+        android:layout_below="@+id/txt_corchndo"
+        android:text="  >  display cor 9"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_cordisp"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_cordcrp"
+        android:layout_below="@+id/txt_cordisp"
+        android:text="You can check all the parameters of COR using this command."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_tench"
+        android:layout_below="@+id/txt_cordcrp"
+        android:text="  >  change tenant 12"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_tench"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_tenchna"
+        android:layout_below="@+id/txt_tench"
+        android:text="You can able to change tenant name, tenant permission using this command."/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_dispten"
+        android:layout_below="@+id/txt_tenchna"
+        android:text="  >  display tenant 12"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_dispten"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_disptan"
+        android:layout_below="@+id/txt_dispten"
+        android:text="Using above command you can able to see all the parameters and tenanat name."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_huntlist"
+        android:layout_below="@+id/txt_disptan"
+        android:text="  >  list hunt-group"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_huntlist"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_discrin"
+        android:layout_below="@+id/txt_huntlist"
+        android:text="It is possible to find all hunt groups in respactive ACD with the help of this command."/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_huntdisp"
+        android:layout_below="@+id/txt_discrin"
+        android:text="  >  display hunt-group 12"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_huntdisp"
+        android:text="->" />
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_disphun"
+        android:layout_below="@+id/txt_huntdisp"
+        android:layout_marginBottom="10dp"
+        android:text="You can check that perticular hunt groups all parameters and name."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_huntchan"
+        android:layout_below="@+id/txt_disphun"
+        android:text="  >  change hunt-group 12"
+        />
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_huntchan"
+        android:text="->"
+        />
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:layout_below="@+id/txt_huntchan"
+        android:id="@+id/txt_listchnt"
+        android:text="You can create new hunt-group also do the changes in exsiting hunt group using above command."/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_listun"
+        android:layout_below="@+id/txt_listchnt"
+        android:text="  >  list usage hunt-group 12"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_listun"
+        android:text="->"
+        />
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:layout_below="@+id/txt_listun"
+        android:id="@+id/txt_listunt"
+        android:text="You can able to find agnet IDs,Vector,VDN which are mapped to this pertivulare hunt group by using above command."/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_listvec"
+        android:layout_below="@+id/txt_listunt"
+        android:text="  >  list usage vector 143"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:layout_below="@+id/txt_listvec"
+        android:id="@+id/txt_listvector"
+        android:text="You can able to find VDN numbers which are mapped to this perticulare vector."/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_dispvec"
+        android:layout_below="@+id/txt_listvector"
+        android:text="  >  display vector 143"/>
+    <android.support.v7.widget.AppCompatTextView
+
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_dispvec"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_vecdisp"
+        android:layout_below="@+id/txt_dispvec"
+        android:text="@string/if_you_want_to_read_check_vectors_steps_then_execute_above_command"/>
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_chanvec"
+        android:layout_below="@+id/txt_vecdisp"
+        android:text="  >  change vector 143"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_chanvec"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_vecdis"
+        android:layout_below="@+id/txt_chanvec"
+        android:text="If you want to create any vector do it with the help of above command as per client call flow." />
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:layout_below="@+id/txt_vecdis"
+        android:id="@+id/txt_vecdsp"
+        android:text="  >  list vector"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_vecdsp"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_veclan"
+        android:layout_below="@+id/txt_vecdsp"
+        android:text="By using above command you are able to check all the vector in respactive ACD."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_ann"
+        android:layout_below="@+id/txt_veclan"
+        android:text="  >  list announcements  111127"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:text ="->"
+        android:layout_below="@+id/txt_ann"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_annsur"
+        android:layout_below="@+id/txt_ann"
+        android:text="You can check all the announcements and their names in respactive ACD with the help of above command."/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_addannu"
+        android:layout_below="@+id/txt_annsur"
+        android:text="  >  add announcement next "
+        />
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_addannu"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_addanser"
+        android:layout_below="@+id/txt_addannu"
+        android:text="If you want to create new Announcement in ACD then execute above command and fill required details."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:layout_below="@+id/txt_addanser"
+        android:id="@+id/txt_anndisp"
+        android:text="  >  display announcement  111127"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_anndisp"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:layout_below="@+id/txt_anndisp"
+        android:id="@+id/txt_dispann"
+        android:text="Execute above command and check the Announcement details like name, board, tenant,cor etc."/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_audi"
+        android:layout_below="@+id/txt_dispann"
+        android:text="  >  display audio-group 5"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_audi"
+        android:text="->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_audio"
+        android:layout_below="@+id/txt_audi"
+        android:text="After executing above command. If there is a group like G5 or any name then execute below command to check which VAL board is added in that audio group."/>
+
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_integrann"
+        android:layout_below="@+id/txt_audio"
+        android:text="  >  list integrated-Ann-board  03a03"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_integrann"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_integratedann"
+        android:layout_below="@+id/txt_integrann"
+        android:text="It shows that how much space is free in that perticular VAL board aslo it shows announcement names and numbers."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_ipsil"
+        android:layout_below="@+id/txt_integratedann"
+        android:text="  >  list ipserver-interface all"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_ipsil"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_spsilist"
+        android:layout_below="@+id/txt_ipsil"
+        android:text="It will show the IPSI cards status linek IN service or out off-service also board,IP address PN etc."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_ipsiping"
+        android:layout_below="@+id/txt_spsilist"
+        android:text="  >  ping ipservicerinterface 3a"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_ipsiping"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_ipsipng"
+        android:layout_below="@+id/txt_ipsiping"
+        android:text="If IPSI card is in hang state or out-off service then execute above command and check the result. "/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_ipsipng"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_ipsipngr"
+        android:layout_below="@+id/txt_ipsipng"
+        android:text="If the ping result is not happing then share that result and IPSI IP with network team for further assistance."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_ipsibusy"
+        android:layout_below="@+id/txt_ipsipngr"
+        android:text="  >  busy ipservicerinterface 3a"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_ipsibusy"
+        android:text="->"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_pingipsian"
+        android:layout_below="@+id/txt_ipsibusy"
+        android:text="This is soft reset of IPSI cards commands.Once execute above command immediatly execute below command."
+        />
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_ipsirel"
+        android:layout_below="@+id/txt_pingipsian"
+        android:text="  >  busy ipservicer-interface 3a"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_ipsirel"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_ipsirelese"
+        android:layout_below="@+id/txt_ipsibusy"
+        android:text="Once execute above command then check IPSP is in-service or not."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_dispipnet"
+        android:layout_below="@+id/txt_ipsirelese"
+        android:text="  >  display ip-network-map"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_dispipnet"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_dispipntwork"
+        android:layout_below="@+id/txt_dispipnet"
+        android:text="This command will help you to check IP range, voice VLAN,network region etc."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_chanipnet"
+        android:layout_below="@+id/txt_dispipntwork"
+        android:text="  >  change ip-network-map"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_chanipnet"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_changipntwork"
+        android:layout_below="@+id/txt_chanipnet"
+        android:text="you can assign IPs to devices / phones with the help of above command."/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_listipnet"
+        android:layout_below="@+id/txt_changipntwork"
+        android:text="  >  list ip-network-map all"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_listipnet"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_listipntwork"
+        android:layout_below="@+id/txt_listipnet"
+        android:text="It will show the whole IP range,voice vlans,network regions etc in your respactive ACDs."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_liipmoni"
+        android:layout_below="@+id/txt_listipntwork"
+        android:text="  >  list ip-network-region monitor"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_liipmoni"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_lisipmoni"
+        android:layout_below="@+id/txt_liipmoni"
+        android:text="It will show the network region, Name,Port No IPv4,codec set,UDP min port,"/>
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_ntenabl"
+        android:layout_below="@+id/txt_lisipmoni"
+        android:text="  >  enable nr-registration 9"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_ntenabl"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_ntenable"
+        android:layout_below="@+id/txt_ntenabl"
+        android:text="If you have disabled any network region then you can enable it using above command."/>
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_liipmonill"
+        android:layout_below="@+id/txt_ntenable"
+        android:text="  >  display ars analysis location all 5"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_liipmonill"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_lisipmonil"
+        android:layout_below="@+id/txt_liipmonill"
+        android:text="You can see the decalred dialed string, min,max number range,route pattern then do it with the help of this command."/>
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_arsan"
+        android:layout_below="@+id/txt_lisipmonil"
+        android:text="  >  change ars analysis location all 5"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_arsan"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_arsana"
+        android:layout_below="@+id/txt_arsan"
+        android:text="If you want to change/create new dialed string, min,max number range,route pattern then do it with the help of this command."/>
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_route"
+        android:layout_below="@+id/txt_arsana"
+        android:text="  >  list route-pattern"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_route"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_routp"
+        android:layout_below="@+id/txt_route"
+        android:text="First check all route pattern in your respactive ACD with the help of above command."/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_rouisp"
+        android:layout_below="@+id/txt_routp"
+        android:text="  >  display route-pattern 12"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_rouisp"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_rodsp"
+        android:layout_below="@+id/txt_rouisp"
+        android:text="If you want to use route pattern 12, then check which trunk is added in that route pattern using above command."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_routch"
+        android:layout_below="@+id/txt_rodsp"
+        android:text="  >  change route-pattern 12"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_routch"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_rodchn"
+        android:layout_below="@+id/txt_routch"
+        android:text="After executing above command assign route pattern name,add trunk number also set FRL as per ACD setup."/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_trunklis"
+        android:layout_below="@+id/txt_rodchn"
+        android:text="  >  list trunk-group"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_trunklis"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_trunklst"
+        android:layout_below="@+id/txt_trunklis"
+        android:text="Once you execute above command then see the all trunk number and name which are already created in ACD"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_trunkdis"
+        android:layout_below="@+id/txt_trunklst"
+        android:text="  >  display trunk-group 929"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_trunkdis"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_trunkdsp"
+        android:layout_below="@+id/txt_trunkdis"
+        android:text="It will show the all parameters of that trunk like trunk name, signaling group etc."/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_trunkch"
+        android:layout_below="@+id/txt_trunkdsp"
+        android:text="  >  change trunk-group 929"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_trunkch"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_trunkdchan"
+        android:layout_below="@+id/txt_trunkch"
+        android:text="You are able to do all change on trunk by using this command."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_trunkadd"
+        android:layout_below="@+id/txt_trunkdchan"
+        android:text="  >  add trunk-group 929"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_trunkadd"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_trunkad"
+        android:layout_below="@+id/txt_trunkadd"
+        android:text="If you want to create new trunk then do it by using this command."/>
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_sigadd"
+        android:layout_below="@+id/txt_trunkad"
+        android:text="  >  list signaling-group"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_sigadd"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_signad"
+        android:layout_below="@+id/txt_sigadd"
+        android:text="All voice engineers are able to see all signaling group in ACD using this command."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_sigdisp"
+        android:layout_below="@+id/txt_signad"
+        android:text="  >  display signaling-group 929"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_sigdisp"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_signdis"
+        android:layout_below="@+id/txt_sigdisp"
+        android:text="You can see the all parameters which are already available in that signaling group in respactive ACD by using this command."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_sigchn"
+        android:layout_below="@+id/txt_signdis"
+        android:text="  >  change signaling-group 929"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_sigchn"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_sigchng"
+        android:layout_below="@+id/txt_sigchn"
+        android:text="You can change the signaling group also add near end node name and far end node name as well as thir IDs in respactive ACD by using this command."/>
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_node"
+        android:layout_below="@+id/txt_sigchng"
+        android:text="  >  list node-names all"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_node"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_nodes"
+        android:layout_below="@+id/txt_node"
+        android:text="It will show the all node names in respactive ACD."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_nodedis"
+        android:layout_below="@+id/txt_nodes"
+        android:text="  >  display node-names Pune_Bang_SY"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_nodedis"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_nodedisp"
+        android:layout_below="@+id/txt_nodedis"
+        android:text="Once execute above command it will show the IP address of that node names in respactive ACD."/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_nodecha"
+        android:layout_below="@+id/txt_nodedisp"
+        android:text="  >  change node-names Pune_Bang_SY"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_nodecha"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_nodechan"
+        android:layout_below="@+id/txt_nodecha"
+        android:text="You can able to change IP address as well as node names in respactive ACD."/>
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_carrir"
+        android:layout_below="@+id/txt_nodechan"
+        android:text="  >  list configuration carrier a"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_carrir"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_carrire"
+        android:layout_below="@+id/txt_carrir"
+        android:text="By using above command check how many cards are inserted in perticulare port network."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_suri"
+        android:layout_below="@+id/txt_carrire"
+        android:text="  >  list survivable-processor"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_suri"
+        android:text="->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_suriv"
+        android:layout_below="@+id/txt_suri"
+        android:text="@string/this_command_will_show_the_status_of_lsp_in_g_450_media_gateway_in_respactive_acd"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_cabi"
+        android:layout_below="@+id/txt_suriv"
+        android:text="  >  status cabinet 1 "/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_cabi"
+        android:text="->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_cabinate"
+        android:layout_below="@+id/txt_cabi"
+        android:text="It used to check cabinate status.Once execute above command it will show Activate and standby status."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_cdr"
+        android:layout_below="@+id/txt_cabinate"
+        android:text="  >  status cdr-link "/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_cdr"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_cdrst"
+        android:layout_below="@+id/txt_cdr"
+        android:text="You can check CDR-LINK status with the help of above command."/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_aes"
+        android:layout_below="@+id/txt_cdrst"
+        android:text="  >  status aesvcs interface "/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_aes"
+        android:text="->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_aesi"
+        android:layout_below="@+id/txt_aes"
+        android:text="You can check CDR-LINK status with the help of above command."/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_goshell"
+        android:layout_below="@+id/txt_aesi"
+        android:text="  >  go shell "/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_goshell"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_gshell"
+        android:layout_below="@+id/txt_goshell"
+        android:text="If you want to ping or trace any device IP from ACD then login into ACD and execute this command and hit enter."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_goshellp"
+        android:layout_below="@+id/txt_gshell"
+        android:text="  >  ping 10.134.132.99"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_goshellp"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_gshellping"
+        android:layout_below="@+id/txt_goshellp"
+        android:text="@string/once_execute_above_command_check_ping_result_packet_loss_should_be_0_and_take_action_accordingly"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_trace"
+        android:layout_below="@+id/txt_gshellping"
+        android:text="  >  traceroute 10.134.132.99"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_trace"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_tracero"
+        android:layout_below="@+id/txt_trace"
+        android:text="This command will help you to check any device IP is reachebale from ACD or not."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_sa"
+        android:layout_below="@+id/txt_tracero"
+        android:text="  >  sat"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_sa"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_sate"
+        android:layout_below="@+id/txt_sa"
+        android:text="Now execute above command to go back to ACD."/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_discabi"
+        android:layout_below="@+id/txt_sate"
+        android:text="  >  display cabinet 1 "/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_discabi"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_discabin"
+        android:layout_below="@+id/txt_discabi"
+        android:text="It will show the all information about all cards which are inserted in that cabinate/port network."/>
+
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_statuscab"
+        android:layout_below="@+id/txt_discabin"
+        android:text="  >  status cabinet 1 "/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_statuscab"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_statuscn"
+        android:layout_below="@+id/txt_statuscab"
+        android:text="It will show the status of cabinate/port network."/>
+
+
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_media"
+        android:layout_below="@+id/txt_statuscn"
+        android:text="  >  list ip-interface medpro"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_media"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_medi"
+        android:layout_below="@+id/txt_media"
+        android:text="It will show all all medpro cards status,IP and port network number."/>
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_dimed"
+        android:layout_below="@+id/txt_medi"
+        android:text="  >  status media-processor board 02A03"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_dimed"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_lismedi"
+        android:layout_below="@+id/txt_dimed"
+        android:text="This command will help you to check card status like up or down,MAC address,Network Region and Alarms."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_medgat"
+        android:layout_below="@+id/txt_lismedi"
+        android:text="  >  list media-gateway"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_medgat"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_medils"
+        android:layout_below="@+id/txt_medgat"
+        android:text="This command will help you to check all media gateways which are registred in respactive ACD."/>
+
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_medser"
+        android:layout_below="@+id/txt_medils"
+        android:text="  >  list media-server"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_medser"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_lismedisr"
+        android:layout_below="@+id/txt_medser"
+        android:text="This command will help you to check all media servers which are registred in respactive ACD."/>
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_liscodec"
+        android:layout_below="@+id/txt_lismedisr"
+        android:text="  >  list ip-codec-set"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_liscodec"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_lscodec"
+        android:layout_below="@+id/txt_liscodec"
+        android:text="If you want to check all codec set which are created in respective ACD then do it using this command."/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_chcodec"
+        android:layout_below="@+id/txt_lscodec"
+        android:text="  >  change ip-codec-set 2"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_chcodec"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_chancodec"
+        android:layout_below="@+id/txt_chcodec"
+        android:text="This command will help you to change any code set in respactive ACD."/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_discodec"
+        android:layout_below="@+id/txt_lscodec"
+        android:text="  >  display ip-codec-set 2"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_chcodec"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_dispcodec"
+        android:layout_below="@+id/txt_chcodec"
+        android:text="This command will help you to check any code set parameters and permissions in respactive ACD."/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_listbc"
+        android:layout_below="@+id/txt_dispcodec"
+        android:text="  >  list bcms skill 434"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_listbc"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_listbcms"
+        android:layout_below="@+id/txt_listbc"
+        android:text="If you want check how many agent are logged in on any skill do it using above command in respactive ACD."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_sthealth"
+        android:layout_below="@+id/txt_listbcms"
+        android:text="  >  status health"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_sthealth"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_sthelt"
+        android:layout_below="@+id/txt_sthealth"
+        android:text="This is used to check alarms in respactive ACD."/>
+
+
+
+
+
+
+
+
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMD"
+        android:id="@+id/txt_aescv"
+        android:layout_below="@+id/txt_sthelt"
+        android:text="  >  status aesvcs cti-link"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDArrow"
+        android:layout_below="@+id/txt_aescv"
+        android:text="->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/ACDCMDAnswer"
+        android:id="@+id/txt_aecs"
+        android:layout_below="@+id/txt_aescv"
+        android:text="This is help to check that CTI links are established or not in respactive ACD."/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+</ScrollView>

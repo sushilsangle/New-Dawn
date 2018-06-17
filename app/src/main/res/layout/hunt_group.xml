@@ -1,13 +1,188 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#1A237E"
+    android:layout_marginTop="?attr/actionBarSize"
     android:layout_height="match_parent"
-    tools:context="com.sushil.navigationtesting.fragments.HuntGroup">
+    tools:context=".fragments.acd.HuntGroup">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        tools:context=".ui.ui.fragment.acd.HuntGroup">
 
-</FrameLayout>
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/txt_change_id"
+            style="@style/Commands"
+            android:text="  change hunt-group 777" />
+
+
+        <TextView
+            android:id="@+id/txt_hunt"
+            style="@style/TxtAllNames"
+            android:layout_marginTop="25dp"
+            android:text="Hunt Group" />
+
+        <TextView
+            android:id="@+id/txt_hunt_no"
+           style="@style/AllFragmentsStyle"
+            android:textColor="#ffd700"
+            android:layout_below="@+id/txt_hunt"
+            android:layout_marginStart="112dp"
+            android:text="Group Number  :  999777" />
+
+
+        <TextView
+            android:id="@+id/txt_hunt_name"
+            android:layout_below="@+id/txt_hunt_no"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="126dp"
+            android:textColor="#ffd700"
+            android:text="Group Name  :  Test_Hunt" />
+        <TextView
+            android:id="@+id/txt_hunt_exten"
+            android:layout_below="@+id/txt_hunt_name"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="103dp"
+            android:textColor="#ffd700"
+
+            android:text="Group Extension  :  xxx" />
+
+
+        <TextView
+            android:id="@+id/txt_hunt_type"
+            android:layout_below="@+id/txt_hunt_exten"
+            style="@style/AllFragmentsStyle"
+            android:textColor="#ffd700"
+            android:layout_marginStart="132dp"
+            android:text="Group Type  :  Y/N" />
+
+        <TextView
+            android:id="@+id/txt_hunt_ten"
+            style="@style/AllFragmentsStyle"
+            android:textColor="#ffd700"
+            android:layout_below="@+id/txt_hunt_type"
+            android:layout_marginStart="143dp"
+            android:text="Group TN  :  xxx" />
+        <TextView
+            android:id="@+id/txt_hunt_cor"
+            android:textColor="#ffd700"
+            style="@style/AllFragmentsStyle"
+            android:layout_below="@+id/txt_hunt_ten"
+            android:layout_marginStart="134dp"
+            android:text="Group COR  :  xxx" />
+
+        <TextView
+            android:id="@+id/txt_hunt_acd"
+            android:textColor="#ffd700"
+            style="@style/AllFragmentsStyle"
+            android:layout_below="@+id/txt_hunt_cor"
+            android:layout_marginStart="133dp"
+            android:text="Group ACD  :  Y/N" />
+        <TextView
+            android:id="@+id/txt_hunt_queue"
+            style="@style/AllFragmentsStyle"
+            android:layout_below="@+id/txt_hunt_acd"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffd700"
+            android:layout_marginStart="133dp"
+            android:text="Group ACD  :  Y" />
+        <TextView
+            android:id="@+id/txt_hunt_vector"
+            android:textColor="#ffd700"
+            style="@style/AllFragmentsStyle"
+            android:layout_below="@+id/txt_hunt_queue"
+            android:layout_marginStart="112dp"
+            android:text="  Group Vector  :  xxx" />
+
+        <TextView
+            android:id="@+id/txt_hunt_skill"
+            style="@style/AllFragmentsStyle"
+            android:textColor="#ffd700"
+            android:layout_below="@+id/txt_hunt_vector"
+            android:layout_marginStart="127dp"
+            android:text="Group Skill?  :  Y" />
+        <TextView
+            android:id="@+id/txt_hunt_measured"
+            style="@style/AllFragmentsStyle"
+            android:textColor="#ffd700"
+            android:layout_below="@+id/txt_hunt_skill"
+            android:layout_marginStart="98dp"
+            android:text="Group Measured  :  both" />
+        <TextView
+            android:id="@+id/txt_change_idd"
+           style="@style/Commands"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_hunt_measured"
+            android:text="  change hunt-group 777" />
+
+
+        <TextView
+            android:id="@+id/txt_hunt_info"
+            style="@style/TxtAllNames"
+            android:layout_below="@+id/txt_change_idd"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="98dp"
+            android:layout_marginLeft="10dp"
+            android:text="Hunt/Skill related commands..!" />
+
+        <TextView
+            android:id="@+id/txt_hunt_change"
+           style="@style/AllFragmentsStyle"
+            android:layout_below="@+id/txt_hunt_info"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="98dp"
+            android:textColor="#ffd700"
+            android:text="change hunt-group  :  xxx" />
+        <TextView
+            android:id="@+id/txt_hunt_dupl"
+            style="@style/AllFragmentsStyle"
+            android:layout_below="@+id/txt_hunt_change"
+            android:layout_marginTop="3dp"
+            android:textColor="#ffd700"
+            android:layout_marginStart="84dp"
+            android:text="duplicate hunt-group  :  xxx" />
+        <TextView
+            android:id="@+id/txt_hunt_list"
+            style="@style/AllFragmentsStyle"
+            android:textColor="#ffd700"
+            android:layout_below="@+id/txt_hunt_dupl"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="123dp"
+            android:text="list hunt-group  :  xxx" />
+        <TextView
+            android:id="@+id/txt_hunt_listt"
+            style="@style/AllFragmentsStyle"
+            android:textColor="#ffd700"
+            android:layout_below="@+id/txt_hunt_list"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="81dp"
+            android:layout_marginLeft="10dp"
+            android:text="list usage hunt-group  :  xxx" />
+        <TextView
+            android:id="@+id/txt_hunt_monitor"
+            style="@style/AllFragmentsStyle"
+            android:layout_below="@+id/txt_hunt_listt"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffd700"
+            android:text="monitor bcms skill  :  xxx" />
+        <TextView
+            android:id="@+id/txt_hunt_disp"
+            style="@style/AllFragmentsStyle"
+            android:layout_below="@+id/txt_hunt_monitor"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="96dp"
+            android:textColor="#ffd700"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="display hunt-group  :  xxx" />
+
+
+
+    </RelativeLayout>
+</ScrollView>

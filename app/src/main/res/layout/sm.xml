@@ -1,13 +1,152 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.sushil.navigationtesting.fragments.sip.SM">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.AppCompatTextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:background="#D7CCC8"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_dark"
+        android:id="@+id/txt_smfirst"
+        android:text="  What is mean by SM..?" />
 
-</FrameLayout>
+    <android.support.v7.widget.AppCompatTextView
+       style="@style/SIPCallFlowArrow"
+       android:layout_below="@+id/txt_smfirst"
+        android:text=" ->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sm_def"
+        android:layout_below="@+id/txt_smfirst"
+        android:text="SM stands for Session Manager. It used for SIP routing and integration tool. Its funcations are works as SIP proxy, registrar and location server."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_below="@+id/txt_sm_def"
+        android:text=" ->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sm_defn"
+        android:layout_below="@+id/txt_sm_def"
+        android:text="It provides up to 25,000 locations and 3 Million Busy Hour Call Completions."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_below="@+id/txt_sm_defn"
+        android:text=" ->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sm_defin"
+        android:layout_below="@+id/txt_sm_defn"
+        android:text="You can register up to 125000 SIP endpoints on SM."/>
+
+
+
+
+
+
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPFlowCMD"
+        android:id="@+id/txt_smgr_role"
+        android:layout_below="@+id/txt_sm_defin"
+        android:text="  What role plays SMGR in Avaya..>"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_below="@+id/txt_smgr_role"
+        android:text=" ->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_smgr_rl"
+        android:layout_below="@+id/txt_smgr_role"
+        android:text="You can register up to 125000 SIP endpoints on SM."/>
+
+
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPFlowCMD"
+        android:id="@+id/txt_smgr_menu"
+        android:layout_below="@+id/txt_smgr_rl"
+        android:text="  How to mapped DID in SMGR..?"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_below="@+id/txt_smgr_menu"
+        android:text=" ->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+       style="@style/SIPCallFlowText"
+        android:id="@+id/txt_smgr_did"
+        android:layout_below="@+id/txt_smgr_menu"
+        android:text="Now login into SMGR once done follow below path."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_below="@+id/txt_smgr_did"
+        android:text=" ->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_smgr_go"
+        android:layout_below="@+id/txt_smgr_did"
+        android:text="Go to"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_smgr_di"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_marginStart="63dp"
+        android:layout_below="@+id/txt_smgr_did"
+        android:text="Routing"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_marginStart="110dp"
+        android:layout_below="@+id/txt_smgr_did"
+        android:text=" ->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_smgr_adaptation"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_marginStart="129dp"
+        android:layout_below="@+id/txt_smgr_did"
+        android:text="Adaptation"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_marginStart="199dp"
+        android:layout_below="@+id/txt_smgr_did"
+        android:text=" ->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_smgr_ada"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_marginStart="220dp"
+        android:layout_below="@+id/txt_smgr_did"
+        android:text="Adaptation"/>
+
+
+
+
+
+
+</RelativeLayout>
+
+</ScrollView>

@@ -2,10 +2,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sushil.navigationtesting.fragments.IpsiCard">
+    android:layout_marginTop="?attr/actionBarSize"
+    tools:context="com.sushil.navigationtesting.fragments.navigation.IpsiCard">
 
     <RelativeLayout
-        android:layout_marginTop="?attr/actionBarSize"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <!-- TODO: Update blank fragment layout -->
@@ -262,9 +262,10 @@
             android:layout_marginStart="25dp"
             android:layout_marginLeft="5dp"
             android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
             android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_pi"
-            android:text="ping 192.11.13.6/"/>
+            android:text="ping 192.11.13.6"/>
 
 
         <android.support.v7.widget.AppCompatTextView
@@ -499,6 +500,284 @@
             android:layout_below="@+id/txt_ipsi_neg"
             android:textColor="@android:color/holo_green_dark"
             android:text="disable auto negotiation"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_mdsua"
+           android:layout_margin="9dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_below="@+id/txt_ipsi_dis"
+            android:text="------------------------------------------------------------------------------------------"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_cmdcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#afafaf"
+            android:gravity="center"
+            android:layout_below="@+id/txt_mdsua"
+            android:text="Follow steps to upgrade IPSI Firmware"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_cmdcon" />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_ip"
+            android:layout_below="@+id/txt_cmdcon"
+            android:text="First login into Avaya web page by using ACD IP."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_ip" />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_tip"
+            android:layout_below="@+id/txt_ip"
+            android:text="First login into Avaya web page by using ACD IP."/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_tip" />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_tips"
+            android:layout_below="@+id/txt_tip"
+            android:text="Once login go to "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_tipsf"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold"
+            android:layout_marginStart="130dp"
+            android:layout_below="@+id/txt_tip"
+            android:text="Administrator"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_tipsf" />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_tipt"
+            android:layout_below="@+id/txt_tipsf"
+            android:text="In ASA web page go to"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_tipss"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginStart="171dp"
+            android:layout_below="@+id/txt_tipsf"
+            android:text="IPSI Firmware upgrades "/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_tipss" />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_tis"
+            android:layout_below="@+id/txt_tipss"
+            android:text="Now click on                          and check IPSI IP,board,HW,FW and name"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_view"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginStart="111dp"
+            android:layout_below="@+id/txt_tipss"
+            android:text="IPSI Version"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_tis" />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_busy"
+            android:layout_below="@+id/txt_tis"
+            android:text="Now login into ACD/ASA and busy the standby IPSI. with the help of below command."/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_chg"
+            android:layout_below="@+id/txt_busy"
+            android:text="   >  busyout ipserver-interface 9b"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_chg" />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_downd"
+            android:layout_below="@+id/txt_chg"
+            android:text="Now click on                                               tab on new page.."/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_doncm"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginStart="111dp"
+            android:layout_below="@+id/txt_chg"
+            android:text="Download IPSI Firmware"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_doncm" />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_dostr"
+            android:layout_below="@+id/txt_doncm"
+            android:text="Click on                                       "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_dos"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginStart="79dp"
+            android:layout_below="@+id/txt_doncm"
+            android:text="Start Download Now"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_dos" />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_dotr"
+            android:layout_below="@+id/txt_dos"
+            android:text="IPSI Target select"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_dosu"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginStart="141dp"
+            android:layout_below="@+id/txt_dos"
+            android:text="IPSI cabinate number       carrier ID"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="275dp"
+            android:layout_below="@+id/txt_dos"
+            android:background="@drawable/ips"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="355dp"
+            android:layout_below="@+id/txt_dos"
+            android:background="@drawable/ipsb"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_dotr" />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_ipn"
+            android:layout_below="@+id/txt_dotr"
+            android:text="Also select firmware file as per your file name."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_ipn" />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_ipndon"
+            android:layout_below="@+id/txt_ipn"
+            android:text="Then click on                                       and check the status of IPSI"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_ipndony"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginStart="115dp"
+            android:layout_below="@+id/txt_ipn"
+            android:text="Download Firmware"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_ipndon" />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_statusip"
+            android:layout_below="@+id/txt_ipndon"
+            android:text="After completing above steps check the result on next page like firmware gets downloaded successfully."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_statusip" />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_comp"
+            android:layout_below="@+id/txt_statusip"
+            android:text="Once completing above steps select on below tab  "/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_comp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_compe"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_comp"
+            android:text="Activate IPSI Upgrade"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_compe" />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_complt"
+            android:layout_below="@+id/txt_compe"
+            android:text="Now check                                 If Its successfull then... "/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_complte"
+            android:layout_marginStart="100dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@+id/txt_compe"
+            android:text="Activation status"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnsArrow"
+            android:text=" ->"
+            android:layout_below="@+id/txt_complte" />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AnswerStyle"
+            android:id="@+id/txt_complts"
+            android:layout_below="@+id/txt_complte"
+            android:text="Now login into respactive ACD then execute below command and check the IPSI stataus."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Questions"
+            android:id="@+id/txt_chgs"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/txt_complts"
+            android:text="   >  list ipserver interface all"/>
+
+
+
+
+
+
+
+
+
+
 
 
 

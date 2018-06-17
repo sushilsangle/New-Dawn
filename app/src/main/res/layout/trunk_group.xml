@@ -1,13 +1,189 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sushil.navigationtesting.fragments.TrunkGroup">
+    android:layout_marginTop="?attr/actionBarSize"
+    android:background="#1A237E"
+    tools:context=".fragments.acd.TrunkGroup">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <!-- TODO: Update blank fragment layout -->
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_change_id"
+            style="@style/Commands"
+            android:text="  display trunk-group 923" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_vdn"
+            style="@style/TxtAllNames"
+            android:layout_below="@+id/txt_change_id"
+            android:text="Trunk Group" />
+        <TextView
+            android:id="@+id/txt_vdn_extension"
+           style="@style/AllFragmentsStyle"
+            android:textColor="#ffd700"
+            android:layout_marginStart="121dp"
+            android:layout_below="@+id/txt_vdn"
+            android:text="Group Number  : 9997" />
+
+        <TextView
+            android:id="@+id/txt_vdn_name"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="135dp"
+            android:textColor="#ffd700"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/txt_vdn_extension"
+            android:text="Group Name  : Test Trunk" />
+        <TextView
+            android:id="@+id/txt_vdn_desti"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="162dp"
+            android:textColor="#ffd700"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/txt_vdn_name"
+            android:text="Direction : two-way" />
+        <TextView
+            android:id="@+id/txt_vdn_overrid"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="144dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffd700"
+            android:layout_below="@+id/txt_vdn_desti"
+            android:text="group Type  : ISDN/SIP" />
+        <TextView
+            android:id="@+id/txt_vdn_cor"
+            style="@style/AllFragmentsStyle"
+            android:textColor="#ffd700"
+            android:layout_marginStart="186dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/txt_vdn_overrid"
+            android:text="COR  : xxx" />
+        <TextView
+            android:id="@+id/txt_vdn_ten"
+            style="@style/AllFragmentsStyle"
+            android:textColor="#ffd700"
+            android:gravity="center"
+            android:layout_marginStart="32dp"
+
+            android:layout_below="@+id/txt_vdn_cor"
+            android:text="TN  : xxx" />
+
+        <TextView
+            android:id="@+id/txt_vdn_measured"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="149dp"
+            android:textColor="#ffd700"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/txt_vdn_ten"
+            android:text="CD Report  : Y/N" />
+
+        <TextView
+            android:id="@+id/txt_vdn_originext"
+            style="@style/AllFragmentsStyle"
+            android:textColor="#ffd700"
+            android:layout_marginStart="134dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/txt_vdn_measured"
+            android:text="Service Type : tie" />
+
+        <TextView
+            android:id="@+id/txt_vdn_skillf"
+            android:textColor="#ffd700"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="183dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/txt_vdn_originext"
+            android:text="TAC  : #923" />
+        <TextView
+            android:id="@+id/txt_trunk_carrie"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="113dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffd700"
+
+            android:layout_below="@+id/txt_vdn_skillf"
+            android:text="Carrier Medium  : PRI/BRI" />
+
+        <TextView
+            android:id="@+id/txt_trunk_signaling"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="110dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffd700"
+            android:layout_below="@+id/txt_trunk_carrie"
+            android:text="Signaling Group  : 923" />
+
+
+
+
+        <TextView
+            android:id="@+id/txt_change_displ"
+            style="@style/Commands"
+            android:layout_marginTop="9dp"
+            android:layout_below="@+id/txt_trunk_signaling"
+            android:text="  display trunk-group   923" />
+        <TextView
+            android:id="@+id/txt_vdn_chang"
+            style="@style/TxtAllNames"
+            android:gravity="center"
+            android:layout_below="@+id/txt_change_displ"
+            android:text=" Trunk-Group related commands." />
+
+
+        <TextView
+            android:id="@+id/txt_vdn_duplicate"
+            style="@style/AllFragmentsStyle"
+            android:textColor="#ffd700"
+            android:layout_marginStart="77dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/txt_vdn_chang"
+            android:text="duplicate trunk-group  : xxx" />
+        <TextView
+            android:id="@+id/txt_vdn_changev"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="111dp"
+            android:textColor="#ffd700"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/txt_vdn_duplicate"
+            android:text="add trunk-group  : xxx" />
+        <TextView
+            android:id="@+id/txt_vdn_listusg"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="88dp"
+            android:textColor="#ffd700"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/txt_vdn_changev"
+            android:text="change trunk-group  : xxx" />
+        <TextView
+            android:id="@+id/txt_vdn_add"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="114dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffd700"
+            android:layout_below="@+id/txt_vdn_listusg"
+            android:text="list trunk-group  : xxx" />
+        <TextView
+            android:id="@+id/txt_trunk_sig"
+            style="@style/AllFragmentsStyle"
+            android:textColor="#ffd700"
+            android:layout_marginStart="63dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/txt_vdn_add"
+            android:text="display signaling-group  : xxx" />
+        <TextView
+            android:id="@+id/txt_star_add"
+            style="@style/AllFragmentsStyle"
+            android:gravity="center"
+            android:textColor="#ffd700"
+            android:layout_below="@+id/txt_trunk_sig"
+            android:layout_marginBottom="19dp"
+            android:text="once you have trunk configuration part then you can mapped DID numbers on ISDN Trunk refer below sample." />
+
+
+    </RelativeLayout>
+
+</ScrollView>

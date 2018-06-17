@@ -1,4 +1,4 @@
-package com.sushil.navigationtesting.fragments;
+package com.sushil.navigationtesting.fragments.sip;
 
 
 import android.content.Intent;
@@ -40,6 +40,7 @@ public class SIP extends Fragment implements RecyclerItemClickInterface {
         list.add("AMS");
         list.add("SMGR");
         list.add("SIP Flow");
+        list.add("SIP Responses");
 
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         adapter=new ListAdapter(list,this);

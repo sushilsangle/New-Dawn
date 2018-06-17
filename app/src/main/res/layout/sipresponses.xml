@@ -1,13 +1,463 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
     tools:context="com.sushil.navigationtesting.fragments.sip.SIPResponses">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowText"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:id="@+id/txt_sip_response"
+            android:text="There are main six SIP Responses."
+            />
+       <!-- <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_sip_regist"
+            android:layout_below="@+id/txt_sip_response"
+            android:text=" 1."/>-->
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPFlowCMD"
+            android:id="@+id/txt_sip_res"
+            android:textStyle="bold"
+            android:layout_below="@+id/txt_sip_response"
+            android:text="  1xx: Provisional/Informational Responses."/>
 
-</FrameLayout>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_sip_rep"
+            android:layout_below="@+id/txt_sip_res"
+            android:text=" ->"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+           style="@style/SIPCallFlowText"
+            android:id="@+id/txt_sip_resp"
+            android:layout_below="@+id/txt_sip_res"
+            android:text="SIP responses are end to end (except 100 Trying). The main objective of informational responses is to stop retransmission of INVITE requests."/>
+        <android.support.v7.widget.AppCompatTextView
+           style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_sip_resf"
+            android:layout_below="@+id/txt_sip_resp"
+            android:text="  100 Trying..."/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+           style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_hundred"
+            android:layout_below="@+id/txt_sip_resf"
+            android:text=" ->"/>
+        <android.support.v7.widget.AppCompatTextView
+           style="@style/SIPCallFlowText"
+            android:id="@+id/txt_sip_hundr"
+            android:layout_below="@+id/txt_sip_resf"
+            android:text="This respnse is hop-by-hop also it used to avoid the retransmission of INVITE requests."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_hund"
+            android:layout_below="@+id/txt_sip_hundr"
+            android:text=" ->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowText"
+            android:id="@+id/txt_sip_hundrs"
+            android:layout_below="@+id/txt_sip_hundr"
+            android:text="It is not forwarded and may not contain a message body."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_sip_ring"
+            android:layout_below="@+id/txt_sip_hundrs"
+            android:text="  180 Ringing..."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_ringn"
+            android:layout_below="@+id/txt_sip_ring"
+            android:text=" ->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowText"
+            android:id="@+id/txt_sip_rin"
+            android:layout_below="@+id/txt_sip_ring"
+            android:text="The UA receiving INVITE is trying to alert the calling party. Provisional responses may be used to initiate local ring back."/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_sip_ford"
+            android:layout_below="@+id/txt_sip_rin"
+            android:text="  181 Call is Being Forwarded"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_for"
+            android:layout_below="@+id/txt_sip_ford"
+            android:text=" ->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowText"
+            android:id="@+id/txt_sip_frd"
+            android:layout_below="@+id/txt_sip_ford"
+            android:text="This response is used for forwarding call to another endpoint."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_sip_qu"
+            android:layout_below="@+id/txt_sip_frd"
+            android:text="  181 Call is Being Forwarded"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_que"
+            android:layout_below="@+id/txt_sip_qu"
+            android:text=" ->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowText"
+            android:id="@+id/txt_sip_quee"
+            android:layout_below="@+id/txt_sip_qu"
+            android:text="This response is used for INVITE has been received and will be processed in a queue."/>
+
+
+
+       <!-- <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_sip_sucess"
+            android:layout_below="@+id/txt_sip_quee"
+            android:text=" 2."/>-->
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPFlowCMD"
+            android:id="@+id/txt_sip_sues"
+            android:textStyle="bold"
+            android:layout_below="@+id/txt_sip_quee"
+            android:text="  2xx: Success Responses."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_sip_sus"
+            android:layout_below="@+id/txt_sip_sues"
+            android:text="  200 OK"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_suc"
+            android:layout_below="@+id/txt_sip_sus"
+            android:text=" ->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowText"
+            android:id="@+id/txt_sip_succes"
+            android:layout_below="@+id/txt_sip_sus"
+            android:text="It used to invaite  UA receving INVITE also it stop ringing.Phone has been answered also successful final response met with ACK includes SDP.
+    200 OK is used to accept a session invitation." />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_sip_ac"
+            android:layout_below="@+id/txt_sip_succes"
+            android:text="  202 Accept"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_accro"
+            android:layout_below="@+id/txt_sip_ac"
+            android:text=" ->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowText"
+            android:id="@+id/txt_sip_acces"
+            android:layout_below="@+id/txt_sip_ac"
+            android:text="It used in responses to SUBSCRIBE, REFER methods.The UAS has received and understood request,but that request may not processed by server. "/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPFlowCMD"
+            android:id="@+id/txt_redirect"
+            android:layout_below="@+id/txt_sip_acces"
+            android:text="  3xx: Redirect Responses"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_sip_redi"
+            android:layout_below="@+id/txt_redirect"
+            android:text="  300 Multiple Choices"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_choic"
+            android:layout_below="@+id/txt_sip_redi"
+            android:text=" ->"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowText"
+            android:id="@+id/txt_sip_redire"
+            android:layout_below="@+id/txt_sip_redi"
+            android:text="It contain multiple contact header also location service has returned multiple SIP URI in Request-URI."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_sip_rpro"
+            android:layout_below="@+id/txt_sip_redire"
+            android:text="  305 Use Proxy"/>
+        <android.support.v7.widget.AppCompatTextView
+           style="@style/SIPCallFlowArrow"
+            android:layout_below="@+id/txt_sip_rpro"
+            android:text=" ->"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowText"
+            android:id="@+id/txt_sip_rprox"
+            android:layout_below="@+id/txt_sip_rpro"
+            android:text="This response point to proxy server which is having authoritative info about calling party."/>
+        <android.support.v7.widget.AppCompatTextView
+              style="@style/SIPFlowCMD"
+            android:id="@+id/txt_client"
+            android:layout_below="@+id/txt_sip_rprox"
+            android:text="  4xx: Client Failure Responses"
+        />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowText"
+            android:id="@+id/txt_sip_clre"
+            android:layout_below="@+id/txt_client"
+            android:text="The request can not be fulfilled at this server or it contains bad syntax."/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_sip_clint"
+            android:layout_below="@+id/txt_sip_clre"
+            android:text="--> 400 Bad Request..."/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_sip_unauth"
+            android:layout_below="@+id/txt_sip_clint"
+            android:text="--> 401 Unauthorized..."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_sip_pay"
+            android:layout_below="@+id/txt_sip_unauth"
+            android:text="--> 402 Payment Required..."/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:layout_below="@+id/txt_sip_pay"
+            android:text=" ->"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowText"
+            android:id="@+id/txt_sip_ginfo"
+            android:layout_below="@+id/txt_sip_pay"
+            android:text="There are more method in SIP log you can read those accordingly...."/>
+
+        <android.support.v7.widget.AppCompatTextView
+          style="@style/SIPFlowCMD"
+            android:id="@+id/txt_serverf"
+           android:layout_below="@+id/txt_sip_ginfo"
+           android:text="  5xx: Server Failure Responses"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_server"
+            android:layout_below="@+id/txt_serverf"
+            android:text=" ->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowText"
+            android:id="@+id/txt_sip_serginfo"
+            android:layout_below="@+id/txt_serverf"
+            android:text="The server failed to fulfil an apparently valid request.This request can not processed because of there are some internal errors on server.The response may Retry-After header field.  "/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_sip_er"
+            android:layout_below="@+id/txt_sip_serginfo"
+            android:text="  500 Server Internal Error..."/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_errin"
+            android:layout_below="@+id/txt_sip_er"
+            android:text=" ->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowText"
+            android:id="@+id/txt_sip_ers"
+            android:layout_below="@+id/txt_sip_er"
+            android:text="The server has experienced some kind of error that is preventing it from processing the request.The client can retry request again at this server after several seconds."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_sip_imp"
+            android:layout_below="@+id/txt_sip_ers"
+            android:text="  501 Not Implemented..."/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_im"
+            android:layout_below="@+id/txt_sip_imp"
+            android:text=" ->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowText"
+            android:id="@+id/txt_sip_imple"
+            android:layout_below="@+id/txt_sip_imp"
+            android:text="The server is unable to process request because it is not supported."/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_sip_gate"
+            android:layout_below="@+id/txt_sip_imple"
+            android:text="  502 Bad Gateway..."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:layout_below="@+id/txt_sip_gate"
+            android:text=" ->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowText"
+            android:id="@+id/txt_sip_gatew"
+            android:layout_below="@+id/txt_sip_gate"
+            android:text="This response is sent by a proxy that is acting as a gateway to another network.There may be some problem in the other network."/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_sip_unav"
+            android:layout_below="@+id/txt_sip_gatew"
+            android:text="  503 Service Unavailable..."/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:layout_below="@+id/txt_sip_unav"
+            android:text=" ->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowText"
+            android:id="@+id/txt_sip_unavl"
+            android:layout_below="@+id/txt_sip_unav"
+            android:text="This response of that requested service is temporarily unavailable at that time.The request can be retried after a few seconds."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_sip_out"
+            android:layout_below="@+id/txt_sip_unavl"
+            android:text="  504 Gateway Timeout..."/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:layout_below="@+id/txt_sip_out"
+            android:text=" ->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowText"
+            android:id="@+id/txt_sip_time"
+            android:layout_below="@+id/txt_sip_out"
+            android:text="It is a server error class response because the call is failing due to a failure of the server in accessing resources outside the SIP network."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_sip_supprt"
+            android:layout_below="@+id/txt_sip_time"
+            android:text="  505 Version Not Supported..."/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:layout_below="@+id/txt_sip_supprt"
+            android:text=" ->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowText"
+            android:id="@+id/txt_sip_suprt"
+            android:layout_below="@+id/txt_sip_supprt"
+            android:text="The server denies a request when it comes with a different SIP version number. The denial is indicated in this message."/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_sip_fai"
+            android:layout_below="@+id/txt_sip_suprt"
+            android:text="  513 Message Too Larged..."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:layout_below="@+id/txt_sip_fai"
+            android:text=" ->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowText"
+            android:id="@+id/txt_sip_fail"
+            android:layout_below="@+id/txt_sip_fai"
+            android:text="It used to reject SDP offer which required preconditions cannot be met."/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+           style="@style/SIPFlowCMD"
+            android:id="@+id/txt_globle"
+            android:layout_below="@+id/txt_sip_fail"
+            android:text="  6xx: Global Failure Responses"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:layout_below="@+id/txt_globle"
+            android:text=" ->"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowText"
+            android:id="@+id/txt_sip_glb"
+            android:layout_below="@+id/txt_globle"
+            android:text="The request cannot be fulfilled at any server.The server having user information by requested URL in every possible instance should send global error class response."/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_everywhere"
+            android:layout_below="@+id/txt_sip_glb"
+            android:text="  600 Busy Everywhere..."/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:layout_below="@+id/txt_everywhere"
+            android:text=" ->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowText"
+            android:id="@+id/txt_sip_glble"
+            android:layout_below="@+id/txt_everywhere"
+            android:text="It indicates that call to specified Request-URI could be answered in other locations.."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_decline"
+            android:layout_below="@+id/txt_sip_glble"
+            android:text="  603 Decline..."/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:layout_below="@+id/txt_decline"
+            android:text=" ->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowText"
+            android:id="@+id/txt_sip_decl"
+            android:layout_below="@+id/txt_decline"
+            android:text="It indicates called party is busy or it dose not accept call."/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_any"
+            android:layout_below="@+id/txt_sip_decl"
+            android:text="  603 Decline..."/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:layout_below="@+id/txt_any"
+            android:text=" ->"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowText"
+            android:id="@+id/txt_sip_anywhr"
+            android:layout_below="@+id/txt_any"
+            android:text="This response same as 404 Not Found but user in the Request-URI cannot be found anywhere."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:id="@+id/txt_acpt"
+            android:layout_below="@+id/txt_sip_anywhr"
+            android:text="  606 Not Acceptable..."/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowArrow"
+            android:layout_below="@+id/txt_acpt"
+            android:text=" ->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/SIPCallFlowText"
+            android:id="@+id/txt_sip_accpt"
+            android:layout_below="@+id/txt_acpt"
+            android:layout_marginBottom="20dp"
+            android:text="The response may contain Warning header field with a numerical code describing exactly what was not acceptable."/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

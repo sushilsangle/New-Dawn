@@ -1,13 +1,186 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<ScrollView android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sushil.navigationtesting.fragments.Vector">
+    android:background="#1A237E"
+    android:layout_marginTop="?attr/actionBarSize"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        tools:context=".ui.ui.fragment.acd.Vector">
 
-</FrameLayout>
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/txt_change_id"
+            style="@style/Commands"
+            android:text="  display vector 999" />
+        <TextView
+            android:id="@+id/txt_vector"
+            style="@style/TxtAllNames"
+            android:layout_below="@+id/txt_change_id"
+            android:text="Vector" />
+        <TextView
+            android:id="@+id/txt_vector_f"
+            style="@style/MastersTvarrow"
+            android:layout_below="@+id/txt_vector"
+            android:text="@string/arrow" />
+
+        <TextView
+            android:id="@+id/txt_vector_extension"
+           style="@style/AllFragmentsStyle"
+            android:layout_marginStart="25dp"
+            android:textColor="#ffd700"
+            android:layout_below="@+id/txt_vector"
+            android:text="@string/you_can_put_below_command_and_check_which_vector_is_free_as_per_your_acd_setup" />
+        <TextView
+            android:id="@+id/txt_vector_desti"
+            style="@style/Commands"
+            android:layout_below="@+id/txt_vector_extension"
+            android:text="  list vector" />
+
+        <TextView
+            android:id="@+id/txt_in_name"
+            style="@style/MastersTvarrow"
+            android:layout_below="@+id/txt_vector_desti"
+            android:text="@string/arrows" />
+
+        <TextView
+            android:id="@+id/txt_vector_overrid"
+            style="@style/AllFragmentsStyle"
+            android:textColor="#ffd700"
+            android:layout_marginStart="25dp"
+            android:layout_below="@+id/txt_vector_desti"
+            android:text="Once you got free vector then note that vector number and execute below command." />
+
+        <TextView
+            android:id="@+id/txt_change_name"
+           style="@style/MastersTvarrow"
+            android:layout_below="@+id/txt_vector_overrid"
+            android:text="->" />
+
+
+        <TextView
+            android:id="@+id/txt_vector_cor"
+            style="@style/Commands"
+
+            android:layout_below="@+id/txt_vector_overrid"
+            android:text="  change vector : xxx" />
+
+        <TextView
+            android:id="@+id/txt_vector_ten"
+            style="@style/MastersTvarrow"
+            android:layout_below="@+id/txt_vector_cor"
+            android:text="->" />
+        <TextView
+            android:id="@+id/txt_vector_measured"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="25dp"
+            android:textColor="#ffd700"
+            android:layout_below="@+id/txt_vector_cor"
+            android:text="Now give the vector " />
+        <TextView
+            android:id="@+id/txt_vector_namee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:textStyle="bold"
+            android:layout_marginStart="158dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_below="@+id/txt_vector_cor"
+            android:text="Name : Test" />
+        <TextView
+            android:id="@+id/txt_vector_originext"
+           style="@style/MastersTvarrow"
+            android:layout_below="@+id/txt_vector_measured"
+            android:text="->" />
+
+        <TextView
+            android:id="@+id/txt_vector_skillf"
+            style="@style/AllFragmentsStyle"
+            android:textColor="#ffd700"
+            android:layout_marginStart="25dp"
+            android:layout_below="@+id/txt_vector_measured"
+            android:text="Also set the                      and " />
+        <TextView
+            android:id="@+id/txt_vector_tenat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_below="@+id/txt_vector_measured"
+            android:text="Tenant(TN)" />
+        <TextView
+            android:id="@+id/txt_vector_ccor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:textStyle="bold"
+            android:layout_marginStart="203dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/txt_vector_measured"
+            android:text="COR" />
+        <TextView
+            android:id="@+id/txt_vector_origine"
+           style="@style/MastersTvarrow"
+            android:layout_below="@+id/txt_vector_ccor"
+            android:text="->" />
+        <TextView
+            android:id="@+id/txt_change_displ"
+            android:textColor="#ffd700"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="25dp"
+            android:layout_below="@+id/txt_vector_skillf"
+            android:text="Refer the below commands for vector." />
+
+
+
+        <TextView
+            android:id="@+id/txt_vector_chang"
+            style="@style/MastersTvarrow"
+            android:layout_below="@+id/txt_change_displ"
+            android:text="->" />
+        <TextView
+            android:id="@+id/txt_vector_duplicate"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="25dp"
+            android:textColor="#ffd700"
+            android:layout_below="@+id/txt_change_displ"
+            android:text="duplicate vector  : xxx" />
+        <TextView
+            android:id="@+id/txt_vector_changev"
+           style="@style/MastersTvarrow"
+            android:layout_below="@+id/txt_vector_duplicate"
+            android:text="->"
+            />
+
+        <TextView
+            android:id="@+id/txt_vector_listusg"
+            style="@style/AllFragmentsStyle"
+            android:textColor="#ffd700"
+            android:layout_marginStart="23dp"
+            android:layout_below="@+id/txt_vector_duplicate"
+            android:text="list usage vector  : xxx" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtvec_list"
+            style="@style/MastersTvarrow"
+            android:text="->"
+            android:layout_below="@+id/txt_vector_listusg"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AllFragmentsStyle"
+            android:id="@+id/txt_vec_us"
+            android:textColor="#ffd700"
+            android:layout_marginStart="25dp"
+            android:layout_below="@+id/txt_vector_listusg"
+            android:text="If you want to know which VDN is mapped with any vector then execute above command with vector number. "/>
+    </RelativeLayout>
+
+</ScrollView>

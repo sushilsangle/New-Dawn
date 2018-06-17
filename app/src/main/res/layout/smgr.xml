@@ -1,13 +1,369 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.sushil.navigationtesting.fragments.sip.SMGR">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.AppCompatTextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:background="#D7CCC8"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_dark"
+        android:id="@+id/txt_smgr"
+        android:text="  What is mean by SMGR..?" />
+    <android.support.v7.widget.AppCompatTextView
+       style="@style/SIPCallFlowArrow"
+        android:layout_below="@+id/txt_smgr"
+        android:text=" ->"/>
 
-</FrameLayout>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_smgru"
+        android:layout_below="@+id/txt_smgr"
+        android:text=" SMGR stands for System Manager Group Role.It is a tool which configure, maintain and administer the core devices called as ASM, CM, MM etc.."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_below="@+id/txt_smgru"
+        android:text=" ->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_smgruf"
+        android:layout_below="@+id/txt_smgru"
+        android:text=" It is offline database also 1+1 redundancy which can be split. It is not part of any SIP signaling."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPFlowCMD"
+        android:id="@+id/txt_smgr_flow"
+        android:layout_below="@+id/txt_smgruf"
+        android:text="  Below is the physical connectivity of SMGR and SM."/>
+
+    <ImageView
+        android:id="@+id/img_smgrflow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_below="@+id/txt_smgr_flow"
+        android:background="@drawable/smgrs"/>
+
+
+<android.support.v7.widget.AppCompatTextView
+   style="@style/SIPCallFlowArrow"
+    android:layout_below="@+id/img_smgrflow"
+    android:text=" ->"/>
+    <android.support.v7.widget.AppCompatTextView
+       style="@style/SIPCallFlowText"
+        android:id="@+id/txt_smgr_eth"
+        android:layout_below="@+id/img_smgrflow"
+        android:text="In              Eth0 is interface."/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_marginStart="40dp"
+        android:layout_below="@+id/img_smgrflow"
+        android:text="SMGR"
+        android:textColor="@android:color/holo_green_dark"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_below="@+id/txt_smgr_eth"
+        android:text=" ->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_smgr_smeth"
+        android:layout_below="@+id/txt_smgr_eth"
+        android:text=" In        Eth0 is Management interface."/>
+    <android.support.v7.widget.AppCompatTextView
+       style="@style/SIPCallFlowArrow"
+        android:layout_marginStart="44dp"
+        android:layout_below="@+id/txt_smgr_eth"
+        android:text="SM"
+        android:textColor="@android:color/holo_green_dark"/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_below="@+id/txt_smgr_smeth"
+        android:text=" ->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_sm_eth"
+        android:layout_below="@+id/txt_smgr_smeth"
+        android:text="Eth2 is SM100 interface/security module."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_below="@+id/txt_sm_eth"
+        android:text=" ->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_smgr_con"
+        android:layout_below="@+id/txt_sm_eth"
+        android:text="SMGR is installed on either S8800 or on Avaya Common Server (DL360)"/>
+
+
+
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPFlowCMD"
+        android:id="@+id/txt_smgr_entityq"
+        android:layout_below="@+id/txt_smgr_con"
+        android:text=" What is mean by SIP Entity..?"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_below="@+id/txt_smgr_entityq"
+        android:text=" ->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_smgr_entitya"
+        android:layout_below="@+id/txt_smgr_entityq"
+        android:text="dskdsadueh dhsgdhsgdys gdy hg "/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPFlowCMD"
+        android:id="@+id/txt_smgr_enconfig"
+        android:layout_below="@+id/txt_smgr_entitya"
+        android:text=" What is mean by SIP Entity..?"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_below="@+id/txt_smgr_enconfig"
+        android:text=" ->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_smgr_entconfig"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_below="@+id/txt_smgr_enconfig"
+        android:text="Login into SMGR"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_marginStart="130dp"
+        android:layout_below="@+id/txt_smgr_enconfig"
+        android:text=" ->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_smgr_entcfig"
+        android:layout_marginStart="150dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_below="@+id/txt_smgr_enconfig"
+        android:text="Roting"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_marginStart="195dp"
+        android:layout_below="@+id/txt_smgr_enconfig"
+        android:text=" ->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_smgr_enty"
+        android:layout_marginStart="219dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_below="@+id/txt_smgr_enconfig"
+        android:text="SIP Entity"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_marginStart="279dp"
+        android:layout_below="@+id/txt_smgr_enconfig"
+        android:text=" ->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_smgr_entyy"
+        android:layout_marginStart="302dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_below="@+id/txt_smgr_enconfig"
+        android:text="New..."/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_smgr_ent"
+        android:layout_margin="12dp"
+        android:layout_below="@+id/txt_smgr_entyy"
+        android:background="@drawable/sipentity"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_below="@+id/txt_smgr_ent"
+        android:text=" ->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_smgr_fqd"
+        android:layout_below="@+id/txt_smgr_ent"
+        android:text="As per above snap there are more fields available in SIP Entity form but above are most important fields."/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_below="@+id/txt_smgr_fqd"
+        android:text=" ->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:layout_below="@+id/txt_smgr_fqd"
+        android:id="@+id/txt_smgr_type"
+        android:text="The Type should be Session Manager beacuse of it should be managed by System manager."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_below="@+id/txt_smgr_type"
+        android:text=" ->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_smgr_comit"
+        android:layout_below="@+id/txt_smgr_type"
+        android:text="Once you have finished above process then click on Commit button to save changes."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_below="@+id/txt_smgr_comit"
+        android:text=" ->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_smgr_port"
+        android:layout_below="@+id/txt_smgr_comit"
+        android:text="Now select           you can use 3 types of ports."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_smgr_portt"
+        android:layout_marginStart="99dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_below="@+id/txt_smgr_comit"
+        android:text="Port"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_below="@+id/txt_smgr_portt"
+        android:text=" ->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_smgr_tcp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_below="@+id/txt_smgr_portt"
+        android:text="TCP , UDP , TLS  ext."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_smgr_tcpe"
+        android:layout_marginStart="160dp"
+        android:layout_below="@+id/txt_smgr_portt"
+        android:text="You can use any port as per your setup."/>
+
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_below="@+id/txt_smgr_tcpe"
+        android:text=" ->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_smgr_potr"
+        android:layout_below="@+id/txt_smgr_tcpe"
+        android:text="You can define port and protocol that this Session Manager listens for SIP traffic once you added port then click on"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_refresh"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/txt_smgr_tcpe"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_marginStart="76dp"
+        android:text="Refresh."/>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_below="@+id/txt_refresh"
+        android:text=" ->"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_smgr_instance"
+        android:layout_below="@+id/txt_refresh"
+        android:text="Now define Session Manager Instance."/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_below="@+id/txt_smgr_instance"
+        android:text=" ->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_marginStart="134dp"
+        android:layout_below="@+id/txt_smgr_instance"
+        android:text=" ->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_marginStart="256dp"
+        android:layout_below="@+id/txt_smgr_instance"
+        android:text=" ->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:layout_below="@+id/txt_smgr_instance"
+        android:id="@+id/txt_smgr_admin"
+        android:textColor="@android:color/holo_green_dark"
+        android:text="Session Manager        Administration        Edit"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_smgr_ad"
+        android:layout_margin="9dp"
+        android:layout_below="@+id/txt_smgr_admin"
+        android:background="@drawable/entity_global"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowArrow"
+        android:layout_below="@+id/img_smgr_ad"
+        android:text=" ->"/>
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SIPCallFlowText"
+        android:id="@+id/txt_smgr_inst"
+        android:layout_below="@+id/img_smgr_ad"
+        android:text="Once you clicked on Edit then enter required details like.."/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_smgr_inst"
+        android:layout_below="@+id/txt_smgr_inst"
+        android:layout_margin="9dp"
+        android:background="@drawable/entity_smg"
+        />
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+</ScrollView>

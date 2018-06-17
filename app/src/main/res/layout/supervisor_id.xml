@@ -1,13 +1,228 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
     tools:context="com.sushil.navigationtesting.fragments.cms.SupervisorID">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_main"
+            android:background="@drawable/cms_sample"/>
 
-</FrameLayout>
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_dictionary"
+            android:layout_below="@+id/img_main"
+            android:layout_marginStart="158dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/cms_user"/>
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_operation"
+            android:layout_below="@+id/img_dictionary"
+            android:layout_marginStart="158dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/cms_opertion_commn"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_sup"
+
+            android:layout_below="@+id/img_operation"
+            android:layout_marginStart="158dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/cms_sup_menu"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_super"
+            android:layout_below="@+id/img_sup"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/cms_login_menu"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_super_details"
+            android:layout_below="@+id/img_super"
+            android:layout_marginStart="9dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="9dp"
+            android:background="@drawable/cms_sup_details"/>
+
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:layout_marginStart="5dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_below="@+id/img_super_details"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_suprr"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/img_super_details"
+            android:text="Fill the above agent details and select ACD then click        on to add in CMS."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_suprrls"
+            android:layout_marginStart="359dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/img_super_details"
+            android:textColor="#00A695"
+            android:textStyle="bold"
+            android:text="+"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:layout_marginStart="5dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="19dp"
+            android:layout_below="@+id/txt_suprrls"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_suprid"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="19dp"
+            android:layout_below="@+id/txt_suprrls"
+            android:text="Now give Split/Skill access to CMS ID so in "/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_suprido"
+            android:layout_marginStart="299dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="19dp"
+            android:textStyle="bold"
+            android:textColor="#00A687"
+            android:layout_below="@+id/txt_suprrls"
+            android:text="Operation "/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:layout_marginStart="5dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_suprido"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_supridn"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/txt_suprido"
+            android:text="Click on                                   like below"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_supridu"
+            android:layout_marginStart="82dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:textColor="#00A687"
+            android:layout_below="@+id/txt_suprido"
+            android:text="Skill/split Access"/>
+
+
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_supern"
+            android:layout_below="@+id/txt_supridu"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/cms_login_menu"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_skill"
+            android:layout_below="@+id/img_supern"
+            android:layout_marginStart="9dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/cms_skill_access"/>
+
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/img_skill"
+            android:layout_marginTop="9dp"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_gropp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/img_skill"
+            android:text="Enter Skill number like                       , using semi colon you can able to provide multiple skill access at the same time."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_gropn"
+            android:layout_marginStart="163dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColor="#00A689"
+            android:layout_below="@+id/img_skill"
+            android:text="123;333;707"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_gropinfo"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ff5722"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/txt_gropn"
+            android:text="You can give the VDN and Vector Read/Write access with the refernce of above procedure."/>
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

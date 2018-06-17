@@ -1,10 +1,11 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
     android:layout_height="match_parent"
-    tools:context="com.sushil.navigationtesting.fragments.GfourFifty">
+    tools:context="com.sushil.navigationtesting.fragments.navigation.GfourFifty">
     <RelativeLayout
-        android:layout_marginTop="?attr/actionBarSize"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -12,11 +13,12 @@
             android:id="@+id/txt_config"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_green_dark"
             android:layout_alignEnd="@+id/img_gfour"
             android:layout_alignParentTop="true"
             android:background="#D7CCC8"
             android:gravity="center"
-            android:text="Follow the steps to upload announcements."
+            android:text="G-450 Media Gateway Information."
             android:textStyle="bold" />
         <android.support.v7.widget.AppCompatImageView
             android:id="@+id/img_gfour"
@@ -29,7 +31,7 @@
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="->"
+            android:text="  ->"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
@@ -47,7 +49,7 @@
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="->"
+            android:text="  ->"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
@@ -65,7 +67,7 @@
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="->"
+            android:text="  ->"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
@@ -84,7 +86,7 @@
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="->"
+            android:text="  ->"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
@@ -101,7 +103,7 @@
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="->"
+            android:text="  ->"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
@@ -147,7 +149,7 @@
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="->"
+            android:text="  ->"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
@@ -178,7 +180,7 @@
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="->"
+            android:text="  ->"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
@@ -196,7 +198,7 @@
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="->"
+            android:text="  ->"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
@@ -229,7 +231,7 @@
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="->"
+            android:text="  ->"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
@@ -248,7 +250,7 @@
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="->"
+            android:text="  ->"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
@@ -282,7 +284,7 @@
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="->"
+            android:text="  ->"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
@@ -320,7 +322,7 @@
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="->"
+            android:text="  ->"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
@@ -341,7 +343,7 @@
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="->"
+            android:text="  ->"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
@@ -377,7 +379,7 @@
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="->"
+            android:text="  ->"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
@@ -396,7 +398,7 @@
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="->"
+            android:text="  ->"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
@@ -419,7 +421,7 @@
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="->"
+            android:text="  ->"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
@@ -437,7 +439,7 @@
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="->"
+            android:text="  ->"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
@@ -470,7 +472,7 @@
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="->"
+            android:text="  ->"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
@@ -491,7 +493,7 @@
         <android.support.v7.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="->"
+            android:text="  ->"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
@@ -506,6 +508,7 @@
             android:layout_marginTop="10dp"
             android:background="#D7CCC8"
             android:textStyle="bold"
+            android:layout_marginBottom="10dp"
             android:textColor="@android:color/holo_green_dark"
             android:layout_below="@+id/txt_resemg"
             android:text="clear mgc list 172.16.0.141"/>

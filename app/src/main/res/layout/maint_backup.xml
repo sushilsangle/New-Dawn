@@ -1,13 +1,96 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
     android:layout_height="match_parent"
     tools:context="com.sushil.navigationtesting.fragments.cms.MaintBackup">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_main"
+            android:background="@drawable/cms_sample"/>
 
-</FrameLayout>
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_maintenance"
+            android:layout_below="@+id/img_main"
+            android:layout_marginStart="155dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/cms_main"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_maint_op"
+            android:layout_below="@+id/img_maintenance"
+            android:layout_marginStart="155dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/cms_maint_option"/>
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_maint_fin"
+            android:layout_marginStart="29dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/img_maint_op"
+            android:background="@drawable/cms_miant_final"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:layout_marginTop="9dp"
+            android:layout_below="@+id/img_maint_fin"
+            android:text="->"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_networ"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/img_maint_fin"
+            android:text="First take backup TAPE and insert that tape into CMS server."/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+          style="@style/MastersTvarrow"
+            android:text="->"
+            android:id="@+id/txt_m_bck"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/txt_networ"/>
+
+        <android.support.v7.widget.AppCompatTextView
+           style="@style/AllFragmentsStyle"
+            android:id="@+id/txt_m_bckn"
+            android:layout_marginStart="25dp"
+            android:layout_below="@+id/txt_networ"
+            android:text="Refer above graphical design as well as below path."/>
+        <android.support.v7.widget.AppCompatTextView
+           style="@style/MastersTvarrow"
+            android:id="@+id/txt_bck_info"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/txt_m_bckn"
+            android:text="->"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AllFragmentsStyle"
+            android:layout_below="@+id/txt_m_bckn"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="10dp"
+            android:text="Go to Tools -> Maintenance -> Back Up Data -> All ACDs -> run"/>
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,13 +1,218 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
     tools:context="com.sushil.navigationtesting.fragments.cms.Reports">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_main"
+            android:background="@drawable/cms_sample"/>
 
-</FrameLayout>
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cms_logo"
+            android:layout_below="@+id/img_main"
+            android:layout_marginStart="85dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/cms_logo"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_main"
+            android:id="@+id/cms_report_logo"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="Report"
+            android:textStyle="bold"
+            android:layout_marginStart="129dp"
+            android:textSize="20dp" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_report_th"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_below="@+id/cms_report_logo"
+            android:background="#EFEBE9"
+            android:textColor="#795548"
+            android:textStyle="bold"
+            android:text="     Real Time               Historical               Integrated"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:background="#D7CCC8"
+            android:layout_below="@+id/txt_report_th"
+            android:text="Q."/>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_rt_rel"
+            style="@style/Questions"
+            android:layout_below="@+id/txt_report_th"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:text="How to check agnets are logged in on skill?"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:layout_below="@+id/txt_rt_rel"
+            android:text=" ->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:layout_marginStart="97dp"
+            android:layout_below="@+id/txt_rt_rel"
+            android:text=" ->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:layout_marginStart="160dp"
+            android:layout_below="@+id/txt_rt_rel"
+            android:text=" ->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:layout_marginStart="241dp"
+            android:layout_below="@+id/txt_rt_rel"
+            android:text=" ->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:layout_marginStart="293dp"
+            android:layout_below="@+id/txt_rt_rel"
+            android:text=" ->"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_rt_relr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_rt_rel"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:text=" Commands    Reports     Real Time     Agent    agent status      Enter Skill Number / Name "/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:background="#D7CCC8"
+            android:layout_below="@+id/txt_rt_relr"
+            android:text="Q."/>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_rt_rele"
+            style="@style/Questions"
+            android:layout_below="@+id/txt_rt_relr"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="How to pull out Abandone call report.?"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:layout_below="@+id/txt_rt_rele"
+            android:text="->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:layout_marginStart="97dp"
+            android:layout_below="@+id/txt_rt_rele"
+            android:text="->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:layout_marginStart="162dp"
+            android:layout_below="@+id/txt_rt_rele"
+            android:text="->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:layout_marginStart="240dp"
+            android:layout_below="@+id/txt_rt_rele"
+            android:text="->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:layout_marginStart="363dp"
+            android:layout_below="@+id/txt_rt_rele"
+            android:text="->"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_rt_his"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_rt_rele"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="15dp"
+            android:text="Commands     Reports     Historical     Summary interval    Enter Skill Number / Name "/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:background="#D7CCC8"
+            android:layout_below="@+id/txt_rt_his"
+            android:text="Q."/>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_rt_q"
+            style="@style/Questions"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/txt_rt_his"
+            android:layout_marginStart="25dp"
+            android:text="How to assign skill to an agent in CMS?"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:layout_below="@+id/txt_rt_q"
+            android:text=" ->"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_rt_an"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_rt_q"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="15dp"
+            android:text="First take skill/hunt read/ write access.Once access greanted then assign skill to agents refer below path..."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/txt_rt_an"
+            android:text=" ->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="60dp"
+            android:layout_below="@+id/txt_rt_an"
+            android:text=" ->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="159dp"
+            android:layout_below="@+id/txt_rt_an"
+            android:text=" ->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="299dp"
+            android:layout_below="@+id/txt_rt_an"
+            android:text=" ->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="159dp"
+            android:textStyle="bold"
+            android:textColor="#03DAC5"
+            android:layout_below="@+id/txt_rt_an"
+            android:text="+"/>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_rt_pa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_rt_an"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="2dp"
+            android:text="Tools        Permission        Skill/Split access         Enter skill number and click on      button to save changes."/>
+
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

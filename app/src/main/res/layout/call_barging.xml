@@ -1,13 +1,220 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
     android:layout_height="match_parent"
-    tools:context="com.sushil.navigationtesting.fragments.CallBarging">
+    android:background="#1A237E"
+    tools:context=".fragments.acd.CallBarging">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/txt_follos"
+            android:gravity="center"
+            style="@style/Commands"
+            android:text="Follow steps to provide Call Barging Access."/>
+
+        <TextView
+            style="@style/MastersTvarrow"
+            android:id="@+id/txt_cmnds"
+            android:layout_below="@+id/txt_follos"
+            android:text="->"/>
+        <TextView
+            android:id="@+id/txt_cmndf"
+           style="@style/AllFragmentsStyle"
+            android:layout_below="@+id/txt_follos"
+            android:layout_marginStart="25dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="Execute below commands to provide call barging access"/>
+
+        <TextView
+            android:id="@+id/txt_seainfo"
+            style="@style/Commands"
+            android:layout_below="@+id/txt_cmndf"
+            android:layout_marginTop="10dp"
+            android:text="  change cor  9" />
+
+         <TextView
+            android:id="@+id/txt_corno"
+            style="@style/AllFragmentsStyle"
+             android:textColor="#FFEB3B"
+            android:layout_below="@+id/txt_seainfo"
+            android:layout_marginTop="9dp"
+            android:layout_marginStart="95dp"
+            android:layout_marginLeft="5dp"
+            android:text="COR Number : 5"/>
+        <TextView
+            android:id="@+id/txt_cordes"
+            style="@style/AllFragmentsStyle"
+            android:layout_below="@+id/txt_corno"
+            android:layout_marginStart="74dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#FFEB3B"
+            android:text="COR Description : Test"/>
+        <TextView
+            android:id="@+id/txt_flr"
+            style="@style/AllFragmentsStyle"
+            android:textColor="#FFEB3B"
+            android:layout_below="@+id/txt_cordes"
+            android:layout_marginStart="152dp"
+            android:layout_marginLeft="5dp"
+            android:text="FRL : 0"/>
+        <TextView
+            android:id="@+id/txt_can"
+            style="@style/AllFragmentsStyle"
+            android:textColor="#FFEB3B"
+            android:layout_below="@+id/txt_flr"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="5dp"
+            android:text="Can Be Service Observed?:   y"/>
+
+        <TextView
+            android:id="@+id/txt_cabe"
+            style="@style/AllFragmentsStyle"
+            android:layout_below="@+id/txt_can"
+            android:layout_marginStart="10dp"
+            android:textColor="#FFEB3B"
+            android:layout_marginLeft="5dp"
+            android:text="Can Be A Service Observer?:  n"/>
+
+        <TextView
+            android:id="@+id/txt_seroo"
+            style="@style/Commands"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_cabe"
+            android:text="  change cor  9" />
+
+
+        <TextView
+            style="@style/MastersTvarrow"
+            android:text="->"
+            android:id="@+id/txtenable"
+
+            android:layout_below="@+id/txt_seroo"/>
+        <TextView
+            android:id="@+id/textenab"
+            style="@style/AllFragmentsStyle"
+            android:textColor="#FFEB3B"
+            android:text="After creating COR check the Barging access code in respective ACD by using below command."
+            android:layout_marginStart="25dp"
+            android:layout_below="@+id/txt_seroo"/>
+
+        <TextView
+            android:id="@+id/txtdispars"
+            style="@style/Commands"
+            android:layout_below="@+id/textenab"
+            android:layout_marginTop="10dp"
+            android:text="  display feature-access-code"
+            />
+
+        <TextView
+            style="@style/MastersTvarrow"
+            android:text="->"
+            android:id="@+id/txtser"
+            android:layout_below="@+id/txtdispars"/>
+        <TextView
+            android:id="@+id/textservc"
+            android:textColor="#FFEB3B"
+            style="@style/AllFragmentsStyle"
+            android:text="Now check Service Access barging code in your ACD"
+            android:layout_marginStart="25dp"
+            android:layout_below="@+id/txtdispars"/>
+
+        <TextView
+            style="@style/MastersTvarrow"
+            android:id="@+id/txtonc"
+            android:layout_below="@+id/textservc"
+            android:text="->"/>
+        <TextView
+            android:id="@+id/textons"
+            style="@style/AllFragmentsStyle"
+            android:textColor="#FFEB3B"
+            android:text="Once you created barging COR give that COR to respective extension and try to barg call from that extension."
+            android:layout_marginStart="25dp"
+            android:layout_below="@+id/textservc"/>
+        <TextView
+            style="@style/MastersTvarrow"
+            android:text="->"
+            android:id="@+id/txtnot"
+            android:layout_below="@+id/textons"/>
+        <TextView
+            android:id="@+id/textnots"
+            style="@style/AllFragmentsStyle"
+            android:textColor="#FFEB3B"
+            android:text="If your not able to barg the call from tht extension put trace on same extension using below command."
+            android:layout_marginStart="25dp"
+            android:layout_below="@+id/textons"/>
+        <!--<TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:id="@+id/txtsta"
+            android:background="#D7CCC8"
+            android:layout_below="@+id/textnots"/>-->
+
+        <TextView
+            android:id="@+id/txtstati"
+            style="@style/Commands"
+            android:layout_below="@+id/textnots"
+           android:layout_marginTop="10dp"
+            android:text="  list trace station  xxxxxxx"
+            />
+        <TextView
+            style="@style/MastersTvarrow"
+            android:text="->"
+            android:id="@+id/txtnt"
+            android:layout_below="@+id/txtstati"/>
+        <TextView
+            android:id="@+id/textnot"
+            android:textColor="#FFEB3B"
+            style="@style/AllFragmentsStyle"
+            android:text="If you are getting "
+            android:layout_marginStart="25dp"
+            android:layout_below="@+id/txtstati"/>
+
+        <TextView
+            android:id="@+id/textnotu"
+            style="@style/AllFragmentsStyle"
+            android:text="denail event like 1234: COR restricted?"
+            android:layout_marginStart="137dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_below="@+id/txtstati"/>
+
+        <TextView
+           style="@style/MastersTvarrow"
+            android:id="@+id/txtchk"
+            android:layout_below="@+id/textnotu"
+            android:text="->"/>
+        <TextView
+            android:id="@+id/textchek"
+            style="@style/AllFragmentsStyle"
+            android:textColor="#FFEB3B"
+            android:text="Then check respeactive trunks COR and Barging COR permission should be enabled (Y)"
+            android:layout_marginStart="25dp"
+            android:layout_below="@+id/textnotu"/>
+        <TextView
+            style="@style/MastersTvarrow"
+            android:id="@+id/txtagent"
+            android:layout_below="@+id/textchek"
+            android:text="->"/>
+        <TextView
+            android:id="@+id/textagnt"
+           style="@style/AllFragmentsStyle"
+            android:textColor="#FFEB3B"
+            android:text="If you want to provide Call barging access to agent then take agent Avaya login ID and give the Call Barging COR to agents Avaya login ID."
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/textchek"/>
+
+
+    </RelativeLayout>
+</ScrollView>

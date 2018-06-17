@@ -16,11 +16,13 @@
                 android:title="Voice Quality Issue" />
             <item
                 android:id="@+id/nav_outbund"
-                android:title="Out bound Issue" />
+                android:title="Out Bound Issue" />
             <item
-                android:id="@+id/nav_callnot_to_agent"
-                android:title="Calls Not Landing To Agent" />
-
+                android:id="@+id/nav_comds"
+                android:title="ACD Commands"/>
+            <item
+                android:id="@+id/nav_asa"
+                android:title="ASA Web Page"/>
         </menu>
     </item>
 
@@ -64,6 +66,7 @@
                 android:id="@+id/nav_about_us"
                 android:title="About US" />
             <item
+                android:icon="@drawable/log_out"
                 android:id="@+id/nav_log_out"
                 android:title="Log Out" />
 

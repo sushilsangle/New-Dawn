@@ -5,9 +5,136 @@
     tools:context="com.sushil.navigationtesting.fragments.cms.AgentLogin">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
+        <!-- TODO: Update blank fragment layout -->
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_main"
+            android:background="@drawable/cms_sample"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_login"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/img_main"
+            android:background="@drawable/cms_login"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_config"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/img_login"
+            android:background="@drawable/cms_config"/>
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_loginmain"
+            android:layout_marginStart="6dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_below="@+id/img_config"
+            android:background="@drawable/cms_loginmain"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/img_loginmain"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_networ"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/img_loginmain"
+            android:text="First install CMS Supervisor then configure network settings."/>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtserver"
+            style="@style/MasterTVParent"
+            android:gravity="center"
+            android:layout_marginTop="22dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_below="@+id/img_loginmain"
+            android:text="Like CMS Server IP and Port details."/>
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:id="@+id/txt_connect"
+            android:layout_below="@+id/txtserver"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:id="@+id/txt_connecto"
+            android:layout_marginStart="112dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/txtserver"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:id="@+id/txt_connectt"
+            android:layout_marginStart="187dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/txtserver"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_connet"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="25dp"
+            android:layout_below="@+id/txtserver"
+            android:text="Then click on                                          and enter the login ID and password."/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_conneto"
+            android:layout_marginStart="129dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/txtserver"
+            android:text="Connect"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_connett"
+            android:layout_marginStart="206dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/txtserver"
+            android:text="Login"/>
+
+
+
+
+
+    </RelativeLayout>
 </FrameLayout>

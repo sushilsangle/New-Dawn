@@ -1,108 +1,88 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
     android:layout_height="match_parent"
-    tools:context="com.sushil.navigationtesting.fragments.VoiceQuality">
+    android:background="#1A237E"
+    tools:context="com.sushil.navigationtesting.fragments.navigation.VoiceQuality">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_marginTop="?attr/actionBarSize"
         android:layout_height="match_parent">
         <!-- TODO: Update blank fragment layout -->
         <TextView
             android:id="@+id/txt_voice"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#c7d9db"
-            android:layout_marginTop="?attr/actionBarSize"
-            android:layout_margin="9dp"
+            style="@style/Commands"
+            android:gravity="center"
             android:textColor="@android:color/holo_green_dark"
-            android:text="!!! Follow the below steps to resolve Voice Quality Issue. !!!" />
-
+            android:text="Follow the steps to resolve Voice Quality Issue.!" />
 
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/MastersTvarrow"
             android:text="->"
-            android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold"
-            android:layout_marginTop="15dp"
             android:layout_below="@+id/txt_voice"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_voc"
             android:layout_marginStart="25dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="15dp"
+            android:textColor="#FFEB3B"
             android:layout_below="@+id/txt_voice"
             android:text="If you have SIP infra then follow steps....."/>
 
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/MastersTvarrow"
             android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_voc"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_vo"
+            android:textColor="#FFEB3B"
             android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_voc"
             android:text="Login into respective SBC using "/>
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_voi"
             android:layout_marginStart="225dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
-            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold"
+           android:textColor="@android:color/holo_green_dark"
             android:layout_below="@+id/txt_voc"
             android:text="Putty"/>
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+           style="@style/MastersTvarrow"
             android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_voi"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_put"
+            android:textColor="#FFEB3B"
             android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_voi"
             android:text="After login do the          from "/>
 
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_puto"
             android:layout_marginStart="135dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
             android:textStyle="bold"
             android:textColor="@android:color/holo_green_dark"
             android:layout_below="@+id/txt_voi"
             android:text="ping"/>
 
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_putto"
             android:layout_marginStart="201dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
             android:textStyle="bold"
             android:textColor="@android:color/holo_green_dark"
             android:layout_below="@+id/txt_voi"
-            android:text="SBC to  phone IP/Gateway"/>
+            android:text="SBC Internal interface to  phone IP/Gateway"/>
 
         <android.support.v7.widget.AppCompatTextView
             style="@style/MasterTmargin"
@@ -120,20 +100,15 @@
 
 
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+           style="@style/MastersTvarrow"
             android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_putto"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_ip"
+            android:textColor="#FFEB3B"
             android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_putto"
             android:text="Suppose phone IP:-"/>
 
@@ -142,123 +117,83 @@
 
 
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+           style="@style/MastersTvarrow"
             android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_ip"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_ips"
             android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
+            android:textColor="#FFEB3B"
             android:layout_below="@+id/txt_ip"
-            android:text="And SBC Virtual IP:-"/>
+            android:text="And SBC Internal(a) IP:-"/>
 
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_pips"
-            android:layout_marginStart="155dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginStart="159dp"
             android:textColor="@android:color/holo_green_dark"
             android:layout_below="@+id/txt_ip"
-            android:text="10.157.189.34"/>
+            android:text="     10.157.189.34"/>
 
 
 
 
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+           style="@style/MastersTvarrow"
             android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_pips"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_logs"
             android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
+            android:textColor="#FFEB3B"
             android:layout_below="@+id/txt_pips"
-            android:textColor="@android:color/holo_red_dark"
-            android:text="But make sure SBC is a device so SBC login IP and Virtual IP both are different."/>
-
-
-
-
-
-
+            android:text="But make sure SBC is a device so login with SBC IP which we will get from by login with EMS IP."/>
 
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/MastersTvarrow"
             android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_logs"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_vir"
+            android:textColor="#FFEB3B"
             android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_logs"
-            android:text="Now ping the phone IP segment from SBC      is always use in capital laters."/>
+            android:text="Now ping the phone IP segment from SBC Internal      is always use in capital laters."/>
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_vii"
             android:layout_marginStart="289dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
             android:textColor="@android:color/holo_green_dark"
             android:layout_below="@+id/txt_logs"
             android:text="(-i)"/>
 
-
-
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="25dp"
-            android:layout_below="@+id/txt_vii"
-            />
-        <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/Commands"
             android:id="@+id/txt_virl"
-            android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
+
             android:layout_marginTop="25dp"
             android:textColor="@android:color/holo_green_dark"
             android:textStyle="bold"
             android:layout_below="@+id/txt_vii"
-            android:text="ping -I "/>
+            android:text="        ping -I "/>
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_virls"
             android:layout_marginStart="79dp"
-            android:layout_marginLeft="5dp"
             android:layout_marginTop="25dp"
             android:textColor="#64DD17"
             android:layout_below="@+id/txt_vii"
             android:text="10.157.189.34"/>
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_piu"
             android:layout_marginStart="185dp"
-            android:layout_marginLeft="5dp"
             android:layout_marginTop="25dp"
             android:textColor="@android:color/holo_green_dark"
             android:layout_below="@+id/txt_vii"
@@ -266,367 +201,346 @@
 
 
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+           style="@style/MastersTvarrow"
             android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_piu"
+            />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:text="->"
             android:layout_below="@+id/txt_piu"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_nowp"
+            android:textColor="#FFEB3B"
             android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_piu"
-            android:text="If you see abnormalities then share the current ping report with Network team "/>
+            android:text="If you see any abnormalities then share the current ping report with Network team "/>
 
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/MastersTvarrow"
             android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_nowp"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_tracrepo"
+            android:textColor="#FFEB3B"
             android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_nowp"
-            android:text="Also capture trace in ACD on trunk and check jitter or packet loss by dialing respective DID number."/>
+            android:text="Also capture trace in ACD on trunk(list trac tac (#929 tack ID of trunk)) and check jitter or packet loss by dialing respective DID number."/>
 
 
 
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/MastersTvarrow"
             android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_tracrepo"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_ping"
+            android:textColor="#FFEB3B"
             android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_tracrepo"
             android:text="In ideal scenario jitter should be less then 3-4 and packet loss should be 0%."/>
 
 
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/MastersTvarrow"
             android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_ping"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_team"
+            android:textColor="#FFEB3B"
             android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
-            android:textColor="@android:color/holo_green_dark"
             android:layout_below="@+id/txt_ping"
             android:text="If you are working on TDM setup then follow below steps to check voice quality issue."/>
 
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/MastersTvarrow"
             android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_team"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_iplog"
             android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
+            android:textColor="#FFEB3B"
             android:layout_below="@+id/txt_team"
             android:text="Suppose phone IP:-"/>
 
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_pipst"
             android:layout_marginStart="155dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
             android:textColor="@android:color/holo_green_dark"
             android:layout_below="@+id/txt_team"
             android:text="10.130.198.12"/>
 
 
 
-        <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+        <!-- <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
             android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/txt_iplog"
+            android:layout_below="@+id/txt_pipst"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_log"
             android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/txt_iplog"
-            android:text="And SBC Virtual IP:-"/>
+            android:textColor="#FFEB3B"
+            android:layout_below="@+id/txt_pipst"
+            android:text="And SBC Virtual IP:-"/>-->
 
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_logss"
-            android:layout_marginStart="155dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
             android:textColor="@android:color/holo_green_dark"
-            android:layout_below="@+id/txt_iplog"
+            android:layout_marginStart="155dp"
+            android:layout_below="@+id/txt_pipst"
             android:text="10.157.189.34"/>
 
 
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/MastersTvarrow"
             android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_logss"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_nowpp"
+            android:textColor="#FFEB3B"
             android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_logss"
             android:text="Now login into ACD and take trace from "/>
 
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:layout_marginStart="5dp"
+            android:text="->"
+            android:layout_below="@+id/txt_nowpp"/>
 
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_ipclan"
             android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="29dp"
-            android:textColor="@android:color/holo_green_dark"
-            android:layout_below="@+id/txt_piu"
+            android:textColor="#FFEB3B"
+            android:layout_below="@+id/txt_nowpp"
             android:text="CLAN to Phoen IP refer beow command for same. "/>
 
 
 
 
 
+
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:background="#afafaf"
-            android:layout_below="@+id/txt_ipclan"
-            />
-        <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/Commands"
             android:id="@+id/txt_cmd"
-            android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
             android:textColor="@android:color/holo_green_dark"
-            android:background="#afafaf"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_ipclan"
-            android:text="ping ip-address 10.130.198.12            (Phone IP)"/>
+            android:layout_marginTop="15dp"
+            android:text="        ping ip-address 10.130.198.12            (Phone IP)"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:layout_below="@+id/txt_cmd"
+            android:gravity="center"
+            android:id="@+id/txt_dot"
+            android:text="-------------------------------------------------------------------"/>
 
 
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/AllFragmentsStyle"
+            android:id="@+id/txt_ping_ip"
+            android:layout_below="@+id/txt_dot"
+            android:layout_marginStart="95dp"
+            android:textColor="#FFEB3B"
+            android:text="Enter IP Address: "/>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_ping_ips"
+            style="@style/MastersTvarrow"
+            android:layout_marginStart="205dp"
+            android:text="10.130.198.12"
+            android:layout_below="@+id/txt_dot"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AllFragmentsStyle"
+            android:textColor="#FFEB3B"
+            android:id="@+id/txt_pig_ip"
+            android:layout_below="@+id/txt_ping_ips"
+            android:layout_marginStart="138dp"
+            android:text="Enter port: "/>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_pin_ips"
+            style="@style/MastersTvarrow"
+            android:layout_marginStart="209dp"
+            android:text="031020"
+            android:layout_below="@+id/txt_ping_ips"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AllFragmentsStyle"
+            android:id="@+id/txt_pigs"
+            android:textColor="#FFEB3B"
+            android:layout_below="@+id/txt_pin_ips"
+            android:layout_marginStart="140dp"
+            android:text="End point: "/>
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_pin_s"
+            style="@style/MastersTvarrow"
+            android:layout_marginStart="209dp"
+            android:text="10"
+            android:layout_below="@+id/txt_pin_ips"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:layout_below="@+id/txt_pin_s"
+            android:id="@+id/txt_dots"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:text="-------------------------------------------------------------------"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
             android:text="->"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/txt_cmd"
+            android:layout_below="@+id/txt_dots"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_clanb"
+            android:textColor="#FFEB3B"
             android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/txt_cmd"
+            android:layout_below="@+id/txt_dots"
             android:text="Now you need to enter Port(Phone) / Board number / location here so enter details and press f3 to execute tarce/ ping"/>
 
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/MastersTvarrow"
             android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_clanb"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_pi"
+            android:textColor="#FFEB3B"
             android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_clanb"
             android:text="If you want to put trace from phone segments to MedPro the follow above same step."/>
 
 
 
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/MastersTvarrow"
             android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_pi"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_pu"
             android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_pi"
-            android:text="If you found any port FAIL in your ping result then inform network team to check further."/>
-
-
+            android:textColor="#FFEB3B"
+            android:text="If you find any port FAIL or latancy in your ping result then inform network team to check further."/>
 
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:background="#afafaf"
-            android:layout_below="@+id/txt_pu"
-            />
-        <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/Commands"
             android:id="@+id/txt_cmds"
-            android:layout_marginStart="105dp"
-            android:layout_marginLeft="5dp"
             android:textColor="@android:color/holo_green_dark"
-            android:background="#afafaf"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_pu"
-            android:text=" Phone Reboot Issue."/>
+            android:layout_marginTop="15dp"
+            android:text="                                    Phone Reboot Issue."/>
 
 
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
-            android:id="@+id/txt_cmdred"
-            android:layout_marginStart="75dp"
-            android:layout_marginLeft="5dp"
-            android:textColor="@android:color/holo_red_dark"
-
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/txt_pu"
-            android:text="!!!                                                !!!"/>
-
-
-        <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/MastersTvarrow"
             android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/txt_cmdred"
+            android:layout_below="@+id/txt_cmds"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_info"
+            android:textColor="#FFEB3B"
             android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/txt_cmdred"
-            android:text="Check if network switch is up or down in case LAN switch going down will cause the phones to reboot."/>
+            android:layout_below="@+id/txt_cmds"
+            android:text="Check if network switch is up or down in case LAN switch going down it will cause the phones to reboot."/>
 
 
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/MastersTvarrow"
             android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_info"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/AllFragmentsStyle"
             android:id="@+id/txt_infocmd"
+            android:textColor="#FFEB3B"
             android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_info"
             android:text="Login into respactive ACD then check Alarm using below command."/>
 
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="->"
-            android:textColor="@android:color/holo_red_dark"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:background="#afafaf"
-            android:layout_below="@+id/txt_infocmd"
-            />
-        <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
+            style="@style/Commands"
             android:id="@+id/txt_cmd_alrm"
-            android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
             android:textColor="@android:color/holo_green_dark"
-            android:background="#afafaf"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_infocmd"
-            android:text="display alarm"/>
+            android:text="       display alarm"/>
         <android.support.v7.widget.AppCompatTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/MastersTvarrow"
             android:text="->"
             android:textColor="@android:color/holo_red_dark"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
             android:layout_below="@+id/txt_cmd_alrm"
+            android:id="@+id/appCompatTextView" />
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="25dp"
+            android:textColor="#FFEB3B"
+            android:id="@+id/txt_alarmsinfo"
+            android:layout_below="@+id/txt_cmd_alrm"
+            android:text="You check alarms while checking alarms select date,time etc."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:text="->"
+            android:layout_marginStart="5dp"
+            android:layout_below="@+id/txt_alarmsinfo"
             />
         <android.support.v7.widget.AppCompatTextView
-            style="@style/MasterTmargin"
-            android:id="@+id/txt_infocmds"
+            style="@style/AllFragmentsStyle"
+            android:id="@+id/txt_alrmsin"
+            android:layout_below="@+id/txt_alarmsinfo"
             android:layout_marginStart="25dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/txt_cmd_alrm"
-            android:text="Check IP event alarm through web page."/>
+            android:textColor="#FFEB3B"
+            android:text="Also check how many phones got re-booted using below command in your ACD."/>
 
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/Commands"
+            android:id="@+id/list_cmd"
+            android:layout_below="@+id/txt_alrmsin"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="        list history"/>
 
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:layout_below="@+id/list_cmd"
+            android:layout_marginStart="5dp"
+            android:text="->"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AllFragmentsStyle"
+            android:layout_below="@+id/list_cmd"
+            android:layout_marginStart="25dp"
+            android:textColor="#FFEB3B"
+            android:layout_marginBottom="15dp"
+            android:text="Now check assigned and un-assigned phones."/>
 
     </RelativeLayout>
 </ScrollView>

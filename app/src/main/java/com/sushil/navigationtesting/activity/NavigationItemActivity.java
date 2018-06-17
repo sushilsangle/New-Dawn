@@ -2,26 +2,25 @@ package com.sushil.navigationtesting.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 
 import com.sushil.navigationtesting.R;
-import com.sushil.navigationtesting.fragments.AbandonCalls;
-import com.sushil.navigationtesting.fragments.ClanCard;
-import com.sushil.navigationtesting.fragments.DS1;
-import com.sushil.navigationtesting.fragments.GfourFifty;
-import com.sushil.navigationtesting.fragments.GsixFifty;
-import com.sushil.navigationtesting.fragments.Interview;
-import com.sushil.navigationtesting.fragments.IpsiCard;
-import com.sushil.navigationtesting.fragments.MedPro;
-import com.sushil.navigationtesting.fragments.OutBoundIssue;
-import com.sushil.navigationtesting.fragments.ValBoard;
-import com.sushil.navigationtesting.fragments.VoiceQuality;
+import com.sushil.navigationtesting.fragments.cms.AbandonCalls;
+import com.sushil.navigationtesting.fragments.navigation.ACDCommands;
+import com.sushil.navigationtesting.fragments.navigation.ASA;
+import com.sushil.navigationtesting.fragments.navigation.ClanCard;
+import com.sushil.navigationtesting.fragments.navigation.DS1;
+import com.sushil.navigationtesting.fragments.navigation.GfourFifty;
+import com.sushil.navigationtesting.fragments.navigation.GsixFifty;
+import com.sushil.navigationtesting.fragments.navigation.Interview;
+import com.sushil.navigationtesting.fragments.navigation.IpsiCard;
+import com.sushil.navigationtesting.fragments.navigation.MedPro;
+import com.sushil.navigationtesting.fragments.navigation.OutBoundIssue;
+import com.sushil.navigationtesting.fragments.navigation.ValBoard;
+import com.sushil.navigationtesting.fragments.navigation.VoiceQuality;
 
 public class NavigationItemActivity extends AppCompatActivity {
 
@@ -47,7 +46,7 @@ public class NavigationItemActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setTitle(mFragmentName);
-        toolbar.setNavigationOnClickListener(view -> onBackPressed());
+        toolbar.setNavigationOnClickListener(v -> onBackPressed());
     }
 
     public void loadFragment() {
@@ -55,27 +54,32 @@ public class NavigationItemActivity extends AppCompatActivity {
         FragmentManager manager = getSupportFragmentManager();
         if (mFragmentName.equals("Interview")) {
             showFragment(manager, new Interview());
-        } else if (mFragmentName.equals("GfourFifty")) {
+        } else if (mFragmentName.equals(getString(R.string.gfourfifty))) {
             showFragment(manager, new GfourFifty());
-        } else if (mFragmentName.equals("IpsiCard")) {
+        } else if (mFragmentName.equals(getString(R.string.ipsicards))) {
             showFragment(manager, new IpsiCard());
-        } else if (mFragmentName.equals("VoiceQuality")) {
+        } else if (mFragmentName.equals(getString(R.string.voicequality))) {
             showFragment(manager, new VoiceQuality());
-        } else if (mFragmentName.equals("OutBoundIssue")) {
+        } else if (mFragmentName.equals("Out Bound Issue")) {
             showFragment(manager, new OutBoundIssue());
-        } else if (mFragmentName.equals("ClanCard")) {
+        } else if (mFragmentName.equals("Clan Card")) {
             showFragment(manager, new ClanCard());
         } else if (mFragmentName.equals("DS1")) {
             showFragment(manager, new DS1());
-        } else if (mFragmentName.equals("MedPro")) {
+        } else if (mFragmentName.equals("Med Pro")) {
             showFragment(manager, new MedPro());
-        } else if (mFragmentName.equals("ValBoard")) {
-            showFragment(manager, new MedPro());
-        } else if (mFragmentName.equals("GsixFifty")) {
+        } else if (mFragmentName.equals("Val Board")) {
+            showFragment(manager, new ValBoard());
+        } else if (mFragmentName.equals(getString(R.string.gsixfifty))) {
             showFragment(manager, new GsixFifty());
         } else if (mFragmentName.equals("AbandonCalls")) {
             showFragment(manager, new AbandonCalls());
+        }else if (mFragmentName.equals("ACD Commands")){
+            showFragment(manager,new ACDCommands());
+        }else if (mFragmentName.equals("ASA Web Page")){
+            showFragment(manager,new ASA());
         }
+
 
     }
 

@@ -1,13 +1,101 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sushil.navigationtesting.fragments.AddAgent">
+    tools:context="com.sushil.navigationtesting.fragments.cms.AddAgent">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+        <!-- TODO: Update blank fragment layout -->
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_main"
+            android:background="@drawable/cms_sample"/>
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_dictionary"
+            android:layout_below="@+id/img_main"
+            android:layout_marginStart="75dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/cms_dictionry"/>
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_operation"
+            android:layout_below="@+id/img_dictionary"
+            android:layout_marginStart="75dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/cms_dic_option"/>
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_option"
+            android:layout_below="@+id/img_operation"
+            android:layout_marginStart="75dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/cms_menu"/>
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_add"
+            android:layout_below="@+id/img_option"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/cms_add_agent"/>
 
-</FrameLayout>
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="->"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:layout_below="@+id/img_add"
+            />
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_networ"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/img_add"
+            android:text="Enter agent ID and Name and click on     to add into CMS."/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MasterTmargin"
+            android:id="@+id/txt_plus"
+            android:layout_marginStart="263dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/img_add"
+            android:textStyle="bold"
+            android:textColor="#00A695"
+            android:text="+"/>
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/MastersTvarrow"
+            android:text="->"
+            android:layout_below="@+id/txt_networ"/>
+
+    <android.support.v7.widget.AppCompatTextView
+    style="@style/AllFragmentsStyle"
+    android:layout_marginStart="25dp"
+        android:id="@+id/txt_firstid"
+    android:text="First create ACD agent ID then add this id into CMS."
+    android:layout_below="@+id/txt_networ"
+    />
+        <android.support.v7.widget.AppCompatTextView
+           style="@style/MastersTvarrow"
+            android:layout_below="@+id/txt_firstid"
+            android:text="->"/>
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="25dp"
+            android:layout_below="@+id/txt_firstid"
+            android:text="after adding Avaya login ID into CMS in case that agent name is not reflecting in CMS report then ask agent to re-login on Avaya phone once re-login done it will show in report."/>
+    </RelativeLayout>
+</ScrollView>

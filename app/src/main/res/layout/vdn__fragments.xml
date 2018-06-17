@@ -1,13 +1,186 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<ScrollView android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sushil.navigationtesting.fragments.VDN">
-
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    android:background="#1A237E"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        tools:context=".ui.ui.fragment.acd.VDN">
 
-</FrameLayout>
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/txt_change_id"
+            style="@style/Commands"
+            android:text="  display vdn 999" />
+
+        <TextView
+            android:id="@+id/txt_vdn"
+            style="@style/TxtAllNames"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_change_id"
+            android:text="Vector Directory Number" />
+        <TextView
+            android:id="@+id/txt_vdn_extension"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="135dp"
+            android:textColor="#FFEB3B"
+            android:layout_below="@+id/txt_vdn"
+            android:text="Extension  : 9997" />
+
+        <TextView
+            android:id="@+id/txt_vdn_name"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="161dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFEB3B"
+            android:layout_below="@+id/txt_vdn_extension"
+            android:text="Name  : Test VDN" />
+        <TextView
+            android:id="@+id/txt_vdn_desti"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="128dp"
+            android:textColor="#FFEB3B"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/txt_vdn_name"
+            android:text="Destination  : v number   xx" />
+        <TextView
+            android:id="@+id/txt_vdn_overrid"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="76dp"
+            android:textColor="#FFEB3B"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/txt_vdn_desti"
+            android:text="Allow VDN Override  : Y/N" />
+        <TextView
+            android:id="@+id/txt_vdn_cor"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="170dp"
+            android:textColor="#FFEB3B"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/txt_vdn_overrid"
+            android:text="COR  : xxx" />
+        <TextView
+            android:id="@+id/txt_vdn_ten"
+            android:textColor="#FFEB3B"
+            style="@style/AllFragmentsStyle"
+            android:gravity="center"
+
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/txt_vdn_cor"
+            android:text="TN  : xxx" />
+
+        <TextView
+            android:id="@+id/txt_vdn_measured"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="134dp"
+            android:textColor="#FFEB3B"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/txt_vdn_ten"
+            android:text="Measured  : external/both" />
+
+        <TextView
+            android:id="@+id/txt_vdn_originext"
+            style="@style/AllFragmentsStyle"
+            android:textColor="#FFEB3B"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/txt_vdn_measured"
+            android:text="VDN of origin Extension  : xxx" />
+
+        <TextView
+            android:id="@+id/txt_vdn_skillf"
+            android:textColor="#FFEB3B"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="139dp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/txt_vdn_originext"
+            android:text="1st Skill*  : xxx" />
+
+
+        <TextView
+            android:id="@+id/txt_change_displ"
+            style="@style/Commands"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/txt_vdn_skillf"
+            android:text="  display vdn 999" />
+        <TextView
+            android:id="@+id/txt_vdn_chang"
+            style="@style/AllFragmentsStyle"
+            android:gravity="center"
+            android:textColor="#FFEB3B"
+            android:layout_below="@+id/txt_change_displ"
+            android:text="VDN related commands." />
+
+
+        <TextView
+            android:id="@+id/txt_vdn_duplicate"
+            style="@style/AllFragmentsStyle"
+            android:textColor="#FFEB3B"
+            android:layout_marginStart="132dp"
+            android:layout_below="@+id/txt_vdn_chang"
+            android:text="duplicate vdn  : xxx" />
+        <TextView
+            android:id="@+id/txt_vdn_changev"
+            style="@style/AllFragmentsStyle"
+            android:textColor="#FFEB3B"
+          android:layout_marginStart="143dp"
+            android:layout_below="@+id/txt_vdn_duplicate"
+            android:text="change vdn  : xxx" />
+        <TextView
+            android:id="@+id/txt_vdn_listusg"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="171dp"
+            android:textColor="#FFEB3B"
+            android:layout_below="@+id/txt_vdn_changev"
+            android:text="list vdn  : xxx" />
+        <TextView
+            android:id="@+id/txt_vdn_add"
+            style="@style/AllFragmentsStyle"
+            android:gravity="center"
+            android:textColor="#FFEB3B"
+            android:layout_below="@+id/txt_vdn_listusg"
+            android:text="add vdn  : xxx" />
+        <TextView
+            android:id="@+id/txt_star_add"
+            style="@style/AllFragmentsStyle"
+            android:gravity="center"
+            android:layout_below="@+id/txt_vdn_add"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="----------------------- Basic information of VDN -----------------------" />
+        <TextView
+            android:id="@+id/txt_vdn_info"
+            style="@style/MastersTvarrow"
+            android:layout_below="@+id/txt_star_add"
+            android:text=" ->" />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_vdninf"
+            android:layout_width="match_parent"
+            android:textColor="#FFEB3B"
+            android:layout_height="wrap_content"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="25dp"
+            android:layout_below="@+id/txt_star_add"
+            android:text="VDN stands for Vector Directory Number."/>
+
+        <TextView
+            style="@style/MastersTvarrow"
+            android:layout_below="@+id/txt_vdninf"
+            android:text=" ->" />
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txt_vdns"
+            android:layout_width="match_parent"
+            android:textColor="#FFEB3B"
+            android:layout_height="wrap_content"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="12dp"
+            android:layout_below="@+id/txt_vdninf"
+            android:text="Once you create VDN number then map that VDN number against of respactive DID."/>
+
+
+    </RelativeLayout>
+
+</ScrollView>
+

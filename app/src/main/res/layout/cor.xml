@@ -1,13 +1,132 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sushil.navigationtesting.fragments.COR">
+    android:background="#1A237E"
+    tools:context="com.sushil.navigationtesting.fragments.acd.COR">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
+        android:layout_marginTop="?attr/actionBarSize"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/txt_change_id"
+            style="@style/Commands"
+            android:text="  change cor 1212" />
+        <TextView
+            android:id="@+id/txt_cor_details"
+            style="@style/TxtAllNames"
+            android:layout_below="@+id/txt_change_id"
+            android:text="Auth Code....!" />
+
+        <ImageView
+            android:id="@+id/img_cor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_marginTop="9dp"
+            android:layout_below="@+id/txt_cor_details"
+            android:background="@drawable/cor_grp"/>
+
+        <TextView
+            android:id="@+id/txt_cor_obs"
+            style="@style/TxtAllNames"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/img_cor"
+            android:text="COR stands for Class Of Restriction" />
+
+
+
+        <ImageView
+            android:id="@+id/img_corper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_marginTop="9dp"
+            android:layout_below="@+id/txt_cor_obs"
+            android:background="@drawable/cor_permi"/>
+
+
+        <TextView
+            android:id="@+id/txt_chang_id"
+            style="@style/Commands"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/img_corper"
+            android:text="  change cor 1212" />
+
+        <TextView
+            android:id="@+id/txt_cor_info"
+            style="@style/AllFragmentsStyle"
+            android:gravity="center"
+            android:textColor="#FFEB3B"
+            android:layout_marginTop="9dp"
+            android:layout_below="@+id/txt_chang_id"
+            android:text="!!!  COR related commands   !!!" />
+
+        <TextView
+            android:id="@+id/txt_cor_dispar"
+            style="@style/MastersTvarrow"
+            android:layout_below="@+id/txt_cor_info"
+            android:text="->" />
+        <TextView
+            android:id="@+id/txt_cor_disp"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="9dp"
+            android:textColor="#FFEB3B"
+            android:layout_below="@+id/txt_cor_info"
+            android:text="display cor  xxx" />
+        <TextView
+            android:id="@+id/txt_cor_chanar"
+           style="@style/MastersTvarrow"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_below="@+id/txt_cor_disp"
+            android:text="->" />
+        <TextView
+            android:id="@+id/txt_cor_chan"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="30dp"
+            android:textColor="#FFEB3B"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/txt_cor_disp"
+            android:text="change cor  xxx" />
+        <TextView
+            android:id="@+id/txt_cor_chaaro"
+           style="@style/MastersTvarrow"
+            android:layout_below="@+id/txt_cor_chan"
+            android:text="->"/>
+
+        <TextView
+            android:id="@+id/txt_cor_cha"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#FFEB3B"
+            android:layout_below="@+id/txt_cor_chan"
+            android:text="You can set the COR permission as per your ACD configuration." />
+
+        <TextView
+            android:id="@+id/txt_cor_perar"
+            style="@style/MastersTvarrow"
+            android:layout_below="@+id/txt_cor_cha"
+            android:text="->"/>
+
+
+        <TextView
+            android:id="@+id/txt_cor_per"
+            style="@style/AllFragmentsStyle"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#FFEB3B"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/txt_cor_cha"
+            android:text="Now set the FRL as per ACD restrications like Auth Code etc" />
+
+    </RelativeLayout>/
+
+</ScrollView>

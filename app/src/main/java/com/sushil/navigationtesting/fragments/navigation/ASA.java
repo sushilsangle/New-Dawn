@@ -1,4 +1,4 @@
-package com.sushil.navigationtesting.fragments.acd;
+package com.sushil.navigationtesting.fragments.navigation;
 
 
 import android.os.Bundle;
