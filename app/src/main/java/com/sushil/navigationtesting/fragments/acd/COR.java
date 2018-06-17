@@ -1,4 +1,4 @@
-package com.sushil.navigationtesting.fragments;
+package com.sushil.navigationtesting.fragments.acdtabs;
 
 
 import android.os.Bundle;
@@ -12,10 +12,10 @@ import com.sushil.navigationtesting.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class AgentID extends Fragment {
+public class COR extends Fragment {
 
 
-    public AgentID() {
+    public COR() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class AgentID extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.agent_id, container, false);
+        return inflater.inflate(R.layout.cor, container, false);
     }
 
 }

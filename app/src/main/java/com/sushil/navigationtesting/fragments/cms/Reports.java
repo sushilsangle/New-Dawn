@@ -1,4 +1,4 @@
-package com.sushil.navigationtesting.fragments;
+package com.sushil.navigationtesting.fragments.cms;
 
 
 import android.os.Bundle;
@@ -12,10 +12,10 @@ import com.sushil.navigationtesting.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class AbandonCalls extends Fragment {
+public class Reports extends Fragment {
 
 
-    public AbandonCalls() {
+    public Reports() {
         // Required empty public constructor
     }
 
@@ -24,7 +24,7 @@ public class AbandonCalls extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.abandon_calls, container, false);
+        return inflater.inflate(R.layout.reports, container, false);
     }
 
 }
